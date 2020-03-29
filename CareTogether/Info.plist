@@ -39,6 +39,11 @@
 			</array>
 		</dict>
 	</dict>
+    <key>UIAppFonts</key>
+    <array>
+        <string>Pyidaungsu-2.5.3_Bold.ttf</string>
+        <string>Pyidaungsu-2.5.3_Regular.ttf</string>
+    </array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

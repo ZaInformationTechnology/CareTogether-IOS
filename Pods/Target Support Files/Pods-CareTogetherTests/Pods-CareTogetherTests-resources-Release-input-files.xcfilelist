@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-CareTogetherTests/Pods-CareTogetherTests-resources.sh
+${PODS_ROOT}/CRRefresh/CRRefresh/CRRefresh/Animators/NormalAnimator/NormalFooter.bundle
+${PODS_ROOT}/CRRefresh/CRRefresh/CRRefresh/Animators/NormalAnimator/NormalHeader.bundle
+${PODS_ROOT}/DropDown/DropDown/resources/DropDownCell.xib
+${PODS_ROOT}/SKCountryPicker/CountryPicker/CountryPicker/tickMark.png
+${PODS_CONFIGURATION_BUILD_DIR}/SKCountryPicker/CountryPickerController.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/StepIndicator/StepIndicator.bundle
