@@ -31,14 +31,14 @@ extension UIViewController {
     
     func showErrorMessageAlertWithRetry(message : String , completion : @escaping (_ isRetry:Bool)->Void ){
         let alert = UIAlertController.init(title: "", message: message, preferredStyle: .alert)
-        let alertAction = UIAlertAction.init(title: "LocalizationKey.lbRetry.string", style: .default) { (action) in
+        let alertAction = UIAlertAction.init(title: "သတိပေးချက်", style: .default) { (action) in
             completion(true)
         }
-        let cancelAction = UIAlertAction.init(title:" LocalizationKey.btnCancel.string", style: .cancel) { (action) in
+        let cancelAction = UIAlertAction.init(title:"ပြန်လုပ်မည်", style: .cancel) { (action) in
             completion( false)
         }
         alert.addAction(cancelAction)
-        alert.addAction(alertAction)
+//        alert.addAction(alertAction)
         self.present(alert, animated: true, completion: nil)
     }
     

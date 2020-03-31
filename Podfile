@@ -21,7 +21,11 @@ def share_pod
 	pod 'IQKeyboardManager'
 	pod 'SwipeCellKit'
 pod 'SKCountryPicker'
-
+pod 'SKPhotoBrowser'
+pod 'SwiftHEXColors'
+pod 'ImageSlideshow', '~> 1.8.3'
+pod "ImageSlideshow/Kingfisher"
+#pod 'SwiftDataTables'
 end
 
 

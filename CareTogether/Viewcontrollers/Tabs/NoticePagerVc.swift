@@ -116,7 +116,6 @@ class NoticeVc : UIViewController {
     var page: Pages
     init(with page: Pages) {
         self.page = page
-        
         super.init(nibName: nil, bundle: nil)
     }
     

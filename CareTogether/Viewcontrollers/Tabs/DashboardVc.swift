@@ -9,7 +9,12 @@
 import UIKit
 
 class DashboardVc: UIViewController {
-
+    @IBAction func btnLogout(_ sender: Any) {
+        Store.instance.setPhoneNumber(phone: "")
+        Router.instance.navigate(routeName: "PhoneVerifyVc", storyboard: "Main")
+    }
+    
+    @IBOutlet weak var btnLogout: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 

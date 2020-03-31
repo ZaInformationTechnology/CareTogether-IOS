@@ -12,6 +12,12 @@ import UIKit
 class Router {
     static let instance = Router()
     
+    func goToPhoneLogin(window : UIWindow?)  {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let rootVC = storyboard.instantiateViewController(identifier: "PhoneVerifyVc")
+        window?.rootViewController = rootVC
+        window?.makeKeyAndVisible()
+    }
   
     
     
@@ -52,7 +58,7 @@ class Router {
     
     func goFontChooseVc(window : UIWindow?){
           let storyboard = UIStoryboard(name: "Main", bundle: nil)
-          let rootVC = storyboard.instantiateViewController(identifier: "ChooseFontVc")
+          let rootVC = storyboard.instantiateViewController(identifier: "PhoneVerifyVc")
           window?.rootViewController = rootVC
           window?.makeKeyAndVisible()
       }

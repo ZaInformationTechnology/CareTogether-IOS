@@ -19,13 +19,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
        
-    
-        if(Store.instance.getPhoneNumber() != nil && Store.instance.getPhoneNumber() != ""){
-            Router.instance.goMainTab(window: self.window)
-        }else{
-            Router.instance.goFontChooseVc(window: self.window)
+        let phoneNumber = Store.instance.getPhoneNumber()
+        if( phoneNumber != nil && phoneNumber != ""){
+            print("go main")
+                Router.instance.goMainTab(window: self.window)
             
+        }else{
+            print("go phone")
+             Router.instance.goFontChooseVc(window: self.window)
         }
+    
+        
         
         
         return true

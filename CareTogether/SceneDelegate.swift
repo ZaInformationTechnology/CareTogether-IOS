@@ -21,11 +21,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         
         
-        if(Store.instance.getPhoneNumber() != nil){
-            Router.instance.goMainTab(window: self.window)
-        }else{
-            Router.instance.goFontChooseVc(window: self.window)
-        }
+         let phoneNumber = Store.instance.getPhoneNumber()
+               if( phoneNumber != nil && phoneNumber != ""){
+                   print("go main")
+                       Router.instance.goMainTab(window: self.window)
+                   
+               }else{
+                   print("go phone")
+                    Router.instance.goFontChooseVc(window: self.window)
+               }
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
