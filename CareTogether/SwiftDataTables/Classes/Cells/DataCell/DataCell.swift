@@ -44,6 +44,7 @@ class DataCell: UICollectionViewCell {
     func configure(_ viewModel: DataCellViewModel){
         self.dataLabel.text = viewModel.data.stringRepresentation
         self.dataLabel.textAlignment = .center
-        self.dataLabel.font = dataLabel.font.withSize(14)
+//        self.dataLabel.font = dataLabel.font.withSize(14)
+        self.dataLabel.font = UIFont(name: "Pyidaungsu", size: 14)!
     }
 }

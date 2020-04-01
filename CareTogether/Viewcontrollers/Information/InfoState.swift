@@ -11,4 +11,9 @@ enum InfoState {
     case Loading
     case FetchStaticMyanmarSuccess(response : StaticMyanmarResponse)
     case FetchStaticError
+    case FetchStaticGlobalError
+    case FetchStaticAsianError
+    case FetchGlobalSuccess(response : StaticCountryResponse)
+    case FetchAsianSuccess(response : StaticCountryResponse)
+    
 }

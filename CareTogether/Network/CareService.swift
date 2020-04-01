@@ -13,6 +13,8 @@ public enum CareService{
     case getNewsList
     case getNewDetail(Int)
     case getStaticMyanmar
+    case getStaticGlobal
+    case getStaticAsian
 }
 
 
@@ -31,7 +33,9 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
         switch self {
         case .getNewsList: return "/news"
         case .getNewDetail(let id) : return "/news/\(id)"
-        case .getStaticMyanmar : return "/statistic/myanmar"
+        case .getStaticMyanmar : return "/statistic/myanmar-with-region"
+        case .getStaticAsian : return "/statistic/asean-list"
+        case .getStaticGlobal : return "/statistic/global"
             
         }
     }
@@ -41,7 +45,8 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
         case .getNewsList : return .get
         case .getNewDetail(_) : return .get
         case .getStaticMyanmar : return .get
-            
+        case .getStaticAsian : return .get
+        case .getStaticGlobal : return .get
             
         }
     }
@@ -62,6 +67,8 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
             
         case .getNewDetail(_) : return .requestPlain
         case .getStaticMyanmar : return .requestPlain
+        case .getStaticGlobal : return .requestPlain
+        case .getStaticAsian : return .requestPlain
         }
         
     }

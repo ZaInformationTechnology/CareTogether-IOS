@@ -49,28 +49,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MM5-Gr-TTm" customClass="RoundCardView" customModule="CareTogether" customModuleProvider="target">
-                                <rect key="frame" x="16" y="202.5" width="382" height="332"/>
+                                <rect key="frame" x="16" y="202.5" width="382" height="313"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="အသုံးပြုမည့်ဖောင့်အားရွေးချယ်ပေးပါ။" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szb-NU-H1f">
-                                        <rect key="frame" x="16" y="16" width="350" height="29.5"/>
+                                        <rect key="frame" x="16" y="16" width="350" height="20"/>
                                         <fontDescription key="fontDescription" name="Pyidaungsu-Bold" family="Pyidaungsu" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ဇော်ကျီ (သို့) ယူနီကုဒ် တစ်ခုခုကိုရွေးချယ်ပေးပါ။" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ga7-oS-srg">
-                                        <rect key="frame" x="16" y="53.5" width="350" height="29.5"/>
+                                        <rect key="frame" x="16" y="44" width="350" height="20"/>
                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="qkO-vy-7rI">
-                                        <rect key="frame" x="24" y="95" width="334" height="150"/>
+                                        <rect key="frame" x="24" y="76" width="334" height="150"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKp-EP-tLK" customClass="RoundCardView" customModule="CareTogether" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="159" height="150"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="မြန်မာဇော်ကျီ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llz-Yg-sHM">
-                                                        <rect key="frame" x="16" y="112.5" width="127" height="29.5"/>
+                                                        <rect key="frame" x="16" y="122" width="127" height="20"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -82,7 +82,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                             </imageView>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="bottom" secondItem="NCj-TN-neB" secondAttribute="bottom" id="5iU-5H-AQd"/>
                                                             <constraint firstAttribute="width" constant="30" id="7Df-yH-dbb"/>
@@ -112,7 +112,7 @@
                                                 <rect key="frame" x="175" y="0.0" width="159" height="150"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="မြန်မာယူနီကုဒ်" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vs-4s-nvz">
-                                                        <rect key="frame" x="16" y="112.5" width="127" height="29.5"/>
+                                                        <rect key="frame" x="16" y="122" width="127" height="20"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -124,7 +124,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                             </imageView>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="ucg-h8-ehg" firstAttribute="top" secondItem="Xkd-7Y-2cR" secondAttribute="top" id="7jJ-TX-Fs0"/>
                                                             <constraint firstAttribute="trailing" secondItem="ucg-h8-ehg" secondAttribute="trailing" id="Ouk-mB-xug"/>
@@ -156,7 +156,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhm-cj-NGK" customClass="RoundButton" customModule="CareTogether" customModuleProvider="target">
-                                        <rect key="frame" x="24" y="261" width="334" height="55"/>
+                                        <rect key="frame" x="24" y="242" width="334" height="55"/>
                                         <color key="backgroundColor" red="0.94117647058823528" green="0.79607843137254897" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="xz2-Fq-Hgs"/>
@@ -252,10 +252,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1SH-ad-hkw" customClass="RoundCardView" customModule="CareTogether" customModuleProvider="target">
-                                <rect key="frame" x="16" y="266.5" width="382" height="182"/>
+                                <rect key="frame" x="16" y="266.5" width="382" height="173.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sq-JZ-m7k">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="182"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="173.5"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
@@ -272,7 +272,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfZ-GE-gkm">
-                                        <rect key="frame" x="16" y="54" width="350" height="88"/>
+                                        <rect key="frame" x="16" y="54" width="350" height="79.5"/>
                                         <string key="text">သင့်နှင့်သင့်မိသားစု၊ သင့်ပတ်၀န်းကျင်အတွက် Corona Virus(Covid - 19) အနရာယ်ကာကွယ်ေစာင့်ရှောက်မှုတွင်ပါ၀င်ကူညီနိုင်ရန်လိုအပ်နေပါသည်။</string>
                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -506,17 +506,66 @@
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8RT-wP-6xC" customClass="RoundCardView" customModule="CareTogether" customModuleProvider="target">
                                 <rect key="frame" x="16" y="229" width="382" height="157"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_virus" translatesAutoresizingMaskIntoConstraints="NO" id="d0N-DB-IOH">
+                                        <rect key="frame" x="171" y="24" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="GTq-eF-hpd"/>
+                                            <constraint firstAttribute="height" constant="40" id="Psf-xm-6NS"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="တည်နေရာပေါ်မူတည်၍နီးစပ်ဖူးသူမရှိပါ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPn-Bz-Mjv">
+                                        <rect key="frame" x="16" y="72" width="350" height="29.5"/>
+                                        <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstItem="dPn-Bz-Mjv" firstAttribute="centerY" secondItem="8RT-wP-6xC" secondAttribute="centerY" constant="8" id="8xN-nS-9QR"/>
+                                    <constraint firstAttribute="trailing" secondItem="dPn-Bz-Mjv" secondAttribute="trailing" constant="16" id="QXN-eI-Jqp"/>
+                                    <constraint firstItem="dPn-Bz-Mjv" firstAttribute="leading" secondItem="8RT-wP-6xC" secondAttribute="leading" constant="16" id="bzU-f4-093"/>
+                                    <constraint firstItem="dPn-Bz-Mjv" firstAttribute="centerX" secondItem="8RT-wP-6xC" secondAttribute="centerX" id="dnQ-Xt-pb7"/>
+                                    <constraint firstItem="dPn-Bz-Mjv" firstAttribute="top" secondItem="d0N-DB-IOH" secondAttribute="bottom" constant="8" id="g2T-F1-WG1"/>
+                                    <constraint firstItem="d0N-DB-IOH" firstAttribute="centerX" secondItem="8RT-wP-6xC" secondAttribute="centerX" id="hR6-4u-3BZ"/>
                                     <constraint firstAttribute="height" constant="157" id="sO1-Bs-aOC"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PN5-yW-def" customClass="RoundCardView" customModule="CareTogether" customModuleProvider="target">
-                                <rect key="frame" x="16" y="402" width="382" height="157"/>
+                                <rect key="frame" x="16" y="402" width="382" height="210"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="သင်နှင့်သင့်ပတ်၀န်းကျင်သို့ ရောဂါပိုးမရောက်ရှိစေရန်အတွက် နေအိမ်အတွင်းသာနေထိုင်နိုင်ရန် အထူးလိုအပ်နေပါပြီ။" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Diu-hW-UOv">
+                                        <rect key="frame" x="16" y="106" width="350" height="88"/>
+                                        <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="သတိ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgZ-Ra-4fr">
+                                        <rect key="frame" x="16" y="63.5" width="350" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="20"/>
+                                        <color key="textColor" red="0.76470588240000004" green="0.043137254899999998" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_stayhome" translatesAutoresizingMaskIntoConstraints="NO" id="P9h-OE-x7Z">
+                                        <rect key="frame" x="171" y="15.5" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Ygh-aR-KAa"/>
+                                            <constraint firstAttribute="width" constant="40" id="cSw-2y-RqY"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="157" id="ZUA-6K-Vno"/>
-                                    <constraint firstAttribute="height" constant="157" id="cMV-kX-2Mz"/>
+                                    <constraint firstItem="VgZ-Ra-4fr" firstAttribute="leading" secondItem="PN5-yW-def" secondAttribute="leading" constant="16" id="JFK-gy-DCq"/>
+                                    <constraint firstAttribute="bottom" secondItem="Diu-hW-UOv" secondAttribute="bottom" constant="16" id="KJm-ei-QV9"/>
+                                    <constraint firstItem="P9h-OE-x7Z" firstAttribute="centerX" secondItem="PN5-yW-def" secondAttribute="centerX" id="S8H-A2-oXC"/>
+                                    <constraint firstAttribute="height" constant="210" id="cMV-kX-2Mz"/>
+                                    <constraint firstAttribute="trailing" secondItem="VgZ-Ra-4fr" secondAttribute="trailing" constant="16" id="inR-o9-hob"/>
+                                    <constraint firstAttribute="trailing" secondItem="Diu-hW-UOv" secondAttribute="trailing" constant="16" id="klk-O1-ai1"/>
+                                    <constraint firstItem="Diu-hW-UOv" firstAttribute="top" secondItem="VgZ-Ra-4fr" secondAttribute="bottom" constant="8" id="n6Z-kG-I1a"/>
+                                    <constraint firstItem="Diu-hW-UOv" firstAttribute="leading" secondItem="PN5-yW-def" secondAttribute="leading" constant="16" id="rbH-GM-OBz"/>
+                                    <constraint firstItem="VgZ-Ra-4fr" firstAttribute="top" secondItem="P9h-OE-x7Z" secondAttribute="bottom" constant="8" id="wrE-5e-nfO"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVg-kR-drU">
@@ -646,7 +695,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="မြန်မာဘာသာ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwr-Gp-cMm">
-                                                        <rect key="frame" x="56" y="14" width="71.5" height="22.5"/>
+                                                        <rect key="frame" x="56" y="17.5" width="75" height="15.5"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -685,7 +734,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="သတင်းအမှန်များ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgY-RF-yMY">
-                                                        <rect key="frame" x="56" y="14" width="86.5" height="22.5"/>
+                                                        <rect key="frame" x="56" y="17.5" width="95" height="15.5"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -731,7 +780,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPU-vv-AIQ">
-                                                <rect key="frame" x="16" y="14" width="25" height="22"/>
+                                                <rect key="frame" x="16" y="8.5" width="50" height="33"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="back"/>
                                                 <connections>
@@ -739,7 +788,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWl-pu-blk">
-                                                <rect key="frame" x="341" y="14" width="25" height="22"/>
+                                                <rect key="frame" x="316" y="8.5" width="50" height="33"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="next"/>
                                                 <connections>
@@ -887,16 +936,16 @@
                                 <rect key="frame" x="0.0" y="98" width="414" height="715"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOw-ib-Uyf">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="495"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="476"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcv-uu-us2">
-                                                <rect key="frame" x="16" y="16" width="382" height="29.5"/>
+                                                <rect key="frame" x="16" y="16" width="382" height="20"/>
                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQB-3e-IY7">
-                                                <rect key="frame" x="16" y="125.5" width="382" height="300"/>
+                                                <rect key="frame" x="16" y="116" width="382" height="300"/>
                                                 <subviews>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1q5-p5-J2h">
                                                         <rect key="frame" x="0.0" y="250" width="382" height="50"/>
@@ -908,7 +957,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLM-od-QhV">
-                                                                <rect key="frame" x="16" y="14" width="25" height="22"/>
+                                                                <rect key="frame" x="16" y="8.5" width="50" height="33"/>
                                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" image="back"/>
                                                                 <connections>
@@ -916,7 +965,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69Y-ns-7Mk">
-                                                                <rect key="frame" x="341" y="14" width="25" height="22"/>
+                                                                <rect key="frame" x="316" y="8.5" width="50" height="33"/>
                                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" image="next"/>
                                                                 <connections>
@@ -953,7 +1002,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzz-vI-aSe">
-                                                <rect key="frame" x="358" y="69.5" width="40" height="40"/>
+                                                <rect key="frame" x="358" y="60" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="GIM-YM-6H4"/>
                                                     <constraint firstAttribute="width" constant="40" id="T37-A4-wvO"/>
@@ -964,7 +1013,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFi-2j-qq6">
-                                                <rect key="frame" x="16" y="449.5" width="382" height="29.5"/>
+                                                <rect key="frame" x="16" y="440" width="382" height="20"/>
                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1051,32 +1100,32 @@
                                 <rect key="frame" x="0.0" y="90" width="414" height="827"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IlK-M4-xU0">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="834.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="702.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ZK-nc-z1t">
-                                                <rect key="frame" x="16" y="16" width="382" height="176"/>
+                                                <rect key="frame" x="16" y="16" width="382" height="139"/>
                                                 <string key="text">ယခုအခါ COVID - 19 ရောဂါနှင့်ပတ်သက်၍ ပြည်သူများ အထိတ်တလန့်ဖြစ်စေရန်ရည်ရွယ်ပီး သတင်းစာမျက်နှာအတုများ Facebook Page အတုများမှ တဆင့် သတင်းအမှားများကိုဖြန့် လျက်ရှိပါသောကြေင့် အောက်ဖော်ပြပါ သတင်းစာမျက်နှာများ နှင့် Facebook Page များမှသတင်းအမှန်များကိုစသာယုံကြည့်ကြပါရန် အသိပေးအပ်ပါသည်။</string>
                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vu1-dv-jXt">
-                                                <rect key="frame" x="16" y="210" width="382" height="145.5"/>
+                                                <rect key="frame" x="16" y="173" width="382" height="107.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook Page များ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joS-T8-6UT">
-                                                        <rect key="frame" x="8" y="8" width="140.5" height="29.5"/>
+                                                        <rect key="frame" x="8" y="8" width="154" height="20"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://www.fb.com/ministryofhealthandsportsmyanmar" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cq-to-ZYq">
-                                                        <rect key="frame" x="8" y="37" width="366" height="59"/>
+                                                        <rect key="frame" x="8" y="27.5" width="366" height="40"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://www.fb.com/myanmarcdc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zt-JQ-tz0">
-                                                        <rect key="frame" x="8" y="100" width="366" height="29.5"/>
+                                                        <rect key="frame" x="8" y="71.5" width="366" height="20"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1101,22 +1150,22 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u8b-7H-pqz">
-                                                <rect key="frame" x="16" y="371.5" width="382" height="116.5"/>
+                                                <rect key="frame" x="16" y="296.5" width="382" height="87.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website Link များ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnc-yZ-xhP">
-                                                        <rect key="frame" x="8" y="8" width="122" height="30"/>
+                                                        <rect key="frame" x="8" y="8" width="131.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://mohs.gov.mm/" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isv-pR-HcZ">
-                                                        <rect key="frame" x="8" y="37.5" width="366" height="29.5"/>
+                                                        <rect key="frame" x="8" y="27.5" width="366" height="20"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://who.int/" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4M7-jo-vCd">
-                                                        <rect key="frame" x="8" y="71" width="366" height="29.5"/>
+                                                        <rect key="frame" x="8" y="51.5" width="366" height="20"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1141,86 +1190,86 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvZ-1O-W06">
-                                                <rect key="frame" x="16" y="505" width="382" height="313.5"/>
+                                                <rect key="frame" x="16" y="401" width="382" height="285.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="အရေးပေါ်ဆက်သွယ်ရန်ဖုန်းများ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrJ-VD-VO5">
-                                                        <rect key="frame" x="8" y="8" width="210" height="30"/>
+                                                        <rect key="frame" x="8" y="8" width="227.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Public Health Emergency Operation Center" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t75-pt-Clx">
-                                                        <rect key="frame" x="8" y="46" width="366" height="29.5"/>
+                                                        <rect key="frame" x="8" y="36" width="366" height="20"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone-1" translatesAutoresizingMaskIntoConstraints="NO" id="x1z-GY-5bb">
-                                                        <rect key="frame" x="8" y="79.5" width="24" height="24"/>
+                                                        <rect key="frame" x="8" y="60" width="24" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="24" id="ZF4-34-7BQ"/>
                                                             <constraint firstAttribute="height" constant="24" id="p4h-Mo-s2j"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="067-3420268" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQ3-6v-LUW">
-                                                        <rect key="frame" x="40" y="81" width="326" height="21"/>
+                                                        <rect key="frame" x="40" y="61.5" width="326" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regional Development of Public Health(Yangon)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEe-Rc-fqK">
-                                                        <rect key="frame" x="8" y="111" width="366" height="29.5"/>
+                                                        <rect key="frame" x="8" y="91.5" width="366" height="20"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone-1" translatesAutoresizingMaskIntoConstraints="NO" id="Wip-yH-NPE">
-                                                        <rect key="frame" x="8" y="144.5" width="24" height="24"/>
+                                                        <rect key="frame" x="8" y="115.5" width="24" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="24" id="Bi2-5c-E4J"/>
                                                             <constraint firstAttribute="width" constant="24" id="UnY-hW-6Kr"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09-449001261 , 09-794510057" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NM-k0-EAk">
-                                                        <rect key="frame" x="40" y="146" width="246" height="21"/>
+                                                        <rect key="frame" x="40" y="117" width="246" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regional Development of Public Health(Mandalay)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e89-Vk-I8D">
-                                                        <rect key="frame" x="8" y="176" width="366" height="29.5"/>
+                                                        <rect key="frame" x="8" y="147" width="366" height="40"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone-1" translatesAutoresizingMaskIntoConstraints="NO" id="SSZ-Aj-pMQ">
-                                                        <rect key="frame" x="8" y="209.5" width="24" height="24"/>
+                                                        <rect key="frame" x="8" y="191" width="24" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="24" id="7bT-XG-a0A"/>
                                                             <constraint firstAttribute="width" constant="24" id="WsV-jt-GHj"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02-2000344 , 09-43099526" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOc-dE-IOd">
-                                                        <rect key="frame" x="40" y="211" width="225" height="21"/>
+                                                        <rect key="frame" x="40" y="192.5" width="225" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health Quarantine Unit (Yangon International)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQW-Gg-aNb">
-                                                        <rect key="frame" x="8" y="241.5" width="366" height="29.5"/>
+                                                        <rect key="frame" x="8" y="223" width="366" height="20"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone-1" translatesAutoresizingMaskIntoConstraints="NO" id="l8H-hZ-Y55">
-                                                        <rect key="frame" x="8" y="275" width="24" height="24"/>
+                                                        <rect key="frame" x="8" y="247" width="24" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="24" id="kqT-v9-8sH"/>
                                                             <constraint firstAttribute="height" constant="24" id="xrG-8h-HL4"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0-799983833" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdu-Jo-3o3">
-                                                        <rect key="frame" x="40" y="276.5" width="111" height="21"/>
+                                                        <rect key="frame" x="40" y="248.5" width="111" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1349,9 +1398,9 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IOu-Dr-mDz">
                                                 <rect key="frame" x="2" y="2" width="179" height="46"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Myanmar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ca5-wF-krY">
-                                                        <rect key="frame" x="54" y="13" width="71" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="မြန်မာ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ca5-wF-krY">
+                                                        <rect key="frame" x="68.5" y="8.5" width="42.5" height="29.5"/>
+                                                        <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1387,9 +1436,9 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YjN-CW-8lk">
                                                 <rect key="frame" x="2" y="2" width="179" height="46"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Global" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXs-7n-qrC">
-                                                        <rect key="frame" x="65" y="13" width="49" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="နိုင်ငံတကာ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXs-7n-qrC">
+                                                        <rect key="frame" x="52" y="8.5" width="75" height="29.5"/>
+                                                        <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1430,7 +1479,26 @@
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arI-K0-rHL">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocZ-c3-WSc" userLabel="LyGlobalScrollView">
+                                <rect key="frame" x="0.0" y="155.5" width="414" height="861.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcN-ar-D7H" customClass="GlobalView" customModule="CareTogether" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="861.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RcN-ar-D7H" firstAttribute="leading" secondItem="ocZ-c3-WSc" secondAttribute="leading" id="8SS-Yb-Rs1"/>
+                                    <constraint firstItem="RcN-ar-D7H" firstAttribute="top" secondItem="ocZ-c3-WSc" secondAttribute="top" id="OEj-in-NQ1"/>
+                                    <constraint firstAttribute="trailing" secondItem="RcN-ar-D7H" secondAttribute="trailing" id="Ukj-Kw-jUe"/>
+                                    <constraint firstAttribute="bottom" secondItem="RcN-ar-D7H" secondAttribute="bottom" id="YXa-tn-h72"/>
+                                    <constraint firstItem="RcN-ar-D7H" firstAttribute="height" secondItem="ocZ-c3-WSc" secondAttribute="height" priority="250" id="cB6-MN-ivQ"/>
+                                    <constraint firstItem="RcN-ar-D7H" firstAttribute="width" secondItem="ocZ-c3-WSc" secondAttribute="width" id="wg0-Ku-6Ls"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="2GJ-Y2-I5w"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="HM2-PV-dCE"/>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arI-K0-rHL" userLabel="Ly Myanmar Scroll View">
                                 <rect key="frame" x="0.0" y="155.5" width="414" height="861.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekf-32-BHL">
@@ -1547,7 +1615,7 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="၀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfq-uX-GWk">
                                                                 <rect key="frame" x="16" y="16" width="155" height="21.5"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ဓာတ်ခွဲခန်းအဖြေစောင့်ဆိုင်း" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auW-KF-r7T">
@@ -1587,7 +1655,7 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="၀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikn-AI-Omb">
                                                                 <rect key="frame" x="16" y="16" width="155" height="21.5"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ပိုးမတွေ့လူနာ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFf-HK-kv6">
@@ -1659,7 +1727,7 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="၀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qeo-QI-EJJ">
                                                                 <rect key="frame" x="16" y="16" width="155" height="21.5"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="သေဆုံး" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46D-sC-oBM">
@@ -1726,43 +1794,30 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUK-b3-CDp">
                                                 <rect key="frame" x="16" y="450" width="382" height="300"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ဆေးရုံအလိုက်စောင့်ကြည့်/သံသယလူနာစုစုပေါင်း" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpb-V5-xpp">
-                                                        <rect key="frame" x="8" y="8" width="310" height="59"/>
-                                                        <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
-                                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3PQ-7C-qkJ">
-                                                        <rect key="frame" x="334" y="8" width="40" height="40"/>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3PQ-7C-qkJ">
+                                                        <rect key="frame" x="374" y="8" width="0.0" height="0.0"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="bVl-sd-thL"/>
-                                                            <constraint firstAttribute="width" constant="40" id="u8E-fE-d39"/>
+                                                            <constraint firstAttribute="height" id="bVl-sd-thL"/>
+                                                            <constraint firstAttribute="width" id="u8E-fE-d39"/>
                                                         </constraints>
                                                         <state key="normal" image="expand"/>
                                                         <connections>
                                                             <action selector="btnExpandPressed:" destination="xEI-4f-Mjf" eventType="touchUpInside" id="EEo-hs-wHQ"/>
                                                         </connections>
                                                     </button>
-                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pKH-WJ-vip">
-                                                        <rect key="frame" x="0.0" y="75" width="382" height="225"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                <integer key="value" value="8"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </tableView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="တိုင်း/ပြည်နယ်အလိုက်စောင့်ကြည့်/သံသယလူနာစုစုပေါင်း" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpb-V5-xpp">
+                                                        <rect key="frame" x="8" y="8" width="350" height="59"/>
+                                                        <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="pKH-WJ-vip" secondAttribute="bottom" id="5P7-Ft-rYA"/>
                                                     <constraint firstAttribute="trailing" secondItem="3PQ-7C-qkJ" secondAttribute="trailing" constant="8" id="AIQ-jC-OMb"/>
-                                                    <constraint firstItem="pKH-WJ-vip" firstAttribute="top" secondItem="zpb-V5-xpp" secondAttribute="bottom" constant="8" id="CWZ-eI-h8G"/>
                                                     <constraint firstItem="zpb-V5-xpp" firstAttribute="top" secondItem="jUK-b3-CDp" secondAttribute="top" constant="8" id="FGo-7C-kAh"/>
                                                     <constraint firstItem="3PQ-7C-qkJ" firstAttribute="top" secondItem="jUK-b3-CDp" secondAttribute="top" constant="8" id="S4S-d8-Uuf"/>
-                                                    <constraint firstItem="pKH-WJ-vip" firstAttribute="leading" secondItem="jUK-b3-CDp" secondAttribute="leading" id="Y2g-qp-z2f"/>
                                                     <constraint firstAttribute="height" constant="300" id="YN1-I7-zNH"/>
-                                                    <constraint firstAttribute="trailing" secondItem="pKH-WJ-vip" secondAttribute="trailing" id="w2j-0k-etZ"/>
                                                     <constraint firstItem="zpb-V5-xpp" firstAttribute="leading" secondItem="jUK-b3-CDp" secondAttribute="leading" constant="8" id="wHi-DZ-5Mt"/>
                                                     <constraint firstItem="3PQ-7C-qkJ" firstAttribute="leading" secondItem="zpb-V5-xpp" secondAttribute="trailing" constant="16" id="yZi-9G-VZ4"/>
                                                 </constraints>
@@ -1818,11 +1873,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="JFn-WO-xKN" firstAttribute="top" secondItem="jEs-UI-k8H" secondAttribute="top" constant="8" id="1Pi-cq-Wap"/>
+                            <constraint firstItem="jEs-UI-k8H" firstAttribute="bottom" secondItem="ocZ-c3-WSc" secondAttribute="bottom" id="1RI-4Y-PoC"/>
+                            <constraint firstItem="jEs-UI-k8H" firstAttribute="trailing" secondItem="ocZ-c3-WSc" secondAttribute="trailing" id="1uO-Pq-bmp"/>
                             <constraint firstItem="jEs-UI-k8H" firstAttribute="trailing" secondItem="Fbq-D7-X4P" secondAttribute="trailing" constant="16" id="AeF-R6-x3X"/>
                             <constraint firstItem="arI-K0-rHL" firstAttribute="leading" secondItem="jEs-UI-k8H" secondAttribute="leading" id="DBN-Av-wNi"/>
                             <constraint firstItem="jEs-UI-k8H" firstAttribute="trailing" secondItem="JFn-WO-xKN" secondAttribute="trailing" constant="16" id="MHI-pJ-1dI"/>
                             <constraint firstItem="arI-K0-rHL" firstAttribute="bottom" secondItem="jEs-UI-k8H" secondAttribute="bottom" id="QZP-s8-b2O"/>
                             <constraint firstItem="Fbq-D7-X4P" firstAttribute="top" secondItem="JFn-WO-xKN" secondAttribute="bottom" constant="16" id="REW-wK-xqf"/>
+                            <constraint firstItem="ocZ-c3-WSc" firstAttribute="leading" secondItem="jEs-UI-k8H" secondAttribute="leading" id="abV-O6-2e3"/>
                             <constraint firstItem="jEs-UI-k8H" firstAttribute="trailing" secondItem="EXV-GI-dpY" secondAttribute="trailing" id="bd0-yW-zgJ"/>
                             <constraint firstAttribute="bottom" secondItem="EXV-GI-dpY" secondAttribute="bottom" id="cbg-Gd-37c"/>
                             <constraint firstItem="EXV-GI-dpY" firstAttribute="leading" secondItem="jEs-UI-k8H" secondAttribute="leading" id="hN0-KC-mU1"/>
@@ -1831,12 +1889,15 @@
                             <constraint firstItem="EXV-GI-dpY" firstAttribute="top" secondItem="2Ew-o9-Pf8" secondAttribute="top" id="ktO-1P-e5V"/>
                             <constraint firstItem="arI-K0-rHL" firstAttribute="top" secondItem="Fbq-D7-X4P" secondAttribute="bottom" constant="16" id="lsZ-rY-YOU"/>
                             <constraint firstItem="jEs-UI-k8H" firstAttribute="trailing" secondItem="arI-K0-rHL" secondAttribute="trailing" id="qeq-Dp-ezp"/>
+                            <constraint firstItem="ocZ-c3-WSc" firstAttribute="top" secondItem="Fbq-D7-X4P" secondAttribute="bottom" constant="16" id="x52-Ah-JcT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jEs-UI-k8H"/>
                     </view>
                     <navigationItem key="navigationItem" id="sdH-oS-mbw"/>
                     <size key="freeformSize" width="414" height="1100"/>
                     <connections>
+                        <outlet property="frameLocalTableView" destination="jUK-b3-CDp" id="gaz-mx-Snl"/>
+                        <outlet property="frameTableView" destination="YN1-I7-zNH" id="6ny-9x-sRd"/>
                         <outlet property="lbConfirmed" destination="NAk-hz-blq" id="43g-Dh-EUJ"/>
                         <outlet property="lbDeath" destination="Qeo-QI-EJJ" id="msU-pb-f9O"/>
                         <outlet property="lbGlobal" destination="IXs-7n-qrC" id="vIH-Vc-2Jl"/>
@@ -1848,16 +1909,18 @@
                         <outlet property="lbSus" destination="eT0-99-z64" id="4iP-Pw-PlZ"/>
                         <outlet property="lbTitleDashboard" destination="Fbq-D7-X4P" id="B0P-Hu-JOj"/>
                         <outlet property="lyGlobal" destination="YjN-CW-8lk" id="WDI-AI-3Db"/>
+                        <outlet property="lyGlobalScrollView" destination="ocZ-c3-WSc" id="Oa9-eq-I3K"/>
+                        <outlet property="lyGlobalView" destination="RcN-ar-D7H" id="ydx-P5-b3v"/>
                         <outlet property="lyMyanmar" destination="IOu-Dr-mDz" id="Rc0-gK-QVU"/>
                         <outlet property="lyMyanmarScrollVie" destination="arI-K0-rHL" id="dK3-XP-Ghi"/>
                         <outlet property="pending" destination="Tfq-uX-GWk" id="8sa-HI-gax"/>
-                        <outlet property="tbHospital" destination="pKH-WJ-vip" id="2WU-8h-Pth"/>
+                        <outlet property="titleForPatient" destination="zpb-V5-xpp" id="YrX-23-5Lu"/>
                         <segue destination="bWV-nb-Ipa" kind="show" id="uPD-Aj-Wnk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPO-Q2-k0u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2274" y="1132"/>
+            <point key="canvasLocation" x="2273.913043478261" y="1131.6964285714284"/>
         </scene>
         <!--Full Information Vc-->
         <scene sceneID="emh-I1-uiN">
@@ -1910,11 +1973,13 @@
         <image name="dropdown_arrow" width="24" height="24"/>
         <image name="expand" width="21.5" height="21.5"/>
         <image name="healthorganization" width="129" height="129.5"/>
+        <image name="ic_stayhome" width="91.5" height="96"/>
         <image name="info.circle" catalog="system" width="64" height="62"/>
         <image name="logo" width="170.5" height="170.5"/>
         <image name="mask" width="25" height="25"/>
         <image name="next" width="25" height="16.5"/>
         <image name="no_corona" width="61.5" height="61"/>
+        <image name="no_virus" width="38" height="42"/>
         <image name="noti" width="25" height="25"/>
         <image name="phone-1" width="25" height="25"/>
         <image name="right news" width="29" height="27.5"/>

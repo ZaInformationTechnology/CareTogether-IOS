@@ -89,8 +89,7 @@ extension FullInformationVc {
             headerTitles: self.columnHeaders(),
             options: configuration!
         )
-//        dataTable.backgroundColor = UIColor(red: 235/255, green: 235/255, blue: 235/255, alpha: 1)
-//        dataTable.backgroundColor = .gree
+
         dataTable.translatesAutoresizingMaskIntoConstraints = false
         dataTable.delegate = self
         return dataTable

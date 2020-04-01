@@ -82,6 +82,9 @@
 		EEDA21D424336CD70077B293 /* InfoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA21D324336CD70077B293 /* InfoUseCase.swift */; };
 		EEDA21D624336D010077B293 /* InfoState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA21D524336D010077B293 /* InfoState.swift */; };
 		EEDA21D924336D8A0077B293 /* StaticMyanmarResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA21D824336D8A0077B293 /* StaticMyanmarResponse.swift */; };
+		EEFEE8092434D8EB00B8D072 /* GlobalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFEE8082434D8EB00B8D072 /* GlobalView.swift */; };
+		EEFEE80B2434D8F300B8D072 /* GlobalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFEE80A2434D8F300B8D072 /* GlobalView.xib */; };
+		EEFEE80D2434E64500B8D072 /* StaticCountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFEE80C2434E64500B8D072 /* StaticCountryResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,6 +192,9 @@
 		EEDA21D324336CD70077B293 /* InfoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoUseCase.swift; sourceTree = "<group>"; };
 		EEDA21D524336D010077B293 /* InfoState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoState.swift; sourceTree = "<group>"; };
 		EEDA21D824336D8A0077B293 /* StaticMyanmarResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticMyanmarResponse.swift; sourceTree = "<group>"; };
+		EEFEE8082434D8EB00B8D072 /* GlobalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalView.swift; sourceTree = "<group>"; };
+		EEFEE80A2434D8F300B8D072 /* GlobalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GlobalView.xib; sourceTree = "<group>"; };
+		EEFEE80C2434E64500B8D072 /* StaticCountryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticCountryResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -410,6 +416,7 @@
 		EE695CF42430C003008512E4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EEFEE8072434D8D300B8D072 /* GlobalView */,
 				EE5A0F972432FC6700F20E85 /* DetailToolbar */,
 				EE695CF52430C009008512E4 /* PhoneToolbar */,
 			);
@@ -556,8 +563,18 @@
 			isa = PBXGroup;
 			children = (
 				EEDA21D824336D8A0077B293 /* StaticMyanmarResponse.swift */,
+				EEFEE80C2434E64500B8D072 /* StaticCountryResponse.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		EEFEE8072434D8D300B8D072 /* GlobalView */ = {
+			isa = PBXGroup;
+			children = (
+				EEFEE8082434D8EB00B8D072 /* GlobalView.swift */,
+				EEFEE80A2434D8F300B8D072 /* GlobalView.xib */,
+			);
+			path = GlobalView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -679,6 +696,7 @@
 				EED1F3042430870E00B071C8 /* Pyidaungsu-2.5.3_Regular.ttf in Resources */,
 				EED1F2DA2430854700B071C8 /* Assets.xcassets in Resources */,
 				EE695CF92430C034008512E4 /* PhoneToolbar.xib in Resources */,
+				EEFEE80B2434D8F300B8D072 /* GlobalView.xib in Resources */,
 				EED1F2D52430854600B071C8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -825,6 +843,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE58228024339BCF00D25CA2 /* VirtualPositionTrackable.swift in Sources */,
+				EEFEE80D2434E64500B8D072 /* StaticCountryResponse.swift in Sources */,
 				EEDA21D924336D8A0077B293 /* StaticMyanmarResponse.swift in Sources */,
 				EE5A0F992432FC7C00F20E85 /* DetailToolbar.swift in Sources */,
 				EE58227F24339BCF00D25CA2 /* SwiftDataTable.swift in Sources */,
@@ -849,6 +868,7 @@
 				EE58227C24339BCF00D25CA2 /* SwiftDataTableLayout.swift in Sources */,
 				EE58226E24339BCF00D25CA2 /* PaginationHeader.swift in Sources */,
 				EE58227E24339BCF00D25CA2 /* DataStore.swift in Sources */,
+				EEFEE8092434D8EB00B8D072 /* GlobalView.swift in Sources */,
 				EE58227024339BCF00D25CA2 /* MenuLengthHeaderViewModel.swift in Sources */,
 				EE58227524339BCF00D25CA2 /* DataHeaderFooter.swift in Sources */,
 				EE695CFC2430C638008512E4 /* DashboardVc.swift in Sources */,

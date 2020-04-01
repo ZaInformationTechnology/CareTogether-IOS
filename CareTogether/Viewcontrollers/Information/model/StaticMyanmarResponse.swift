@@ -11,7 +11,7 @@ import Foundation
 
 struct StaticMyanmarResponse  : Codable {
     let overall_counts : OverAll
-    let data_by_hospitals : [DataByHospital]
+    let data_by_regions : [DataByHospital]
 }
 
 
@@ -21,22 +21,22 @@ struct OverAll : Codable {
     let pending : String?
     let suspected : String?
     let negative : String?
-    let confirmed : Int?
-    let deaths : Int?
-    let recovered : Int?
+    let confirmed : String?
+    let deaths : String?
+    let recovered : String?
 }
 
 struct DataByHospital : Codable {
     let region : String
-    let hospital : String
-    let quarantined_suspected : Int
-    let quarantined : Int
-    let suspected : Int
-    let negative : Int
-    let confirmed : Int
-    let pending : Int
-    let extra : Extra
-    let positions : LatLng
+    let hospital : String?
+    let quarantined_suspected : String
+    let quarantined : String
+    let suspected : String
+    let negative : String
+    let confirmed : String
+    let pending : String
+//    let extra : Extra
+//    let positions : LatLng
     let no : Int
 }
 

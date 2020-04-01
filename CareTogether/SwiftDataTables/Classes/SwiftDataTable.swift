@@ -13,7 +13,16 @@ public typealias DataTableRow = [DataTableValueType]
 public typealias DataTableContent = [DataTableRow]
 public typealias DataTableViewModelContent = [[DataCellViewModel]]
 
+
+protocol CellChanged {
+    func cellForRowAt(row : Int,label : UILabel)
+}
+
 public class SwiftDataTable: UIView {
+    
+    
+    var delegateCellChanged : CellChanged?
+    
     public enum SupplementaryViewType: String {
         /// Single header positioned at the top above the column section
         case paginationHeader = "SwiftDataTablePaginationHeader"
@@ -378,16 +387,15 @@ extension SwiftDataTable: UICollectionViewDataSource, UICollectionViewDelegate {
         cellViewModel = self.rowModel(at: indexPath)
         //}
         let cell = cellViewModel.dequeueCell(collectionView: collectionView, indexPath: indexPath)
-
         print("CellViewModel \(indexPath.row)")
         
         
         if cell is DataCell {
-            (cell as! DataCell).dataLabel.textColor = .green
+
+            let label = (cell as! DataCell).dataLabel
+            delegateCellChanged?.cellForRowAt(row: indexPath.row, label : label)
+  
         }
-        
-        
-        
         return cell
     }
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -472,26 +480,38 @@ extension SwiftDataTable: UIScrollViewDelegate {
     }
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
+        if scrollView.contentOffset.y > 0 || scrollView.contentOffset.y < 0 {
+               scrollView.contentOffset.y = 0
+            }
+        
+        
+        
         if self.disableScrollViewLeftBounce() {
             if (self.collectionView.contentOffset.x <= 0) {
                 self.collectionView.contentOffset.x = 0
+                self.collectionView.contentOffset.y = 0
             }
         }
         if self.disableScrollViewTopBounce() {
             if (self.collectionView.contentOffset.y <= 0) {
                 self.collectionView.contentOffset.y = 0
+                 scrollView.contentOffset.y = 0
             }
         }
         if self.disableScrollViewRightBounce(){
             let maxX = self.collectionView.contentSize.width-self.collectionView.frame.width
             if (self.collectionView.contentOffset.x >= maxX){
                 self.collectionView.contentOffset.x = max(maxX-1, 0)
+                self.collectionView.contentOffset.y = 0
+                 scrollView.contentOffset.y = 0
             }
         }
         if self.disableScrollViewBottomBounce(){
             let maxY = self.collectionView.contentSize.height-self.collectionView.frame.height
             if (self.collectionView.contentOffset.y >= maxY){
                 self.collectionView.contentOffset.y = maxY-1
+                self.collectionView.contentOffset.y = 0
+                scrollView.contentOffset.y = 0
             }
         }
     }
@@ -649,9 +669,9 @@ extension SwiftDataTable {
             return self.columnWidths[index]
         }
         //TODO: Implement it so that the preferred column widths are calculated first, and then the scaling happens after to fill the frame.
-//        if width != SwiftDataTableAutomaticColumnWidth {
-//            self.columnWidths[index] = width
-//        }
+        //        if width != SwiftDataTableAutomaticColumnWidth {
+        //            self.columnWidths[index] = width
+        //        }
         return width
     }
     

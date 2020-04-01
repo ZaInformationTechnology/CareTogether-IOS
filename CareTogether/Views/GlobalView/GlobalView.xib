@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pyidaungsu-2.5.3_Regular.ttf">
+            <string>Pyidaungsu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GlobalView" customModule="CareTogether" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="U42-sa-6A6"/>
+                <outlet property="lbAll" destination="2Pz-6I-X8U" id="oYo-Qo-1Mq"/>
+                <outlet property="lbAsian" destination="8JM-UL-mGl" id="g5s-nO-mf7"/>
+                <outlet property="lyAll" destination="Tph-ok-4nR" id="9dA-cw-0Cn"/>
+                <outlet property="lyAllheight" destination="JGj-zK-sNA" id="Qbp-wn-5Jq"/>
+                <outlet property="lyAsian" destination="p75-iX-WGv" id="bSD-1J-iyA"/>
+                <outlet property="lyAsianHeight" destination="13B-fe-T8y" id="RpK-NQ-ieb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="444"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p75-iX-WGv">
+                    <rect key="frame" x="16" y="8" width="363" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="အာဆီယံနိုင်ငံများ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JM-UL-mGl">
+                            <rect key="frame" x="8" y="8" width="347" height="29.5"/>
+                            <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="13B-fe-T8y"/>
+                        <constraint firstItem="8JM-UL-mGl" firstAttribute="top" secondItem="p75-iX-WGv" secondAttribute="top" constant="8" id="5Hq-wT-g03"/>
+                        <constraint firstAttribute="trailing" secondItem="8JM-UL-mGl" secondAttribute="trailing" constant="8" id="Xd9-6O-kMZ"/>
+                        <constraint firstItem="8JM-UL-mGl" firstAttribute="leading" secondItem="p75-iX-WGv" secondAttribute="leading" constant="8" id="lcv-aU-pMk"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tph-ok-4nR">
+                    <rect key="frame" x="16" y="224" width="363" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="နိုင်ငံအားလုံး" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pz-6I-X8U">
+                            <rect key="frame" x="8" y="8" width="347" height="29.5"/>
+                            <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="2Pz-6I-X8U" secondAttribute="trailing" constant="8" id="4Cn-Io-CHz"/>
+                        <constraint firstAttribute="height" constant="200" id="JGj-zK-sNA"/>
+                        <constraint firstItem="2Pz-6I-X8U" firstAttribute="leading" secondItem="Tph-ok-4nR" secondAttribute="leading" constant="8" id="Kg7-cO-Hye"/>
+                        <constraint firstItem="2Pz-6I-X8U" firstAttribute="top" secondItem="Tph-ok-4nR" secondAttribute="top" constant="8" id="hJc-mh-NzX"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="p75-iX-WGv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Cpd-77-L8R"/>
+                <constraint firstItem="Tph-ok-4nR" firstAttribute="top" secondItem="p75-iX-WGv" secondAttribute="bottom" constant="16" id="HiB-t8-xXf"/>
+                <constraint firstItem="p75-iX-WGv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="IEd-Ud-XHp"/>
+                <constraint firstAttribute="trailing" secondItem="p75-iX-WGv" secondAttribute="trailing" constant="16" id="MY5-Kg-YhJ"/>
+                <constraint firstItem="Tph-ok-4nR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="fo9-7F-5io"/>
+                <constraint firstAttribute="trailing" secondItem="Tph-ok-4nR" secondAttribute="trailing" constant="16" id="luE-4a-fVi"/>
+                <constraint firstAttribute="bottom" secondItem="Tph-ok-4nR" secondAttribute="bottom" constant="20" id="skk-Ku-a2l"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="123.91304347826087" y="1.3392857142857142"/>
+        </view>
+    </objects>
+</document>

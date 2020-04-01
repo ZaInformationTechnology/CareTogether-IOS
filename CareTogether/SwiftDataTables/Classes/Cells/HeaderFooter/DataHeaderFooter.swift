@@ -76,6 +76,8 @@ class DataHeaderFooter: UICollectionReusableView {
         self.titleLabel.textAlignment = .center
         self.sortingImageView.image = viewModel.imageForSortingElement
         self.sortingImageView.tintColor = .white
+        self.titleLabel.font = UIFont(name: "Pyidaungsu", size: 14)!
+
     }
     @objc func didTapView(){
         self.didTapEvent?()
