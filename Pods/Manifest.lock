@@ -1,8 +1,5 @@
 PODS:
   - Alamofire (5.0.5)
-  - BlueCapKit (0.7.0)
-  - Bluejay (0.8.6):
-    - XCGLogger (~> 7.0.0)
   - BlueSwift (1.0.3)
   - CRRefresh (1.1.3)
   - DropDown (2.3.4)
@@ -106,12 +103,14 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
-  - ObjcExceptionBridging (1.0.1):
-    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
-  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
   - ObjectMapper (3.5.2)
   - PromisesObjC (1.2.8)
   - Protobuf (3.11.4)
+  - Realm (4.4.0):
+    - Realm/Headers (= 4.4.0)
+  - Realm/Headers (4.4.0)
+  - RealmSwift (4.4.0):
+    - Realm (= 4.4.0)
   - RxBluetoothKit (5.3.0):
     - RxSwift (~> 5.0)
   - RxCocoa (5.1.1):
@@ -128,14 +127,8 @@ PODS:
   - SwiftyJSON (4.3.0)
   - SwipeCellKit (2.7.1)
   - TagListView (1.4.0)
-  - XCGLogger (7.0.1):
-    - XCGLogger/Core (= 7.0.1)
-  - XCGLogger/Core (7.0.1):
-    - ObjcExceptionBridging
 
 DEPENDENCIES:
-  - BlueCapKit (~> 0.7)
-  - Bluejay (~> 0.8)
   - BlueSwift (~> 1.0.3)
   - CRRefresh
   - DropDown (= 2.3.4)
@@ -148,6 +141,7 @@ DEPENDENCIES:
   - JGProgressHUD
   - Moya/RxSwift (~> 14.0.0-beta.6)
   - ObjectMapper (~> 3.4)
+  - RealmSwift
   - RxBluetoothKit
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
@@ -163,8 +157,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
-    - BlueCapKit
-    - Bluejay
     - BlueSwift
     - CRRefresh
     - DropDown
@@ -188,10 +180,11 @@ SPEC REPOS:
     - Kingfisher
     - Moya
     - nanopb
-    - ObjcExceptionBridging
     - ObjectMapper
     - PromisesObjC
     - Protobuf
+    - Realm
+    - RealmSwift
     - RxBluetoothKit
     - RxCocoa
     - RxRelay
@@ -204,12 +197,9 @@ SPEC REPOS:
     - SwiftyJSON
     - SwipeCellKit
     - TagListView
-    - XCGLogger
 
 SPEC CHECKSUMS:
   Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
-  BlueCapKit: b13b8715d4de6f325971c4dd5bc33598697dad2f
-  Bluejay: 1e617d90d13408823a6b9c09d9637d2a05ef09fd
   BlueSwift: 871a4c6926cf47832b747e867d817b4a7bafa2ec
   CRRefresh: 1415d4ae06837fa7bb064c44f2e102f3ef517044
   DropDown: f225ff0fd09dde064d17aa03db7e4d4e4ff40b6b
@@ -233,10 +223,11 @@ SPEC CHECKSUMS:
   Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
-  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
   ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
+  Realm: e125f464884cda953ebefe70c671b75b03b81b9b
+  RealmSwift: 33656a42bd300959a081fc13347376bc478071af
   RxBluetoothKit: 0e781978e8a0df70ac3c611dcf44800b76c69f8a
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
@@ -249,8 +240,7 @@ SPEC CHECKSUMS:
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
   TagListView: 987b0bdbb16cd9d9e7c0e2ec32aff37ecba8b173
-  XCGLogger: 1943831ef907df55108b0b18657953f868de973b
 
-PODFILE CHECKSUM: 46d03936f65520939d929f67519c5bf271b58ec7
+PODFILE CHECKSUM: ca88428f4b885eb9d90a2ce3a3e2501ec4767bc6
 
 COCOAPODS: 1.9.1

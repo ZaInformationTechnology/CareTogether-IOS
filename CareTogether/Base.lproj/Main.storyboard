@@ -729,10 +729,10 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LfY-LB-Pm1">
-                                        <rect key="frame" x="16" y="727.5" width="382" height="69.5"/>
+                                        <rect key="frame" x="16" y="670" width="382" height="127"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSx-1h-5Rt">
-                                                <rect key="frame" x="0.0" y="24.5" width="134" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="53.5" width="134" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="  App အကြောင်း" image="info.circle" catalog="system">
@@ -740,7 +740,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTY-uV-CwX">
-                                                <rect key="frame" x="171" y="25.5" width="211" height="19"/>
+                                                <rect key="frame" x="171" y="54" width="211" height="19"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="  အချက်အလက်ဆိုင်ရာမူ၀ါဒ" image="info.circle" catalog="system">
@@ -750,17 +750,17 @@
                                         </subviews>
                                     </stackView>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wy-g4-50J">
-                                        <rect key="frame" x="0.0" y="130" width="414" height="581.5"/>
+                                        <rect key="frame" x="0.0" y="130" width="414" height="524"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mur-IW-UB7">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="581.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="524"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8By-2X-eey" customClass="RoundCardView" customModule="CareTogether" customModuleProvider="target">
-                                                        <rect key="frame" x="16" y="16" width="382" height="110"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8By-2X-eey">
+                                                        <rect key="frame" x="16" y="0.0" width="382" height="110"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1F-N6-gyx">
                                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="110"/>
-                                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -768,13 +768,13 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Surveillance Dashboard" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eW9-vn-7Fc">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ကိုယ်ပိုင် ဗိုင်းရပ်စ်စောင့်ကြည့်ခန်း" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eW9-vn-7Fc">
                                                                 <rect key="frame" x="16" y="53.5" width="350" height="29.5"/>
                                                                 <fontDescription key="fontDescription" name="Pyidaungsu-Bold" family="Pyidaungsu" pointSize="17"/>
                                                                 <color key="textColor" red="0.050980392159999999" green="0.1529411765" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(COVID -  19)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WT-Bk-F0z">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Care Together" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WT-Bk-F0z">
                                                                 <rect key="frame" x="16" y="16" width="350" height="29.5"/>
                                                                 <fontDescription key="fontDescription" name="Pyidaungsu-Bold" family="Pyidaungsu" pointSize="17"/>
                                                                 <color key="textColor" red="0.050980392159999999" green="0.1529411765" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -798,17 +798,28 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qKU-Qf-AjY" customClass="RoundCardView" customModule="CareTogether" customModuleProvider="target">
-                                                        <rect key="frame" x="16" y="142" width="382" height="157"/>
+                                                        <rect key="frame" x="16" y="126" width="382" height="120"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_virus" translatesAutoresizingMaskIntoConstraints="NO" id="8PB-IA-I8Y">
-                                                                <rect key="frame" x="171" y="24" width="40" height="40"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="40" id="vpk-TG-aef"/>
-                                                                    <constraint firstAttribute="height" constant="40" id="yEY-De-kBF"/>
-                                                                </constraints>
-                                                            </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="တည်နေရာပေါ်မူတည်၍နီးစပ်ဖူးသူမရှိပါ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXo-s4-VT5">
-                                                                <rect key="frame" x="16" y="72" width="350" height="29.5"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="100" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ix2-ai-cvv">
+                                                                <rect key="frame" x="157" y="16" width="68" height="30"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_virus" translatesAutoresizingMaskIntoConstraints="NO" id="8PB-IA-I8Y">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="30" id="vpk-TG-aef"/>
+                                                                            <constraint firstAttribute="height" constant="30" id="yEY-De-kBF"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9k-Rj-uyY">
+                                                                        <rect key="frame" x="38" y="0.0" width="30" height="30"/>
+                                                                        <fontDescription key="fontDescription" name="Pyidaungsu-Bold" family="Pyidaungsu" pointSize="20"/>
+                                                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="တည်နေရာပေါ်မူတည်၍နီးစပ်ဖူးသူမရှိပါ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXo-s4-VT5">
+                                                                <rect key="frame" x="16" y="62" width="350" height="42"/>
                                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -816,53 +827,54 @@
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstItem="IXo-s4-VT5" firstAttribute="centerY" secondItem="qKU-Qf-AjY" secondAttribute="centerY" constant="8" id="1Zx-ex-kzz"/>
                                                             <constraint firstItem="IXo-s4-VT5" firstAttribute="leading" secondItem="qKU-Qf-AjY" secondAttribute="leading" constant="16" id="6RY-n5-5iF"/>
                                                             <constraint firstAttribute="trailing" secondItem="IXo-s4-VT5" secondAttribute="trailing" constant="16" id="7bI-7p-omo"/>
-                                                            <constraint firstItem="8PB-IA-I8Y" firstAttribute="centerX" secondItem="qKU-Qf-AjY" secondAttribute="centerX" id="MAs-aQ-yx7"/>
-                                                            <constraint firstAttribute="height" constant="157" id="SO8-h1-XRK"/>
+                                                            <constraint firstItem="IXo-s4-VT5" firstAttribute="top" secondItem="Ix2-ai-cvv" secondAttribute="bottom" constant="16" id="8XC-6x-9Nd"/>
+                                                            <constraint firstItem="Ix2-ai-cvv" firstAttribute="centerX" secondItem="qKU-Qf-AjY" secondAttribute="centerX" id="CwT-Kk-JfR"/>
+                                                            <constraint firstItem="Ix2-ai-cvv" firstAttribute="top" secondItem="qKU-Qf-AjY" secondAttribute="top" constant="16" id="EdR-xe-yly"/>
+                                                            <constraint firstAttribute="bottom" secondItem="IXo-s4-VT5" secondAttribute="bottom" constant="16" id="L4d-Ry-hib"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="SO8-h1-XRK"/>
                                                             <constraint firstItem="IXo-s4-VT5" firstAttribute="centerX" secondItem="qKU-Qf-AjY" secondAttribute="centerX" id="hoF-Gd-38i"/>
-                                                            <constraint firstItem="IXo-s4-VT5" firstAttribute="top" secondItem="8PB-IA-I8Y" secondAttribute="bottom" constant="8" id="lC6-AF-coA"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEY-yw-aSZ" customClass="RoundCardView" customModule="CareTogether" customModuleProvider="target">
-                                                        <rect key="frame" x="16" y="323" width="382" height="205"/>
+                                                        <rect key="frame" x="16" y="270" width="382" height="200.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="သင်နှင့်သင့်ပတ်၀န်းကျင်သို့ ရောဂါပိုးမရောက်ရှိစေရန်အတွက် နေအိမ်အတွင်းသာနေထိုင်နိုင်ရန် အထူးလိုအပ်နေပါပြီ။" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6VQ-JH-snC">
-                                                                <rect key="frame" x="16" y="101" width="350" height="88"/>
+                                                                <rect key="frame" x="16" y="96.5" width="350" height="88"/>
                                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="သတိ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtT-jL-xGO">
-                                                                <rect key="frame" x="16" y="58.5" width="350" height="34.5"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="သတိ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtT-jL-xGO">
+                                                                <rect key="frame" x="16" y="54" width="350" height="34.5"/>
                                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="20"/>
                                                                 <color key="textColor" red="0.76470588240000004" green="0.043137254899999998" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_stayhome" translatesAutoresizingMaskIntoConstraints="NO" id="73K-22-IN1">
-                                                                <rect key="frame" x="171" y="10.5" width="40" height="40"/>
+                                                                <rect key="frame" x="176" y="16" width="30" height="30"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="40" id="8Ws-Ix-hSe"/>
-                                                                    <constraint firstAttribute="height" constant="40" id="VZ9-1a-ywU"/>
+                                                                    <constraint firstAttribute="width" constant="30" id="8Ws-Ix-hSe"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="VZ9-1a-ywU"/>
                                                                 </constraints>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="6VQ-JH-snC" firstAttribute="top" secondItem="dtT-jL-xGO" secondAttribute="bottom" constant="8" id="2wT-7x-gc9"/>
+                                                            <constraint firstItem="73K-22-IN1" firstAttribute="top" secondItem="hEY-yw-aSZ" secondAttribute="top" constant="16" id="3jk-A9-CPG"/>
                                                             <constraint firstItem="6VQ-JH-snC" firstAttribute="leading" secondItem="hEY-yw-aSZ" secondAttribute="leading" constant="16" id="DWC-YG-mFX"/>
                                                             <constraint firstItem="dtT-jL-xGO" firstAttribute="top" secondItem="73K-22-IN1" secondAttribute="bottom" constant="8" id="R6d-sr-XSl"/>
                                                             <constraint firstItem="73K-22-IN1" firstAttribute="centerX" secondItem="hEY-yw-aSZ" secondAttribute="centerX" id="a4H-mG-z9z"/>
                                                             <constraint firstAttribute="bottom" secondItem="6VQ-JH-snC" secondAttribute="bottom" constant="16" id="iYf-lF-5Kq"/>
                                                             <constraint firstAttribute="trailing" secondItem="dtT-jL-xGO" secondAttribute="trailing" constant="16" id="mqI-Cd-mld"/>
                                                             <constraint firstItem="dtT-jL-xGO" firstAttribute="leading" secondItem="hEY-yw-aSZ" secondAttribute="leading" constant="16" id="nCF-cD-Fzg"/>
-                                                            <constraint firstAttribute="height" constant="205" id="oKk-JT-eK7"/>
                                                             <constraint firstAttribute="trailing" secondItem="6VQ-JH-snC" secondAttribute="trailing" constant="16" id="xxR-7T-y07"/>
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBW-Hd-4cd">
-                                                        <rect key="frame" x="184" y="543" width="46" height="31"/>
+                                                        <rect key="frame" x="184" y="485.5" width="46" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="btnLogout:" destination="HBi-I6-a4S" eventType="touchUpInside" id="bRa-U0-yLm"/>
@@ -872,7 +884,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="hEY-yw-aSZ" firstAttribute="top" secondItem="qKU-Qf-AjY" secondAttribute="bottom" constant="24" id="6IZ-yM-lYJ"/>
-                                                    <constraint firstItem="8By-2X-eey" firstAttribute="top" secondItem="mur-IW-UB7" secondAttribute="top" constant="16" id="B6m-CH-RBs"/>
+                                                    <constraint firstItem="8By-2X-eey" firstAttribute="top" secondItem="mur-IW-UB7" secondAttribute="top" id="B6m-CH-RBs"/>
                                                     <constraint firstItem="mBW-Hd-4cd" firstAttribute="top" secondItem="6VQ-JH-snC" secondAttribute="bottom" constant="31" id="KVy-Ig-Dcz"/>
                                                     <constraint firstItem="qKU-Qf-AjY" firstAttribute="top" secondItem="y1F-N6-gyx" secondAttribute="bottom" constant="16" id="U4c-0d-ZGt"/>
                                                     <constraint firstAttribute="bottom" secondItem="hEY-yw-aSZ" secondAttribute="bottom" constant="53.5" id="V0H-0S-E0c"/>
@@ -934,6 +946,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="9PK-wc-yMw"/>
                     <connections>
+                        <outlet property="ivFoundUser" destination="8PB-IA-I8Y" id="ffp-uA-RfE"/>
+                        <outlet property="ivWarning" destination="73K-22-IN1" id="MWr-B9-4Pk"/>
+                        <outlet property="lbFoundUserMessage" destination="IXo-s4-VT5" id="Bls-l6-nhN"/>
+                        <outlet property="lbUserCount" destination="v9k-Rj-uyY" id="aKx-XT-zwL"/>
+                        <outlet property="lbWarningMessage" destination="6VQ-JH-snC" id="wMf-sy-yXv"/>
+                        <outlet property="lbWarningTitle" destination="dtT-jL-xGO" id="A7m-Sf-PJ3"/>
+                        <outlet property="lyCardDashboard" destination="y1F-N6-gyx" id="3H9-Hk-jQl"/>
+                        <outlet property="lyCardWarningInfo" destination="hEY-yw-aSZ" id="e48-V5-H9p"/>
                         <outlet property="lyDashboardView" destination="gLi-9G-Oi0" id="Gjz-aD-FIl"/>
                         <outlet property="lyPermissionDeniedView" destination="bD9-np-qUF" id="If1-DR-ELU"/>
                     </connections>

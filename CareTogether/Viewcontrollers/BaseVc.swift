@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 import CoreBluetooth
 import BlueSwift
-
+import Foundation
 
 
 protocol BaseManagerDelegate {
@@ -96,14 +96,14 @@ class BaseVc: UIViewController {
     
     
     func scanStop(){
-         centralManager?.stopScan()
-     }
-     
-     func startScan(){
-         centralManager?.scanForPeripherals(withServices: nil, options: nil)
-
-     }
-     
+        centralManager?.stopScan()
+    }
+    
+    func startScan(){
+        centralManager?.scanForPeripherals(withServices: nil, options: nil)
+        
+    }
+    
 }
 
 
@@ -190,11 +190,38 @@ extension BaseVc: CBCentralManagerDelegate {
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber){
         print("ble name \(peripheral)")
+        checkDeviceNameWithCT(peripheral: peripheral)
+        
+        
+    }
+    
+    func checkDeviceNameWithCT(peripheral : CBPeripheral) {
+        guard let name = peripheral.name else {
+            return
+        }
+        if name.count > 2 {
+            let prefix = name[0 ..< 2]
+            if prefix.elementsEqual("On"){
+                print("found \(prefix)")
+                guard let location  = currentLocation else {
+                   return
+                }
+                 TrackDbUtils.instance.checkAndUpdate(name: name, location: location)
+                
+            }else {
+                print("not found \(prefix)")
+            }
+        }
     }
     
     
     
     func turnOn() {
+        guard let phone = Store.instance.getEncryptedDeviceName() else {
+            return
+        }
+        
+        let encryptedPhoneNumber  =  "CT-\(phone)"
         guard echoPeripheral == nil else {
             print("arrrr")
             return
@@ -212,10 +239,14 @@ extension BaseVc: CBCentralManagerDelegate {
             print(error ?? "error connecting to peripheral")
             
         }
+        //        1004FD87-820F-438A-B757-7AC2C15C2D56
+        let randomString = NSUUID().uuidString
         let  peripheral: Peripheral<Advertisable> = {
-            let configuration = try! Configuration(services: [echoService], advertisement: "1004FD87-820F-438A-B757-7AC2C15C2D56")
-            return Peripheral(configuration: configuration, advertisementData: [.localName("CT-Hein Htet Testing Phone"), .servicesUUIDs("1004FD87-820F-438A-B757-7AC2C15C2D56")])
+            let configuration = try! Configuration(services: [echoService], advertisement:randomString)
+            return Peripheral(configuration: configuration, advertisementData: [.localName(encryptedPhoneNumber), .servicesUUIDs(randomString)])
         }()
+        
+        
         advertisement.advertise(peripheral: peripheral) { _ in
             // handle possible error
             print("advertisement error \(peripheral)")
@@ -229,7 +260,8 @@ extension BaseVc: CBCentralManagerDelegate {
     }
     
     
- 
+    
+    
     
     
     func turnOff() throws {
@@ -238,11 +270,5 @@ extension BaseVc: CBCentralManagerDelegate {
         echoPeripheral = nil
     }
     
-    func readValue() {
-        echoPeripheral?.read(echoCharacteristic) { [weak self] (data, error) in
-            guard error == nil else { return }
-            self?.characteristicDidUpdateValue?(true, data)
-        }
-    }
     
 }

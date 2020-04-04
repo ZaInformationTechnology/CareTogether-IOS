@@ -12,4 +12,7 @@ enum AnalyticsState {
     case Loading
     case StoreError
     case StoreSuccess(response : EncodedModel)
+    
+    case CountError
+    case CountSuccess(count : CountModel)
 }

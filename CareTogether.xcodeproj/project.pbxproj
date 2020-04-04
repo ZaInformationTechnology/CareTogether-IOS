@@ -17,6 +17,10 @@
 		EE12FE4B2438BBD4009BD49B /* AnalyticsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE12FE4A2438BBD4009BD49B /* AnalyticsUseCase.swift */; };
 		EE12FE4D2438BC02009BD49B /* AnalyticsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE12FE4C2438BC02009BD49B /* AnalyticsState.swift */; };
 		EE12FE502438C803009BD49B /* EncodedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE12FE4F2438C803009BD49B /* EncodedModel.swift */; };
+		EE4ED24C2438EE2B00C63954 /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4ED24B2438EE2B00C63954 /* TrackModel.swift */; };
+		EE4ED24E2438EECD00C63954 /* TrackDbUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4ED24D2438EECD00C63954 /* TrackDbUtils.swift */; };
+		EE4ED25024390AE800C63954 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4ED24F24390AE800C63954 /* Const.swift */; };
+		EE4ED25224390CCA00C63954 /* CountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4ED25124390CCA00C63954 /* CountModel.swift */; };
 		EE58224424337B4D00D25CA2 /* DataByHospitalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE58224224337B4D00D25CA2 /* DataByHospitalCell.swift */; };
 		EE58224524337B4D00D25CA2 /* DataByHospitalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE58224324337B4D00D25CA2 /* DataByHospitalCell.xib */; };
 		EE5822472433801A00D25CA2 /* FullInformationVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5822462433801A00D25CA2 /* FullInformationVc.swift */; };
@@ -128,6 +132,10 @@
 		EE12FE4A2438BBD4009BD49B /* AnalyticsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsUseCase.swift; sourceTree = "<group>"; };
 		EE12FE4C2438BC02009BD49B /* AnalyticsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsState.swift; sourceTree = "<group>"; };
 		EE12FE4F2438C803009BD49B /* EncodedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodedModel.swift; sourceTree = "<group>"; };
+		EE4ED24B2438EE2B00C63954 /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
+		EE4ED24D2438EECD00C63954 /* TrackDbUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDbUtils.swift; sourceTree = "<group>"; };
+		EE4ED24F24390AE800C63954 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		EE4ED25124390CCA00C63954 /* CountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountModel.swift; sourceTree = "<group>"; };
 		EE58224224337B4D00D25CA2 /* DataByHospitalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataByHospitalCell.swift; sourceTree = "<group>"; };
 		EE58224324337B4D00D25CA2 /* DataByHospitalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataByHospitalCell.xib; sourceTree = "<group>"; };
 		EE5822462433801A00D25CA2 /* FullInformationVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullInformationVc.swift; sourceTree = "<group>"; };
@@ -285,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				EE12FE4F2438C803009BD49B /* EncodedModel.swift */,
+				EE4ED25124390CCA00C63954 /* CountModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -484,6 +493,15 @@
 			path = Tabs;
 			sourceTree = "<group>";
 		};
+		EEA699DB2438ED2B00D7176F /* db */ = {
+			isa = PBXGroup;
+			children = (
+				EE4ED24B2438EE2B00C63954 /* TrackModel.swift */,
+				EE4ED24D2438EECD00C63954 /* TrackDbUtils.swift */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
 		EED1F2C12430854600B071C8 = {
 			isa = PBXGroup;
 			children = (
@@ -509,6 +527,7 @@
 		EED1F2CC2430854600B071C8 /* CareTogether */ = {
 			isa = PBXGroup;
 			children = (
+				EEA699DB2438ED2B00D7176F /* db */,
 				EE06E1F524387F6600CF5B9C /* GoogleService-Info.plist */,
 				EE58224824339BCF00D25CA2 /* SwiftDataTables */,
 				EE5A0F8B2432F2C000F20E85 /* Cells */,
@@ -574,6 +593,7 @@
 				EED1F3112430961300B071C8 /* ViewExt.swift */,
 				EE695CFD2430CBCA008512E4 /* Store.swift */,
 				EE695CFF2430D026008512E4 /* Reachability.swift */,
+				EE4ED24F24390AE800C63954 /* Const.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -890,6 +910,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE12FE4D2438BC02009BD49B /* AnalyticsState.swift in Sources */,
+				EE4ED25224390CCA00C63954 /* CountModel.swift in Sources */,
+				EE4ED24E2438EECD00C63954 /* TrackDbUtils.swift in Sources */,
 				EE58228024339BCF00D25CA2 /* VirtualPositionTrackable.swift in Sources */,
 				EEFEE80D2434E64500B8D072 /* StaticCountryResponse.swift in Sources */,
 				EEDA21D924336D8A0077B293 /* StaticMyanmarResponse.swift in Sources */,
@@ -946,6 +968,7 @@
 				EE5A0F942432F83F00F20E85 /* NewDetailVc.swift in Sources */,
 				EE58227B24339BCF00D25CA2 /* DataStructureModel.swift in Sources */,
 				EED1F30A24308E9E00B071C8 /* Router.swift in Sources */,
+				EE4ED24C2438EE2B00C63954 /* TrackModel.swift in Sources */,
 				EE58227224339BCF00D25CA2 /* DataCellLayoutAttributes.swift in Sources */,
 				EED1F3152430969400B071C8 /* PhoneVerifyVc.swift in Sources */,
 				EED1F2D02430854600B071C8 /* SceneDelegate.swift in Sources */,
@@ -956,6 +979,7 @@
 				EE5A0F8A2432EB7000F20E85 /* NewState.swift in Sources */,
 				EE58227424339BCF00D25CA2 /* DataHeaderFooterViewModel.swift in Sources */,
 				EE58226F24339BCF00D25CA2 /* MenuLengthHeader.swift in Sources */,
+				EE4ED25024390AE800C63954 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

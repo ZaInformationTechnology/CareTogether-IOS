@@ -9,6 +9,7 @@
 import Foundation
 protocol AnalyticsRepository {
     func storeTokenWithPhone ( token : String, completion : @escaping (_ state : AnalyticsState) ->Void)
+     func fetchCountForUserr ( completion : @escaping (_ state : AnalyticsState) ->Void)
 }
 
 class AnalyticsUseCase : AnalyticsRepository {
@@ -35,6 +36,32 @@ class AnalyticsUseCase : AnalyticsRepository {
             }
         }else {
             completion(.StoreError)
+        }
+    }
+    
+    func fetchCountForUserr(completion: @escaping (AnalyticsState) -> Void) {
+        if Reachability.isConnectedToNetwork() {
+            completion(.Loading)
+            Engine.apiService.request(.getCountForUser) { (result) in
+                switch (result) {
+                case .failure(let error) :
+                    completion(.CountError)
+                    print("error new list \(error)")
+                case .success(let response) :
+                    print("count  respone \(String(data: response.data, encoding: .utf8))")
+                    if response.statusCode == 200 {
+                        response.data.decode(completion: { (data) in
+                            completion(.CountSuccess(count : data))
+                        }) { (error) in
+                            completion(.CountError)
+                        }
+                    }else{
+                        completion(.CountError)
+                    }
+                }
+            }
+        }else {
+            completion(.CountError)
         }
     }
     
