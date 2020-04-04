@@ -1,5 +1,5 @@
 //
-//  BLECentralDelegate.swift
+//  EncodedModel.swift
 //  CareTogether
 //
 //  Created by CodigoHeinHtet on 04/04/2020.
@@ -7,8 +7,9 @@
 //
 
 import Foundation
-import CoreBluetooth
 
-protocol BLECentralDelegate {
-    func didDiscoverPeripheral(_ peripheral: CBPeripheral!)
+struct EncodedModel : Codable {
+
+    let success :  Bool
+    let phone : String
 }

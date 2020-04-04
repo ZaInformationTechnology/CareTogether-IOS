@@ -15,6 +15,7 @@ public enum CareService{
     case getStaticMyanmar
     case getStaticGlobal
     case getStaticAsian
+    case storePhoneWithToken(String)
 }
 
 
@@ -36,6 +37,7 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
         case .getStaticMyanmar : return "/statistic/myanmar-with-region"
         case .getStaticAsian : return "/statistic/asean-list"
         case .getStaticGlobal : return "/statistic/global"
+        case .storePhoneWithToken(_) : return "/firebase"
             
         }
     }
@@ -47,7 +49,7 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
         case .getStaticMyanmar : return .get
         case .getStaticAsian : return .get
         case .getStaticGlobal : return .get
-            
+        case .storePhoneWithToken(_ ) : return .post
         }
     }
     
@@ -69,6 +71,14 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
         case .getStaticMyanmar : return .requestPlain
         case .getStaticGlobal : return .requestPlain
         case .getStaticAsian : return .requestPlain
+            
+        case .storePhoneWithToken( let token) :
+            let phoneNumber = Store.instance.getPhoneNumber() ??  ""
+            let p = ["phone_number" : phoneNumber,
+                     "token" : token
+                ] as [String : Any]
+            return .requestParameters(parameters: p, encoding:JSONEncoding.default )
+            
         }
         
     }

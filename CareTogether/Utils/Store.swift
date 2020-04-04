@@ -14,7 +14,7 @@ class Store {
     private let PHONE = "USER_PHONE"
     private let ENCRYPTED_DEVICE_NAME = "ENCRYPTED_DEVICE_NAME"
     private let FB_TOKEN = "FB_TOKEN"
-    
+
     
     init() {
         UserDefaults.standard.register(defaults: [PHONE : "",ENCRYPTED_DEVICE_NAME : "", FB_TOKEN : ""])
@@ -28,6 +28,8 @@ class Store {
         return UserDefaults.standard.string(forKey: PHONE)
         
     }
+    
+    
     func getEncryptedDeviceName() -> String? {
         return UserDefaults.standard.string(forKey: ENCRYPTED_DEVICE_NAME)
     }
@@ -40,7 +42,7 @@ class Store {
         UserDefaults.standard.set(token,forKey: FB_TOKEN)
     }
     
-    func setEncryptedDeviceName(token : String)  {
-           UserDefaults.standard.set(token,forKey: ENCRYPTED_DEVICE_NAME)
+    func setEncryptedDeviceName(phone : String)  {
+           UserDefaults.standard.set(phone,forKey: ENCRYPTED_DEVICE_NAME)
        }
 }

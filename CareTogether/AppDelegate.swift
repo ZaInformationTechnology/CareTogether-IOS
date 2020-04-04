@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import IQKeyboardManager
 import Firebase
+import FirebaseMessaging
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,MessagingDelegate {
@@ -20,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MessagingDelegate {
     var initialViewController :UIViewController?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let phoneNumber = Store.instance.getPhoneNumber()
+        let phoneNumber = Store.instance.getEncryptedDeviceName()
         if( phoneNumber != nil && phoneNumber != ""){
             print("go main")
                 Router.instance.goMainTab(window: self.window)
@@ -92,6 +93,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MessagingDelegate {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        print("applicationDidBecomeActive")
+         NotificationCenter.default.post(name: NSNotification.Name("Active"), object: nil)
+    }
+    
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        print("applicationWillEnterForeground")
     }
     
 }

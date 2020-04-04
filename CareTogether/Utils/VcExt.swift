@@ -38,33 +38,39 @@ extension UIViewController {
             completion( false)
         }
         alert.addAction(cancelAction)
-//        alert.addAction(alertAction)
+        //        alert.addAction(alertAction)
         self.present(alert, animated: true, completion: nil)
     }
     
-    func showErrorMessageAlertWithCloseWithCallback(message : String, completion :  @escaping ()-> Void ){
-           let alert = UIAlertController.init(title: "သတိပေးချက်", message: message, preferredStyle: .alert)
-           let alertAction = UIAlertAction.init(title: "ကောင်းပီ", style: .default) { (action) in
-            completion()
-           }
-           alert.addAction(alertAction)
-           self.present(alert, animated: true, completion: nil)
-       }
+    func showErrorMessageAlertWithCloseWithCallback(message : String, completion :  @escaping (_ isOkPressed : Bool)-> Void ){
+        let alert = UIAlertController.init(title: "သတိပေးချက်", message: message, preferredStyle: .alert)
+        let alertAction = UIAlertAction.init(title: "ကောင်းပီ", style: .default) { (action) in
+            completion(true)
+        }
+        
+        let cancelAction = UIAlertAction.init(title:"မလုပ်ပါ", style: .cancel) { (action) in
+            completion(false )
+        }
+    alert.addAction(cancelAction)
+
+        alert.addAction(alertAction)
+        self.present(alert, animated: true, completion: nil)
+    }
     
     func showErrorMessageAlertWithClose(message : String){
-              let alert = UIAlertController.init(title: "LocalizationKey.lbErrorTitle.string", message: message, preferredStyle: .alert)
-              let alertAction = UIAlertAction.init(title: "LocalizationKey.lbClose.string", style: .default) { (action) in
-              }
-              alert.addAction(alertAction)
-              self.present(alert, animated: true, completion: nil)
-          }
+        let alert = UIAlertController.init(title: "သတိပေးချက်", message: message, preferredStyle: .alert)
+        let alertAction = UIAlertAction.init(title: "ကောင်းပီ", style: .default) { (action) in
+        }
+        alert.addAction(alertAction)
+        self.present(alert, animated: true, completion: nil)
+    }
     
     func showSuccessMessageAlertWithClose(message : String , completion :  @escaping ()-> Void ){
-              let alert = UIAlertController.init(title: "LocalizationKey.successTitle.string", message: message, preferredStyle: .alert)
-              let alertAction = UIAlertAction.init(title: "LocalizationKey.lbClose.string", style: .default) { (action) in
-                completion()
-              }
-              alert.addAction(alertAction)
-              self.present(alert, animated: true, completion: nil)
-          }
+        let alert = UIAlertController.init(title: "LocalizationKey.successTitle.string", message: message, preferredStyle: .alert)
+        let alertAction = UIAlertAction.init(title: "LocalizationKey.lbClose.string", style: .default) { (action) in
+            completion()
+        }
+        alert.addAction(alertAction)
+        self.present(alert, animated: true, completion: nil)
+    }
 }

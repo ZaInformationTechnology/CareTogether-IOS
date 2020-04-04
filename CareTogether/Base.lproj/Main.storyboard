@@ -714,6 +714,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="bakground" translatesAutoresizingMaskIntoConstraints="NO" id="J9V-02-Frk">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bD9-np-qUF" customClass="ServiceView" customModule="CareTogether" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLi-9G-Oi0">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
@@ -857,16 +861,26 @@
                                                             <constraint firstAttribute="trailing" secondItem="6VQ-JH-snC" secondAttribute="trailing" constant="16" id="xxR-7T-y07"/>
                                                         </constraints>
                                                     </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBW-Hd-4cd">
+                                                        <rect key="frame" x="184" y="543" width="46" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="btnLogout:" destination="HBi-I6-a4S" eventType="touchUpInside" id="bRa-U0-yLm"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="hEY-yw-aSZ" firstAttribute="top" secondItem="qKU-Qf-AjY" secondAttribute="bottom" constant="24" id="6IZ-yM-lYJ"/>
                                                     <constraint firstItem="8By-2X-eey" firstAttribute="top" secondItem="mur-IW-UB7" secondAttribute="top" constant="16" id="B6m-CH-RBs"/>
+                                                    <constraint firstItem="mBW-Hd-4cd" firstAttribute="top" secondItem="6VQ-JH-snC" secondAttribute="bottom" constant="31" id="KVy-Ig-Dcz"/>
                                                     <constraint firstItem="qKU-Qf-AjY" firstAttribute="top" secondItem="y1F-N6-gyx" secondAttribute="bottom" constant="16" id="U4c-0d-ZGt"/>
                                                     <constraint firstAttribute="bottom" secondItem="hEY-yw-aSZ" secondAttribute="bottom" constant="53.5" id="V0H-0S-E0c"/>
                                                     <constraint firstAttribute="trailing" secondItem="hEY-yw-aSZ" secondAttribute="trailing" constant="16" id="cQZ-gi-KAb"/>
+                                                    <constraint firstAttribute="bottom" secondItem="mBW-Hd-4cd" secondAttribute="bottom" constant="7.5" id="gDu-qu-1Ra"/>
                                                     <constraint firstItem="qKU-Qf-AjY" firstAttribute="leading" secondItem="mur-IW-UB7" secondAttribute="leading" constant="16" id="l3f-n2-474"/>
                                                     <constraint firstItem="hEY-yw-aSZ" firstAttribute="leading" secondItem="mur-IW-UB7" secondAttribute="leading" constant="16" id="oEb-XE-Rnq"/>
+                                                    <constraint firstItem="mBW-Hd-4cd" firstAttribute="centerX" secondItem="mur-IW-UB7" secondAttribute="centerX" id="qhn-Mg-6uF"/>
                                                     <constraint firstAttribute="trailing" secondItem="8By-2X-eey" secondAttribute="trailing" constant="16" id="rzj-Bh-E3M"/>
                                                     <constraint firstItem="8By-2X-eey" firstAttribute="leading" secondItem="mur-IW-UB7" secondAttribute="leading" constant="16" id="sMR-E0-Zd4"/>
                                                     <constraint firstAttribute="trailing" secondItem="qKU-Qf-AjY" secondAttribute="trailing" constant="16" id="ve6-fg-KwK"/>
@@ -909,16 +923,24 @@
                             <constraint firstItem="J9V-02-Frk" firstAttribute="top" secondItem="7ma-ox-gvx" secondAttribute="top" id="OA5-Vi-eq9"/>
                             <constraint firstAttribute="bottom" secondItem="J9V-02-Frk" secondAttribute="bottom" id="bKo-4X-fHr"/>
                             <constraint firstItem="gLi-9G-Oi0" firstAttribute="top" secondItem="7ma-ox-gvx" secondAttribute="top" id="e80-JB-t4R"/>
+                            <constraint firstItem="bD9-np-qUF" firstAttribute="top" secondItem="de4-KM-6GJ" secondAttribute="top" id="fLF-q4-tkb"/>
+                            <constraint firstItem="de4-KM-6GJ" firstAttribute="trailing" secondItem="bD9-np-qUF" secondAttribute="trailing" id="jdJ-e8-bUk"/>
                             <constraint firstItem="gLi-9G-Oi0" firstAttribute="leading" secondItem="7ma-ox-gvx" secondAttribute="leading" id="jwN-oU-JHY"/>
+                            <constraint firstItem="bD9-np-qUF" firstAttribute="leading" secondItem="de4-KM-6GJ" secondAttribute="leading" id="rNA-7O-XtD"/>
+                            <constraint firstItem="de4-KM-6GJ" firstAttribute="bottom" secondItem="bD9-np-qUF" secondAttribute="bottom" id="sPQ-gF-M5L"/>
                             <constraint firstAttribute="trailing" secondItem="gLi-9G-Oi0" secondAttribute="trailing" id="zTW-iG-5hY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="de4-KM-6GJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="9PK-wc-yMw"/>
+                    <connections>
+                        <outlet property="lyDashboardView" destination="gLi-9G-Oi0" id="Gjz-aD-FIl"/>
+                        <outlet property="lyPermissionDeniedView" destination="bD9-np-qUF" id="If1-DR-ELU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n3P-w7-dMn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2357" y="-248"/>
+            <point key="canvasLocation" x="2356.521739130435" y="-248.4375"/>
         </scene>
         <!--ဆောင်ရန်/ရှောင်ရန်-->
         <scene sceneID="Cka-Lz-JO1">

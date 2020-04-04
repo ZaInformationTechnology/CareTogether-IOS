@@ -17,7 +17,10 @@ class PhoneVerifyVc: UIViewController {
     @IBOutlet weak var countryCodeImageView: UIImageView!
     @IBOutlet weak var countryCodeButton: UIButton!
     let hud = JGProgressHUD(style: .dark)
+    var useCase = AnalyticsUseCase()
     
+    
+    var firebaseToken = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +34,7 @@ class PhoneVerifyVc: UIViewController {
     }
     
     
-   
+    
     func checkNetwork()  {
         if Reachability.isConnectedToNetwork() {
             retrieveToken()
@@ -65,8 +68,8 @@ class PhoneVerifyVc: UIViewController {
                 print("Error fetching remote instance ID: \(error)")
             } else if let result = result {
                 print("Remote instance ID token: \(result.token)")
-                Store.instance.setEncryptedDeviceName(token: result.token)
-                //  self.instanceIDTokenMessage.text  = "Remote InstanceID token: \(result.token)"
+                self.firebaseToken = result.token
+                Store.instance.setFBToken(token : result.token)
             }
         }
         
@@ -76,9 +79,39 @@ class PhoneVerifyVc: UIViewController {
         guard  let phone = edPhone.text  else {
             return
         }
-        Store.instance.setPhoneNumber(phone: phone)
-        Router.instance.navigate(routeName: "AppTabBar", storyboard: "Main")
+        Store.instance.setPhoneNumber(phone: "0\(phone)")
+        
+        if !phone.isEmpty {
+            if !firebaseToken.isEmpty {
+                useCase.storeTokenWithPhone(token: firebaseToken) { (state) in
+                    self.renderStatus(state: state)
+                }
+            }else{
+                checkNetwork()
+            }
+        }else{
+           showErrorMessageAlertWithClose(message: "မှန်ကန်သောဖုန်းနံပါတ်အားထည့်သွင်းပေးပါ")
+        }
+   
     }
+    
+    func renderStatus(state : AnalyticsState){
+        switch state {
+        case .Loading:
+            self.hud.show(in: self.view)
+        case .StoreError :
+            self.hud.dismiss(animated: true)
+        case .StoreSuccess(let data) :
+            self.hud.dismiss(animated: true)
+            Store.instance.setEncryptedDeviceName(phone: data.phone)
+            Router.instance.navigate(routeName: "AppTabBar", storyboard: "Main")
+
+        default:
+            print("other")
+        }
+
+    }
+    
     @IBAction func countryCodeButtonClicked(_ sender: UIButton) {
         print("open coutn")
         

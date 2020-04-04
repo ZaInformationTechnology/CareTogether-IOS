@@ -11,7 +11,16 @@ import UIKit
 import CoreBluetooth
 
 class DashboardVc: BaseVc {
-    var centralManager: CBCentralManager!
+    
+    
+    @IBOutlet weak var lyDashboardView: UIView!
+    @IBOutlet weak var lyPermissionDeniedView: ServiceView!
+    var allServiceAreAvaliable = false
+    var timerIsStarted = false
+    var fetchNearBlueToothDeivceTImer : Timer?
+    
+    
+    
     @IBAction func btnLogout(_ sender: Any) {
         Store.instance.setPhoneNumber(phone: "")
         Router.instance.navigate(routeName: "PhoneVerifyVc", storyboard: "Main")
@@ -20,103 +29,71 @@ class DashboardVc: BaseVc {
     @IBOutlet weak var btnLogout: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        centralManager = CBCentralManager(delegate: self, queue: nil)
+        delegate = self
+    }
+    
+    
+    func startFindDevice()  {
+        timerIsStarted = true
+        fetchNearBlueToothDeivceTImer?.invalidate()
+        fetchNearBlueToothDeivceTImer = Timer.scheduledTimer(timeInterval: 180, target: self, selector: #selector(startFindCT), userInfo: nil, repeats: true)
+        startScan()
+    }
+    
+    func stopFindDevice()  {
+        timerIsStarted = false
+        fetchNearBlueToothDeivceTImer?.invalidate()
+    }
+    
+    
+    @objc func startFindCT()
+    {
+        print("Start Find")
+        startScan()
+
         
     }
     
-    enum CentralError: Error {
-        case centralAlreadyOn
-        case centralAlreadyOff
+}
+
+
+extension DashboardVc : BaseManagerDelegate {
+    func serviceChanged(locationIsOn: Bool, bluetoothIsOn: Bool) {
+        print("service changed \(locationIsOn) bluetooth is on \(bluetoothIsOn)")
+        self.allServiceAreAvaliable = locationIsOn && bluetoothIsOn
+        if(allServiceAreAvaliable){
+            if(!timerIsStarted){
+                startFindDevice()
+                startScan()
+            }
+            self.lyPermissionDeniedView.isHidden = true
+            self.lyDashboardView.isHidden = false
+        }else{
+            showPermissionErrorLayout(locationOn: locationIsOn, bluetoothOn: bluetoothIsOn)
+            stopFindDevice()
+            scanStop()
+        }
     }
     
-    
-    let advertisement = BluetoothAdvertisement.shared
-    var characteristicDidUpdateValue: ((Bool, Data?) -> Void)?
-    private let connection = BluetoothConnection.shared
-    private var echoCharacteristic: Characteristic!
-    private var echoPeripheral: Peripheral<Connectable>?
-    
-    func turnOn() {
-        guard echoPeripheral == nil else {
-            print("arrrr")
-            return
+    func showPermissionErrorLayout(locationOn : Bool,bluetoothOn : Bool){
+        var message = ""
+        if !allServiceAreAvaliable {
+            message = "သင့်တည်နေရာနဲ့ တွေ့ဆုံဖူးသောသူများအားရယူနိုင်ရန်အတွက် Location နှင့် Bluetooth တို့အားဖွင့်ထားရန်လိုအပ်ပီး Permission အားခွင့်ပြုပေးရန်လိုအပ်ပါသည်"
         }
-        let echoIDString = "ec00"
-        echoCharacteristic = try! Characteristic(uuid: echoIDString, shouldObserveNotification: true)
-        echoCharacteristic.notifyHandler = { [weak self] data in
-            self?.characteristicDidUpdateValue?(false, data)
+        if !bluetoothOn {
+            message = "သင်နှင့် တွေ့ဆုံဖူးသောသူများအားရယူနိုင်ရန်အတွက်  Bluetooth အားဖွင့်ထားရန်လိုအပ်ပီး Permission အားခွင့်ပြုပေးရန်လိုအပ်ပါသည်"
         }
-        let echoService = try! Service(uuid: echoIDString, characteristics: [echoCharacteristic])
-        let configuration = try! Configuration(services: [echoService], advertisement: echoIDString)
-        echoPeripheral = Peripheral(configuration: configuration)
         
-        connection.connect(echoPeripheral!) { error in
-            print(error ?? "error connecting to peripheral")
-            
+        if !locationOn {
+            message = "သင့်တည်နေရာ အားရယူနိုင်ရန်အတွက် Location အားဖွင့်ထားရန်လိုအပ်ပီး Permission အားခွင့်ပြုပေးရန်လိုအပ်ပါသည်"
         }
-        let  peripheral: Peripheral<Advertisable> = {
-            let configuration = try! Configuration(services: [echoService], advertisement: "1004FD87-820F-438A-B757-7AC2C15C2D56")
-            return Peripheral(configuration: configuration, advertisementData: [.localName("CT-Hein Htet Testing Phone"), .servicesUUIDs("1004FD87-820F-438A-B757-7AC2C15C2D56")])
-        }()
-        advertisement.advertise(peripheral: peripheral) { _ in
-            // handle possible error
-            print("advertisement error \(peripheral)")
-        }
-    }
-    
-    
-    
-    func turnOff() throws {
-        guard echoPeripheral != nil else { throw CentralError.centralAlreadyOff }
-        try connection.disconnect(echoPeripheral!)
-        echoPeripheral = nil
-    }
-    
-    func readValue() {
-        echoPeripheral?.read(echoCharacteristic) { [weak self] (data, error) in
-            guard error == nil else { return }
-            self?.characteristicDidUpdateValue?(true, data)
-        }
-    }
-    
-    func writeValue(_ value: Data) {
-        echoPeripheral?.write(command: .data(value), characteristic: echoCharacteristic) { (error) in
-            print(error ?? "error writing characteristic value")
-        }
+        
+        self.lyPermissionDeniedView.isHidden = false
+        self.lyDashboardView.isHidden = true
+        
+        self.lyPermissionDeniedView.lbErrorMessage.text = message
+        
     }
 }
 
 
-
-
-extension DashboardVc: CBCentralManagerDelegate {
-    func centralManagerDidUpdateState(_ central: CBCentralManager) {
-        switch central.state {
-        case .unknown:
-            print("central.state is .unknown")
-        case .resetting:
-            print("central.state is .resetting")
-        case .unsupported:
-            print("central.state is .unsupported")
-        case .unauthorized:
-            print("central.state is .unauthorized")
-        case .poweredOff:
-            print("central.state is .poweredOff")
-        case .poweredOn:
-            print("central.state is .poweredOn")
-            centralManager.scanForPeripherals(withServices: nil, options: nil)//
-            turnOn()
-            
-        @unknown default:
-            print("unknown case ")
-        }
-    }
-  func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber){
-
-    print("ble name \(peripheral)")
-    }
-    
-    
-    
-    
-}
