@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftDataTables
 import JGProgressHUD
 
 class GlobalView: UIView {

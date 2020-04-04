@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftDataTables
 class FullInformationVc: UIViewController {
     @IBOutlet weak var lyDetailToolbar: DetailToolbar!
     

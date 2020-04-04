@@ -9,7 +9,6 @@
 import UIKit
 import SwiftHEXColors
 import JGProgressHUD
-import SwiftDataTables
 
 class InfoVc: UIViewController {
     

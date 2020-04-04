@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>586342574268-7fvmabm6kf0h6mj285o70klm9mgeq5vr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.586342574268-7fvmabm6kf0h6mj285o70klm9mgeq5vr</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBPXYWiWGOJ1H1FXqzyh-nPTI51gMLvgcA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>586342574268</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.deevvdd.CareTogether</string>
+	<key>PROJECT_ID</key>
+	<string>za-information-technology-2019</string>
+	<key>STORAGE_BUCKET</key>
+	<string>za-information-technology-2019.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:586342574268:ios:041f5f87b9be2b0bc6c8b9</string>
+	<key>DATABASE_URL</key>
+	<string>https://za-information-technology-2019.firebaseio.com</string>
+</dict>
+</plist>

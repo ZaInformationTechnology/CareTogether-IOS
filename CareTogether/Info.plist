@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>App is need to use Location Access. To determine your reached location.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>App is need to use Location Access. To determine your reached location.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -20,6 +24,13 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>This App is require bluetooth permission to find out person</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Pyidaungsu-2.5.3_Bold.ttf</string>
+		<string>Pyidaungsu-2.5.3_Regular.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -39,11 +50,6 @@
 			</array>
 		</dict>
 	</dict>
-    <key>UIAppFonts</key>
-    <array>
-        <string>Pyidaungsu-2.5.3_Bold.ttf</string>
-        <string>Pyidaungsu-2.5.3_Regular.ttf</string>
-    </array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

@@ -43,8 +43,8 @@ extension UIViewController {
     }
     
     func showErrorMessageAlertWithCloseWithCallback(message : String, completion :  @escaping ()-> Void ){
-           let alert = UIAlertController.init(title: "LocalizationKey.lbErrorTitle.string", message: message, preferredStyle: .alert)
-           let alertAction = UIAlertAction.init(title: "LocalizationKey.lbClose.string", style: .default) { (action) in
+           let alert = UIAlertController.init(title: "သတိပေးချက်", message: message, preferredStyle: .alert)
+           let alertAction = UIAlertAction.init(title: "ကောင်းပီ", style: .default) { (action) in
             completion()
            }
            alert.addAction(alertAction)

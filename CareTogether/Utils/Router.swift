@@ -58,7 +58,7 @@ class Router {
     
     func goFontChooseVc(window : UIWindow?){
           let storyboard = UIStoryboard(name: "Main", bundle: nil)
-          let rootVC = storyboard.instantiateViewController(identifier: "PhoneVerifyVc")
+          let rootVC = storyboard.instantiateViewController(identifier: "ChooseFontVc")
           window?.rootViewController = rootVC
           window?.makeKeyAndVisible()
       }

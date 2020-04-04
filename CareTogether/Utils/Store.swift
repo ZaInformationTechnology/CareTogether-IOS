@@ -12,10 +12,12 @@ class Store {
     static let instance = Store()
     
     private let PHONE = "USER_PHONE"
+    private let ENCRYPTED_DEVICE_NAME = "ENCRYPTED_DEVICE_NAME"
+    private let FB_TOKEN = "FB_TOKEN"
     
     
     init() {
-        UserDefaults.standard.register(defaults: [PHONE : ""])
+        UserDefaults.standard.register(defaults: [PHONE : "",ENCRYPTED_DEVICE_NAME : "", FB_TOKEN : ""])
     }
     
     func setPhoneNumber(phone : String){
@@ -26,4 +28,19 @@ class Store {
         return UserDefaults.standard.string(forKey: PHONE)
         
     }
+    func getEncryptedDeviceName() -> String? {
+        return UserDefaults.standard.string(forKey: ENCRYPTED_DEVICE_NAME)
+    }
+    
+    func getFireBaseToken() -> String? {
+        return UserDefaults.standard.string(forKey: FB_TOKEN)
+    }
+    
+    func setFBToken(token : String)  {
+        UserDefaults.standard.set(token,forKey: FB_TOKEN)
+    }
+    
+    func setEncryptedDeviceName(token : String)  {
+           UserDefaults.standard.set(token,forKey: ENCRYPTED_DEVICE_NAME)
+       }
 }

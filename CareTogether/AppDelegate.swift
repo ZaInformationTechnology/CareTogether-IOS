@@ -9,8 +9,10 @@
 import UIKit
 import CoreData
 import IQKeyboardManager
+import Firebase
+
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,MessagingDelegate {
     
     static let instance  = AppDelegate()
     
@@ -18,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var initialViewController :UIViewController?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-       
         let phoneNumber = Store.instance.getPhoneNumber()
         if( phoneNumber != nil && phoneNumber != ""){
             print("go main")
@@ -28,10 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("go phone")
              Router.instance.goFontChooseVc(window: self.window)
         }
-    
-        
-        
-        
+        FirebaseApp.configure()
+        Messaging.messaging().delegate = self
+
         return true
     }
     
