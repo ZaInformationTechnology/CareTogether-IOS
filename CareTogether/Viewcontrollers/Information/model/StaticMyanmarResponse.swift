@@ -3,7 +3,7 @@
 //  StaticMyanmarResponse.swift
 //  CareTogether
 //
-//  Created by CodigoHeinHtet on 31/03/2020.
+//  Created by HeinHtet on 31/03/2020.
 //  Copyright © 2020 HEINHTET. All rights reserved.
 //
 
