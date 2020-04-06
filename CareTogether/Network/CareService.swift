@@ -10,13 +10,14 @@ import Foundation
 import Moya
 
 public enum CareService{
-    case getNewsList 
+    case getNewsList(Int)
     case getNewDetail(Int)
     case getStaticMyanmar
     case getStaticGlobal
     case getStaticAsian
     case storePhoneWithToken(String)
     case getCountForUser
+    case getVideoNews
 }
 
 
@@ -27,32 +28,34 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
     
     
     public var baseURL: URL {
-        let BASE_URL = "xxxx"
+//        let BASE_URL = "xxxx"
         return URL(string: BASE_URL)!
     }
     
     public var path : String {
         switch self {
-        case .getNewsList: return "/news"
+        case .getNewsList(_): return "/news"
         case .getNewDetail(let id) : return "/news/\(id)"
         case .getStaticMyanmar : return "/statistic/myanmar-with-region"
         case .getStaticAsian : return "/statistic/asean-list"
         case .getStaticGlobal : return "/statistic/global"
         case .storePhoneWithToken(_) : return "/firebase"
         case .getCountForUser : return "count-for-me"
+        case .getVideoNews : return "videos"
             
         }
     }
     
     public var method: Moya.Method {
         switch self{
-        case .getNewsList : return .get
+        case .getNewsList(_) : return .get
         case .getNewDetail(_) : return .get
         case .getStaticMyanmar : return .get
         case .getStaticAsian : return .get
         case .getStaticGlobal : return .get
         case .storePhoneWithToken(_ ) : return .post
         case .getCountForUser : return .get
+        case .getVideoNews : return .get
         }
     }
     
@@ -64,13 +67,12 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
     public var task: Task {
         
         switch self {
-        case .getNewsList:
-            let phoneNumber = Store.instance.getPhoneNumber() ??  ""
-            let p = ["phone_number" : phoneNumber
+        case .getNewsList(let page):
+            let p = ["page" : page
                 ] as [String : Any]
             return .requestParameters(parameters: p, encoding:URLEncoding.default )
             
-        case .getNewDetail(_) : return .requestPlain
+        case .getNewDetail: return .requestPlain
         case .getStaticMyanmar : return .requestPlain
         case .getStaticGlobal : return .requestPlain
         case .getStaticAsian : return .requestPlain
@@ -89,6 +91,8 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
                 ] as [String : Any]
             return .requestParameters(parameters: p, encoding:URLEncoding.default )
             
+        case .getVideoNews : return .requestPlain
+            
         }
         
     }
@@ -96,7 +100,7 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
     public var headers: [String : String]? {
         var httpHeaders: [String: String] = [:]
         httpHeaders["Content-Type"] = "application/json"
-        httpHeaders["X-API-TOKEN"] = "xxxxx"
+//        httpHeaders["X-API-TOKEN"] = "xxxxx"
         httpHeaders["Accept"] = "application/json"
         return httpHeaders
     }

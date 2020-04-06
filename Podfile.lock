@@ -128,6 +128,7 @@ PODS:
   - SwipeCellKit (2.7.1)
   - TagListView (1.4.0)
   - Toast-Swift (5.0.1)
+  - YouTubePlayer (0.4.0)
 
 DEPENDENCIES:
   - BlueSwift (~> 1.0.3)
@@ -155,6 +156,7 @@ DEPENDENCIES:
   - SwipeCellKit
   - TagListView (~> 1.0)
   - Toast-Swift (~> 5.0.1)
+  - YouTubePlayer
 
 SPEC REPOS:
   trunk:
@@ -200,6 +202,7 @@ SPEC REPOS:
     - SwipeCellKit
     - TagListView
     - Toast-Swift
+    - YouTubePlayer
 
 SPEC CHECKSUMS:
   Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
@@ -244,7 +247,8 @@ SPEC CHECKSUMS:
   SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
   TagListView: 987b0bdbb16cd9d9e7c0e2ec32aff37ecba8b173
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
 
-PODFILE CHECKSUM: a8e02c7aafa5c7532377a54b700b2261ace8733c
+PODFILE CHECKSUM: f9d4f3ee4705d3b47d482781fde7110317815f88
 
 COCOAPODS: 1.9.1

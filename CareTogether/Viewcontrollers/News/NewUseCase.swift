@@ -10,16 +10,18 @@ import Foundation
 
 
 protocol NewRepository {
-    func fetchNewList( completion : @escaping (_ state : NewState) -> Void)
+    func fetchNewList(page : Int, completion : @escaping (_ state : NewState) -> Void)
     func fetchNewDetail(id : Int, completion : @escaping (_ state : NewState) -> Void)
+    func fetchNewVideo(completion : @escaping (_ state : NewState) -> Void)
+
 }
 
 class NewUseCase  : NewRepository {
     
-    func fetchNewList(completion: @escaping (NewState) -> Void) {
+    func fetchNewList( page : Int, completion: @escaping (NewState) -> Void) {
         if Reachability.isConnectedToNetwork() {
             completion(.Loading)
-            Engine.apiService.request(.getNewsList) { (result) in
+            Engine.apiService.request(.getNewsList(page)) { (result) in
                 switch (result) {
                 case .failure(let error) :
                     completion(.FetchNewListError)
@@ -38,6 +40,32 @@ class NewUseCase  : NewRepository {
             completion(NewState.FetchNewListError)
         }
     }
+    
+    func fetchNewVideo(completion: @escaping (NewState) -> Void) {
+          if Reachability.isConnectedToNetwork() {
+              completion(.Loading)
+              Engine.apiService.request(.getVideoNews) { (result) in
+                  switch (result) {
+                  case .failure(let error) :
+                      completion(.FetchNewListError)
+                      print("error new list \(error)")
+                  case .success(let response) :
+                      response.data.decode(completion: { (data) in
+                        completion(.FetchNewVideosSuccess(respone: data))
+                      }) { (error) in
+                          completion(.FetchNewListError)
+                      }
+                      print("new list respone \(response)")
+                      
+                  }
+              }
+          }else {
+              completion(NewState.FetchNewListError)
+          }
+      }
+      
+      
+    
     
     func fetchNewDetail(id : Int, completion: @escaping (NewState) -> Void) {
         if Reachability.isConnectedToNetwork() {

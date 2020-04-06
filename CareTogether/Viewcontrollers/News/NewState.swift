@@ -15,5 +15,8 @@ enum NewState {
     
     case FetchNewDetailSuccess(response : NewDetailResponse)
     case FetchNewDetailError
+    case FetchNewVideosError
+
+    case FetchNewVideosSuccess(respone : VideoResponse)
     
 }

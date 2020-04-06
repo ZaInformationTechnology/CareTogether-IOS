@@ -10,6 +10,7 @@ import Foundation
 
 struct NewResponse : Codable {
     let data : [New]
+    let meta : Meta
 }
 
 struct New : Codable {
@@ -17,3 +18,10 @@ struct New : Codable {
     let post_date : String
     let title : String
 }
+
+
+struct Meta : Codable {
+    let current_page : Int
+    let last_page : Int
+}
+
