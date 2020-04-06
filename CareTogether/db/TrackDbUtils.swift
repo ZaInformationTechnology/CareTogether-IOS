@@ -13,6 +13,7 @@ import CoreLocation
 
 protocol DatabaseCallback {
     func dataChanged(result : Results<TrackModel>)
+    func changed()
 }
 
 
@@ -26,30 +27,31 @@ class TrackDbUtils {
     
     
     func addNew(name : String,location : CLLocation){
-        let realm = try! Realm()
-        DispatchQueue(label: "background").async {
+        let data = TrackModel()
+        
+        DispatchQueue(label: "backgroundadd").async {
             autoreleasepool{
-                let data = TrackModel()
-                data.phone = name
-                data.latitude  = location.coordinate.latitude
-                data.longitude = location.coordinate.longitude
-                data.expire_date = self.expire_date
+                let realm = try! Realm()
+               
                 try! realm.write {
+                    data.phone = name
+                    data.latitude  = location.coordinate.latitude
+                    data.longitude = location.coordinate.longitude
+                    data.expire_date = self.expire_date
                     realm.add(data)
                 }
-                let result = realm.objects(TrackModel.self)
-                print("After Add result \(result)")
-                self.delegate?.dataChanged(result: result)
             }
+            self.delegate?.changed()
         }
     }
     
     
     func checkAndUpdate(name : String,location : CLLocation){
-        DispatchQueue(label: "background").async {
+        
+        
+        DispatchQueue(label: "backgroundupdate").async {
             autoreleasepool {
                 let realm = try! Realm()
-                
                 let trackList = realm.objects(TrackModel.self).filter("phone = %@", name)
                 let currentDateTime = Date()
                 
@@ -59,7 +61,7 @@ class TrackDbUtils {
                 formatter.dateStyle = .long
                 
                 // get the date time String from the date object
-               let dateStr =  formatter.string(from: currentDateTime)
+                let dateStr =  formatter.string(from: currentDateTime)
                 
                 
                 if(trackList.count > 0){
@@ -70,10 +72,9 @@ class TrackDbUtils {
                         trackModel?.latitude = location.coordinate.latitude
                         trackModel?.longitude = location.coordinate.longitude
                         trackModel?.expire_date = self.expire_date
-                        let result = realm.objects(TrackModel.self)
-                        print("After updatede result \(result)")
-                        self.delegate?.dataChanged(result: result)
+                        
                     }
+                    self.delegate?.changed()
                 }else{
                     self.addNew(name: name , location: location)
                 }

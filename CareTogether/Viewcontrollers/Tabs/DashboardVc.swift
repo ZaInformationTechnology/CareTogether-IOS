@@ -39,10 +39,7 @@ class DashboardVc: BaseVc {
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
-        let realm = try! Realm()
-        let trackingList = realm.objects(TrackModel.self)
-        
-        checkFoundUserFromDb(result: trackingList)
+        refreshTrackingDb()
         TrackDbUtils.instance.delegate = self
         
         virusWarningApiCall()
@@ -50,12 +47,26 @@ class DashboardVc: BaseVc {
     }
     
     
-    func checkFoundUserFromDb(result : Results<TrackModel>){
-        if  result.count > 0 {
-            self.showCount(count: result.count)
+    func refreshTrackingDb(){
+        
+        checkFoundUserFromDb()
+        
+        
+    }
+    
+    
+    func checkFoundUserFromDb(){
+        let realm = try! Realm()
+        let trackingList = realm.objects(TrackModel.self)
+        print("after data changed \(trackingList)")
+        if  trackingList.count > 0 {
+            self.showCount(count: trackingList.count)
         }else {
-            self.lbUserCount.isHidden = true
+            DispatchQueue.main.async {
+                self.lbUserCount.isHidden = true
+            }
         }
+        
     }
     
     
@@ -64,7 +75,7 @@ class DashboardVc: BaseVc {
             self.ivFoundUser.image = UIImage(named: "ic_rader")
             self.lbUserCount.isHidden = false
             self.lbUserCount.text = String(count)
-            self.lbFoundUserMessage.text = "မှစ၍ ယနေ့အချိန်အထိ တည်နေရာပေါ်မူတည်၍ ( App သုံးသူအချင်းချင်း )​နီးစပ်ဖူးသူဦးရေ"
+            self.lbFoundUserMessage.text = Const.instance.sawPerson
         }
     }
     
@@ -87,14 +98,14 @@ class DashboardVc: BaseVc {
     func showWarningInfo(count : Int){
         if(count > 0){
             lbWarningMessage.textColor = .white
-                   lbWarningTitle.textColor = .white
-                   lyCardWarningInfo.backgroundColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
-                   lbWarningMessage.textAlignment = .left
-                   lbWarningTitle.text = Const.instance.indentifiedCount(count: count)
-                   lbWarningMessage.text = Const.instance.safeInfo
+            lbWarningTitle.textColor = .white
+            lyCardWarningInfo.backgroundColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
+            lbWarningMessage.textAlignment = .left
+            lbWarningTitle.text = Const.instance.indentifiedCount(count: count)
+            lbWarningMessage.text = Const.instance.safeInfo
         }
-       
-            
+        
+        
     }
     
     
@@ -148,14 +159,14 @@ extension DashboardVc : BaseManagerDelegate {
     func showPermissionErrorLayout(locationOn : Bool,bluetoothOn : Bool){
         var message = ""
         if !allServiceAreAvaliable {
-            message = "သင့်တည်နေရာနဲ့ တွေ့ဆုံဖူးသောသူများအားရယူနိုင်ရန်အတွက် Location နှင့် Bluetooth တို့အားဖွင့်ထားရန်လိုအပ်ပီး Permission အားခွင့်ပြုပေးရန်လိုအပ်ပါသည်"
+            message = Const.instance.permissionRequestBleAndLocation
         }
         if !bluetoothOn {
-            message = "သင်နှင့် တွေ့ဆုံဖူးသောသူများအားရယူနိုင်ရန်အတွက်  Bluetooth အားဖွင့်ထားရန်လိုအပ်ပီး Permission အားခွင့်ပြုပေးရန်လိုအပ်ပါသည်"
+            message = Const.instance.perimssionRequestBle
         }
         
         if !locationOn {
-            message = "သင့်တည်နေရာ အားရယူနိုင်ရန်အတွက် Location အားဖွင့်ထားရန်လိုအပ်ပီး Permission အားခွင့်ပြုပေးရန်လိုအပ်ပါသည်"
+            message = Const.instance.permissionRequestLocation
         }
         
         self.lyPermissionDeniedView.isHidden = false
@@ -168,6 +179,13 @@ extension DashboardVc : BaseManagerDelegate {
 
 extension DashboardVc : DatabaseCallback {
     func dataChanged(result: Results<TrackModel>) {
-        checkFoundUserFromDb(result: result)
+        print("data changed \(result)")
+        self.checkFoundUserFromDb()
+        
     }
+    
+    func changed() {
+        self.checkFoundUserFromDb()
+    }
+    
 }

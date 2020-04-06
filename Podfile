@@ -30,6 +30,8 @@ pod 'RxBluetoothKit'
 pod 'Firebase/Analytics'
 pod 'Firebase/Messaging'
   pod 'RealmSwift'
+  pod 'CRRefresh'
+  pod 'Toast-Swift', '~> 5.0.1'
 end
 
 

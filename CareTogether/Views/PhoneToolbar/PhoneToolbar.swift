@@ -45,7 +45,7 @@ class PhoneToolbar: UIView {
         contentView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
         let phone = Store.instance.getPhoneNumber() ?? "-"
         
-        if phone.count == 11 {
+        if phone.count >= 11 {
             var chars = Array(phone)     // gets an array of characters
             chars[4] = "X"
             chars[5]  = "X"

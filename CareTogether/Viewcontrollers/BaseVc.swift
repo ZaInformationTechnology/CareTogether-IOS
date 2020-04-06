@@ -11,7 +11,7 @@ import CoreLocation
 import CoreBluetooth
 import BlueSwift
 import Foundation
-
+import Toast_Swift
 
 protocol BaseManagerDelegate {
     func serviceChanged(locationIsOn : Bool,bluetoothIsOn : Bool)
@@ -201,8 +201,10 @@ extension BaseVc: CBCentralManagerDelegate {
         }
         if name.count > 2 {
             let prefix = name[0 ..< 2]
-            if prefix.elementsEqual("On"){
+            if prefix.elementsEqual("CT"){
                 print("found \(prefix)")
+                self.view.makeToast(name, duration: 3.0, position: .bottom, style: ToastStyle())
+
                 guard let location  = currentLocation else {
                    return
                 }

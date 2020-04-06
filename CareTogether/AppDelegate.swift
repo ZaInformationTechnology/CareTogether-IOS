@@ -30,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MessagingDelegate {
             print("go phone")
              Router.instance.goFontChooseVc(window: self.window)
         }
+        application.isIdleTimerDisabled = true
         FirebaseApp.configure()
         Messaging.messaging().delegate = self
 

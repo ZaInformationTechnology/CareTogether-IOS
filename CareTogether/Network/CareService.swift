@@ -10,7 +10,7 @@ import Foundation
 import Moya
 
 public enum CareService{
-    case getNewsList
+    case getNewsList 
     case getNewDetail(Int)
     case getStaticMyanmar
     case getStaticGlobal
