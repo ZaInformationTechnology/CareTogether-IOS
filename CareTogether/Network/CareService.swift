@@ -27,7 +27,7 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
     
     
     public var baseURL: URL {
-        let BASE_URL = "https://ct.zacompany.dev/api"
+        let BASE_URL = "xxxx"
         return URL(string: BASE_URL)!
     }
     
@@ -96,7 +96,7 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
     public var headers: [String : String]? {
         var httpHeaders: [String: String] = [:]
         httpHeaders["Content-Type"] = "application/json"
-        httpHeaders["X-API-TOKEN"] = "2p8j3fen7kg5850y1b2abdy9a3exzq6c5"
+        httpHeaders["X-API-TOKEN"] = "xxxxx"
         httpHeaders["Accept"] = "application/json"
         return httpHeaders
     }
