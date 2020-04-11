@@ -72,6 +72,8 @@
 		EE695D002430D026008512E4 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE695CFF2430D026008512E4 /* Reachability.swift */; };
 		EE695D082430D77A008512E4 /* NoticePagerVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE695D072430D77A008512E4 /* NoticePagerVc.swift */; };
 		EE695D0A2430D88D008512E4 /* SafeNoticeVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE695D092430D88D008512E4 /* SafeNoticeVc.swift */; };
+		EEAE66F32442147900DD602E /* BaseVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE66F22442147800DD602E /* BaseVc.swift */; };
+		EEAE66F52442149B00DD602E /* DashboardVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE66F42442149B00DD602E /* DashboardVc.swift */; };
 		EED1F2CE2430854600B071C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1F2CD2430854600B071C8 /* AppDelegate.swift */; };
 		EED1F2D02430854600B071C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1F2CF2430854600B071C8 /* SceneDelegate.swift */; };
 		EED1F2D22430854600B071C8 /* ChooseFontVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1F2D12430854600B071C8 /* ChooseFontVc.swift */; };
@@ -193,6 +195,8 @@
 		EE695CFF2430D026008512E4 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		EE695D072430D77A008512E4 /* NoticePagerVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePagerVc.swift; sourceTree = "<group>"; };
 		EE695D092430D88D008512E4 /* SafeNoticeVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeNoticeVc.swift; sourceTree = "<group>"; };
+		EEAE66F22442147800DD602E /* BaseVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVc.swift; sourceTree = "<group>"; };
+		EEAE66F42442149B00DD602E /* DashboardVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVc.swift; sourceTree = "<group>"; };
 		EED1F2CA2430854600B071C8 /* CareTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED1F2CD2430854600B071C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EED1F2CF2430854600B071C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -510,6 +514,7 @@
 		EE695CFA2430C614008512E4 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
+				EEAE66F42442149B00DD602E /* DashboardVc.swift */,
 				EE695D072430D77A008512E4 /* NoticePagerVc.swift */,
 				EE695D092430D88D008512E4 /* SafeNoticeVc.swift */,
 				EE3E632C243B4C8A0039BE4B /* DashVc.swift */,
@@ -626,6 +631,7 @@
 		EED1F3132430967200B071C8 /* Viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				EEAE66F22442147800DD602E /* BaseVc.swift */,
 				EE3E6330243B4F630039BE4B /* Common */,
 				EE12FE492438BBC3009BD49B /* Analytics */,
 				EEDA21D0243360740077B293 /* Information */,
@@ -948,6 +954,7 @@
 				EE4ED25224390CCA00C63954 /* CountModel.swift in Sources */,
 				EE4ED24E2438EECD00C63954 /* TrackDbUtils.swift in Sources */,
 				EE58228024339BCF00D25CA2 /* VirtualPositionTrackable.swift in Sources */,
+				EEAE66F32442147900DD602E /* BaseVc.swift in Sources */,
 				EEFEE80D2434E64500B8D072 /* StaticCountryResponse.swift in Sources */,
 				EEDA21D924336D8A0077B293 /* StaticMyanmarResponse.swift in Sources */,
 				EE5A0F992432FC7C00F20E85 /* DetailToolbar.swift in Sources */,
@@ -1000,6 +1007,7 @@
 				EE695CF72430C027008512E4 /* PhoneToolbar.swift in Sources */,
 				EED1F2D82430854600B071C8 /* CareTogether.xcdatamodeld in Sources */,
 				EE58226D24339BCF00D25CA2 /* PaginationHeaderViewModel.swift in Sources */,
+				EEAE66F52442149B00DD602E /* DashboardVc.swift in Sources */,
 				EE58227924339BCF00D25CA2 /* DataTableConfiguration.swift in Sources */,
 				EE58C06A24325F3A002F9FAE /* Utils.swift in Sources */,
 				EEDA21D624336D010077B293 /* InfoState.swift in Sources */,

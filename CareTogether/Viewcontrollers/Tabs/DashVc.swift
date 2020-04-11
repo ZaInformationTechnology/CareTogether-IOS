@@ -15,13 +15,17 @@ class DashVc : UIViewController {
        self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
+  
+    
     @IBAction func btnPressedInfo(_ sender: Any) {
         let vc   = storyboard?.instantiateViewController(identifier: "AboutVc") as! AboutVcViewController
                self.navigationController?.pushViewController(vc, animated: true)
         
+    
     }
+    
+    override func viewDidLoad() {
+          super.viewDidLoad()
+          
+      }
 }
