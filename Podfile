@@ -25,8 +25,6 @@ pod 'SKPhotoBrowser'
 pod 'SwiftHEXColors'
 pod 'ImageSlideshow', '~> 1.8.3'
 pod "ImageSlideshow/Kingfisher"
-  pod 'BlueSwift' , '~> 1.0.3'
-pod 'RxBluetoothKit'
 pod 'Firebase/Analytics'
 pod 'Firebase/Messaging'
   pod 'RealmSwift'

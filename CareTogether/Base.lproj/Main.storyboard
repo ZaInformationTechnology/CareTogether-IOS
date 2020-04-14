@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1067,10 +1067,10 @@
                                         </subviews>
                                     </stackView>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wy-g4-50J">
-                                        <rect key="frame" x="0.0" y="130" width="414" height="524"/>
+                                        <rect key="frame" x="0.0" y="130" width="414" height="360"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mur-IW-UB7">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="524"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="360"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8By-2X-eey">
                                                         <rect key="frame" x="16" y="0.0" width="382" height="110"/>
@@ -1114,48 +1114,8 @@
                                                             <constraint firstItem="eW9-vn-7Fc" firstAttribute="top" secondItem="9WT-Bk-F0z" secondAttribute="bottom" constant="8" id="nGH-dm-V3k"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qKU-Qf-AjY" customClass="RoundCardView" customModule="CareTogether" customModuleProvider="target">
-                                                        <rect key="frame" x="16" y="126" width="382" height="120"/>
-                                                        <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="100" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ix2-ai-cvv">
-                                                                <rect key="frame" x="157" y="16" width="68" height="30"/>
-                                                                <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_virus" translatesAutoresizingMaskIntoConstraints="NO" id="8PB-IA-I8Y">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="30" id="vpk-TG-aef"/>
-                                                                            <constraint firstAttribute="height" constant="30" id="yEY-De-kBF"/>
-                                                                        </constraints>
-                                                                    </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9k-Rj-uyY">
-                                                                        <rect key="frame" x="38" y="0.0" width="30" height="30"/>
-                                                                        <fontDescription key="fontDescription" name="Pyidaungsu-Bold" family="Pyidaungsu" pointSize="20"/>
-                                                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
-                                                            </stackView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="တည်နေရာပေါ်မူတည်၍နီးစပ်ဖူးသူမရှိပါ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXo-s4-VT5">
-                                                                <rect key="frame" x="16" y="62" width="350" height="42"/>
-                                                                <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
-                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstItem="IXo-s4-VT5" firstAttribute="leading" secondItem="qKU-Qf-AjY" secondAttribute="leading" constant="16" id="6RY-n5-5iF"/>
-                                                            <constraint firstAttribute="trailing" secondItem="IXo-s4-VT5" secondAttribute="trailing" constant="16" id="7bI-7p-omo"/>
-                                                            <constraint firstItem="IXo-s4-VT5" firstAttribute="top" secondItem="Ix2-ai-cvv" secondAttribute="bottom" constant="16" id="8XC-6x-9Nd"/>
-                                                            <constraint firstItem="Ix2-ai-cvv" firstAttribute="centerX" secondItem="qKU-Qf-AjY" secondAttribute="centerX" id="CwT-Kk-JfR"/>
-                                                            <constraint firstItem="Ix2-ai-cvv" firstAttribute="top" secondItem="qKU-Qf-AjY" secondAttribute="top" constant="16" id="EdR-xe-yly"/>
-                                                            <constraint firstAttribute="bottom" secondItem="IXo-s4-VT5" secondAttribute="bottom" constant="16" id="L4d-Ry-hib"/>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="SO8-h1-XRK"/>
-                                                            <constraint firstItem="IXo-s4-VT5" firstAttribute="centerX" secondItem="qKU-Qf-AjY" secondAttribute="centerX" id="hoF-Gd-38i"/>
-                                                        </constraints>
-                                                    </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEY-yw-aSZ" customClass="RoundCardView" customModule="CareTogether" customModuleProvider="target">
-                                                        <rect key="frame" x="16" y="270" width="382" height="200.5"/>
+                                                        <rect key="frame" x="16" y="106" width="382" height="200.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="သင်နှင့်သင့်ပတ်၀န်းကျင်သို့ ရောဂါပိုးမရောက်ရှိစေရန်အတွက် နေအိမ်အတွင်းသာနေထိုင်နိုင်ရန် အထူးလိုအပ်နေပါပြီ။" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6VQ-JH-snC">
                                                                 <rect key="frame" x="16" y="96.5" width="350" height="88"/>
@@ -1193,16 +1153,13 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="hEY-yw-aSZ" firstAttribute="top" secondItem="qKU-Qf-AjY" secondAttribute="bottom" constant="24" id="6IZ-yM-lYJ"/>
                                                     <constraint firstItem="8By-2X-eey" firstAttribute="top" secondItem="mur-IW-UB7" secondAttribute="top" id="B6m-CH-RBs"/>
-                                                    <constraint firstItem="qKU-Qf-AjY" firstAttribute="top" secondItem="y1F-N6-gyx" secondAttribute="bottom" constant="16" id="U4c-0d-ZGt"/>
                                                     <constraint firstAttribute="bottom" secondItem="hEY-yw-aSZ" secondAttribute="bottom" constant="53.5" id="V0H-0S-E0c"/>
                                                     <constraint firstAttribute="trailing" secondItem="hEY-yw-aSZ" secondAttribute="trailing" constant="16" id="cQZ-gi-KAb"/>
-                                                    <constraint firstItem="qKU-Qf-AjY" firstAttribute="leading" secondItem="mur-IW-UB7" secondAttribute="leading" constant="16" id="l3f-n2-474"/>
+                                                    <constraint firstItem="hEY-yw-aSZ" firstAttribute="top" secondItem="y1F-N6-gyx" secondAttribute="bottom" constant="-4" id="gNq-1D-b6z"/>
                                                     <constraint firstItem="hEY-yw-aSZ" firstAttribute="leading" secondItem="mur-IW-UB7" secondAttribute="leading" constant="16" id="oEb-XE-Rnq"/>
                                                     <constraint firstAttribute="trailing" secondItem="8By-2X-eey" secondAttribute="trailing" constant="16" id="rzj-Bh-E3M"/>
                                                     <constraint firstItem="8By-2X-eey" firstAttribute="leading" secondItem="mur-IW-UB7" secondAttribute="leading" constant="16" id="sMR-E0-Zd4"/>
-                                                    <constraint firstAttribute="trailing" secondItem="qKU-Qf-AjY" secondAttribute="trailing" constant="16" id="ve6-fg-KwK"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -1893,7 +1850,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RD8-hl-GlY">
-                                                        <rect key="frame" x="16" y="9" width="30" height="28.5"/>
+                                                        <rect key="frame" x="16" y="9" width="30" height="29"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="fVx-43-TTh"/>
                                                             <constraint firstAttribute="width" constant="30" id="rHQ-6j-5z2"/>
@@ -2506,7 +2463,7 @@
         <image name="check" width="24" height="24"/>
         <image name="dropdown_arrow" width="24" height="24"/>
         <image name="expand" width="21.5" height="21.5"/>
-        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="globe" catalog="system" width="64" height="62"/>
         <image name="healthorganization" width="129" height="129.5"/>
         <image name="ic_close" width="24" height="24"/>
         <image name="ic_goal" width="28" height="28"/>
@@ -2517,11 +2474,10 @@
         <image name="ic_uni" width="35.5" height="36"/>
         <image name="ic_video" width="256" height="256"/>
         <image name="ic_zg" width="58" height="58"/>
-        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="info.circle" catalog="system" width="64" height="62"/>
         <image name="logo" width="170.5" height="170.5"/>
         <image name="mask" width="25" height="25"/>
         <image name="next" width="25" height="16.5"/>
-        <image name="no_virus" width="38" height="42"/>
         <image name="no_virus-1" width="61.5" height="61"/>
         <image name="noti" width="25" height="25"/>
         <image name="phone-1" width="25" height="25"/>

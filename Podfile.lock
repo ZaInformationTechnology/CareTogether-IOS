@@ -1,6 +1,5 @@
 PODS:
   - Alamofire (5.0.5)
-  - BlueSwift (1.0.3)
   - CRRefresh (1.1.3)
   - DropDown (2.3.4)
   - EFCountingLabel (5.1.1)
@@ -111,8 +110,6 @@ PODS:
   - Realm/Headers (4.4.0)
   - RealmSwift (4.4.0):
     - Realm (= 4.4.0)
-  - RxBluetoothKit (5.3.0):
-    - RxSwift (~> 5.0)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -131,7 +128,6 @@ PODS:
   - YouTubePlayer (0.4.0)
 
 DEPENDENCIES:
-  - BlueSwift (~> 1.0.3)
   - CRRefresh
   - DropDown (= 2.3.4)
   - EFCountingLabel
@@ -144,7 +140,6 @@ DEPENDENCIES:
   - Moya/RxSwift (~> 14.0.0-beta.6)
   - ObjectMapper (~> 3.4)
   - RealmSwift
-  - RxBluetoothKit
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
   - SKCountryPicker
@@ -161,7 +156,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
-    - BlueSwift
     - CRRefresh
     - DropDown
     - EFCountingLabel
@@ -189,7 +183,6 @@ SPEC REPOS:
     - Protobuf
     - Realm
     - RealmSwift
-    - RxBluetoothKit
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -206,7 +199,6 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
-  BlueSwift: 871a4c6926cf47832b747e867d817b4a7bafa2ec
   CRRefresh: 1415d4ae06837fa7bb064c44f2e102f3ef517044
   DropDown: f225ff0fd09dde064d17aa03db7e4d4e4ff40b6b
   EFCountingLabel: 605358591a67a3c92feb7ec32486bfab4a30e2c9
@@ -234,7 +226,6 @@ SPEC CHECKSUMS:
   Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
   Realm: e125f464884cda953ebefe70c671b75b03b81b9b
   RealmSwift: 33656a42bd300959a081fc13347376bc478071af
-  RxBluetoothKit: 0e781978e8a0df70ac3c611dcf44800b76c69f8a
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
@@ -249,6 +240,6 @@ SPEC CHECKSUMS:
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
 
-PODFILE CHECKSUM: f9d4f3ee4705d3b47d482781fde7110317815f88
+PODFILE CHECKSUM: 2bb2e8da89988f7a26a271d0ab7190020609db79
 
 COCOAPODS: 1.9.1

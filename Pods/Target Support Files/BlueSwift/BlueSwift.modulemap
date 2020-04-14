@@ -1,6 +1,0 @@
-framework module BlueSwift {
-  umbrella header "BlueSwift-umbrella.h"
-
-  export *
-  module * { export * }
-}

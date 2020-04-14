@@ -10,7 +10,6 @@
 		152D1593B93C61848485889C /* Pods_CareTogetherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294C8502CCE080D81723B55C /* Pods_CareTogetherTests.framework */; };
 		57A2B2A138675E503037271C /* Pods_CareTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBB9CC93B20939E9244D5B3 /* Pods_CareTogether.framework */; };
 		9EFF38DC7608B7661DF5A6A0 /* Pods_CareTogether_CareTogetherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B496EAB083AC414758D2B2 /* Pods_CareTogether_CareTogetherUITests.framework */; };
-		EE06E1F624387F6600CF5B9C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE06E1F524387F6600CF5B9C /* GoogleService-Info.plist */; };
 		EE12FE462438B4C1009BD49B /* ServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE12FE452438B4C1009BD49B /* ServiceView.swift */; };
 		EE12FE482438B4D2009BD49B /* ServiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE12FE472438B4D2009BD49B /* ServiceView.xib */; };
 		EE12FE4B2438BBD4009BD49B /* AnalyticsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE12FE4A2438BBD4009BD49B /* AnalyticsUseCase.swift */; };
@@ -72,6 +71,7 @@
 		EE695D002430D026008512E4 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE695CFF2430D026008512E4 /* Reachability.swift */; };
 		EE695D082430D77A008512E4 /* NoticePagerVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE695D072430D77A008512E4 /* NoticePagerVc.swift */; };
 		EE695D0A2430D88D008512E4 /* SafeNoticeVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE695D092430D88D008512E4 /* SafeNoticeVc.swift */; };
+		EECD6B4A2445E16900C0D232 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EECD6B492445E16900C0D232 /* GoogleService-Info.plist */; };
 		EED1F2CE2430854600B071C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1F2CD2430854600B071C8 /* AppDelegate.swift */; };
 		EED1F2D02430854600B071C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1F2CF2430854600B071C8 /* SceneDelegate.swift */; };
 		EED1F2D22430854600B071C8 /* ChooseFontVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1F2D12430854600B071C8 /* ChooseFontVc.swift */; };
@@ -131,7 +131,6 @@
 		8AF49D1B7DBE15C18723D305 /* Pods-CareTogetherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareTogetherTests.release.xcconfig"; path = "Target Support Files/Pods-CareTogetherTests/Pods-CareTogetherTests.release.xcconfig"; sourceTree = "<group>"; };
 		CC738E87ED8060A6371A630E /* Pods-CareTogetherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareTogetherTests.debug.xcconfig"; path = "Target Support Files/Pods-CareTogetherTests/Pods-CareTogetherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EAD750E219A87CDF0B9E33ED /* Pods-CareTogether-CareTogetherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareTogether-CareTogetherUITests.debug.xcconfig"; path = "Target Support Files/Pods-CareTogether-CareTogetherUITests/Pods-CareTogether-CareTogetherUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		EE06E1F524387F6600CF5B9C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EE12FE452438B4C1009BD49B /* ServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceView.swift; sourceTree = "<group>"; };
 		EE12FE472438B4D2009BD49B /* ServiceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceView.xib; sourceTree = "<group>"; };
 		EE12FE4A2438BBD4009BD49B /* AnalyticsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsUseCase.swift; sourceTree = "<group>"; };
@@ -193,6 +192,7 @@
 		EE695CFF2430D026008512E4 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		EE695D072430D77A008512E4 /* NoticePagerVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePagerVc.swift; sourceTree = "<group>"; };
 		EE695D092430D88D008512E4 /* SafeNoticeVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeNoticeVc.swift; sourceTree = "<group>"; };
+		EECD6B492445E16900C0D232 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EED1F2CA2430854600B071C8 /* CareTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED1F2CD2430854600B071C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EED1F2CF2430854600B071C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -529,6 +529,7 @@
 		EED1F2C12430854600B071C8 = {
 			isa = PBXGroup;
 			children = (
+				EECD6B492445E16900C0D232 /* GoogleService-Info.plist */,
 				EED1F2CC2430854600B071C8 /* CareTogether */,
 				EED1F2E62430854700B071C8 /* CareTogetherTests */,
 				EED1F2F12430854700B071C8 /* CareTogetherUITests */,
@@ -552,7 +553,6 @@
 			isa = PBXGroup;
 			children = (
 				EEA699DB2438ED2B00D7176F /* db */,
-				EE06E1F524387F6600CF5B9C /* GoogleService-Info.plist */,
 				EE58224824339BCF00D25CA2 /* SwiftDataTables */,
 				EE5A0F8B2432F2C000F20E85 /* Cells */,
 				EE58C06424325EA5002F9FAE /* Network */,
@@ -791,7 +791,6 @@
 				EED1F2DD2430854700B071C8 /* LaunchScreen.storyboard in Resources */,
 				EED1F3032430870E00B071C8 /* Pyidaungsu-2.5.3_Bold.ttf in Resources */,
 				EE5A0F8F2432F2D900F20E85 /* NewCell.xib in Resources */,
-				EE06E1F624387F6600CF5B9C /* GoogleService-Info.plist in Resources */,
 				EE58224524337B4D00D25CA2 /* DataByHospitalCell.xib in Resources */,
 				EED1F3042430870E00B071C8 /* Pyidaungsu-2.5.3_Regular.ttf in Resources */,
 				EE12FE482438B4D2009BD49B /* ServiceView.xib in Resources */,
@@ -800,6 +799,7 @@
 				EE695CF92430C034008512E4 /* PhoneToolbar.xib in Resources */,
 				EEFEE80B2434D8F300B8D072 /* GlobalView.xib in Resources */,
 				EED1F2D52430854600B071C8 /* Main.storyboard in Resources */,
+				EECD6B4A2445E16900C0D232 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1200,7 +1200,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.deevvdd.CareTogether;
+				PRODUCT_BUNDLE_IDENTIFIER = com.za.caretogether;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1219,7 +1219,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.deevvdd.CareTogether;
+				PRODUCT_BUNDLE_IDENTIFIER = com.za.caretogether;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
