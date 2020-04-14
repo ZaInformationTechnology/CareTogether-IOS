@@ -24,6 +24,7 @@
 		EE4ED24E2438EECD00C63954 /* TrackDbUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4ED24D2438EECD00C63954 /* TrackDbUtils.swift */; };
 		EE4ED25024390AE800C63954 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4ED24F24390AE800C63954 /* Const.swift */; };
 		EE4ED25224390CCA00C63954 /* CountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4ED25124390CCA00C63954 /* CountModel.swift */; };
+		EE5556972442212500075F7F /* StatusWebViewVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5556962442212500075F7F /* StatusWebViewVc.swift */; };
 		EE58224424337B4D00D25CA2 /* DataByHospitalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE58224224337B4D00D25CA2 /* DataByHospitalCell.swift */; };
 		EE58224524337B4D00D25CA2 /* DataByHospitalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE58224324337B4D00D25CA2 /* DataByHospitalCell.xib */; };
 		EE5822472433801A00D25CA2 /* FullInformationVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5822462433801A00D25CA2 /* FullInformationVc.swift */; };
@@ -74,6 +75,8 @@
 		EE695D0A2430D88D008512E4 /* SafeNoticeVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE695D092430D88D008512E4 /* SafeNoticeVc.swift */; };
 		EEAE66F32442147900DD602E /* BaseVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE66F22442147800DD602E /* BaseVc.swift */; };
 		EEAE66F52442149B00DD602E /* DashboardVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE66F42442149B00DD602E /* DashboardVc.swift */; };
+		EEAE66F72442184A00DD602E /* AnalysisWebViewVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE66F62442184A00DD602E /* AnalysisWebViewVc.swift */; };
+		EEAE66F924421B3100DD602E /* EmergencyVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE66F824421B3100DD602E /* EmergencyVc.swift */; };
 		EED1F2CE2430854600B071C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1F2CD2430854600B071C8 /* AppDelegate.swift */; };
 		EED1F2D02430854600B071C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1F2CF2430854600B071C8 /* SceneDelegate.swift */; };
 		EED1F2D22430854600B071C8 /* ChooseFontVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1F2D12430854600B071C8 /* ChooseFontVc.swift */; };
@@ -147,6 +150,7 @@
 		EE4ED24D2438EECD00C63954 /* TrackDbUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDbUtils.swift; sourceTree = "<group>"; };
 		EE4ED24F24390AE800C63954 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		EE4ED25124390CCA00C63954 /* CountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountModel.swift; sourceTree = "<group>"; };
+		EE5556962442212500075F7F /* StatusWebViewVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusWebViewVc.swift; sourceTree = "<group>"; };
 		EE58224224337B4D00D25CA2 /* DataByHospitalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataByHospitalCell.swift; sourceTree = "<group>"; };
 		EE58224324337B4D00D25CA2 /* DataByHospitalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataByHospitalCell.xib; sourceTree = "<group>"; };
 		EE5822462433801A00D25CA2 /* FullInformationVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullInformationVc.swift; sourceTree = "<group>"; };
@@ -197,6 +201,8 @@
 		EE695D092430D88D008512E4 /* SafeNoticeVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeNoticeVc.swift; sourceTree = "<group>"; };
 		EEAE66F22442147800DD602E /* BaseVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVc.swift; sourceTree = "<group>"; };
 		EEAE66F42442149B00DD602E /* DashboardVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVc.swift; sourceTree = "<group>"; };
+		EEAE66F62442184A00DD602E /* AnalysisWebViewVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisWebViewVc.swift; sourceTree = "<group>"; };
+		EEAE66F824421B3100DD602E /* EmergencyVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyVc.swift; sourceTree = "<group>"; };
 		EED1F2CA2430854600B071C8 /* CareTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED1F2CD2430854600B071C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EED1F2CF2430854600B071C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -301,6 +307,7 @@
 				EE12FE4E2438C7F3009BD49B /* model */,
 				EE12FE4A2438BBD4009BD49B /* AnalyticsUseCase.swift */,
 				EE12FE4C2438BC02009BD49B /* AnalyticsState.swift */,
+				EEAE66F62442184A00DD602E /* AnalysisWebViewVc.swift */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -319,6 +326,8 @@
 			children = (
 				EE3E6331243B4F840039BE4B /* AboutVcViewController.swift */,
 				EE3E6333243B558E0039BE4B /* TermVc.swift */,
+				EEAE66F824421B3100DD602E /* EmergencyVc.swift */,
+				EE5556962442212500075F7F /* StatusWebViewVc.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -950,6 +959,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5556972442212500075F7F /* StatusWebViewVc.swift in Sources */,
 				EE12FE4D2438BC02009BD49B /* AnalyticsState.swift in Sources */,
 				EE4ED25224390CCA00C63954 /* CountModel.swift in Sources */,
 				EE4ED24E2438EECD00C63954 /* TrackDbUtils.swift in Sources */,
@@ -1011,12 +1021,14 @@
 				EE58227924339BCF00D25CA2 /* DataTableConfiguration.swift in Sources */,
 				EE58C06A24325F3A002F9FAE /* Utils.swift in Sources */,
 				EEDA21D624336D010077B293 /* InfoState.swift in Sources */,
+				EEAE66F72442184A00DD602E /* AnalysisWebViewVc.swift in Sources */,
 				EE58227324339BCF00D25CA2 /* DataCell.swift in Sources */,
 				EE3E632D243B4C8A0039BE4B /* DashVc.swift in Sources */,
 				EE5A0F942432F83F00F20E85 /* NewDetailVc.swift in Sources */,
 				EE58227B24339BCF00D25CA2 /* DataStructureModel.swift in Sources */,
 				EED1F30A24308E9E00B071C8 /* Router.swift in Sources */,
 				EE4ED24C2438EE2B00C63954 /* TrackModel.swift in Sources */,
+				EEAE66F924421B3100DD602E /* EmergencyVc.swift in Sources */,
 				EE58227224339BCF00D25CA2 /* DataCellLayoutAttributes.swift in Sources */,
 				EED1F3152430969400B071C8 /* PhoneVerifyVc.swift in Sources */,
 				EED1F2D02430854600B071C8 /* SceneDelegate.swift in Sources */,

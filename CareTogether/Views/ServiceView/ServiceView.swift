@@ -43,6 +43,9 @@ class ServiceView: UIView {
     }
     
     @IBAction func btnPressedAllowPermission(_ sender: Any) {
+        print("allow all permission")
+        let settingsUrl = URL(string: UIApplication.openSettingsURLString)!
+        UIApplication.shared.open(settingsUrl)
     }
     
 }

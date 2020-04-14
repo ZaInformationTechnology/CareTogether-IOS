@@ -11,7 +11,6 @@ import UIKit
 class PhoneToolbar: UIView {
     
     @IBOutlet weak var contentView : UIView!
-    
     @IBOutlet weak var ivWifiStatus: CIrcleImage!
     @IBOutlet weak var lbPhone: UILabel!
     override init(frame: CGRect) {
@@ -44,6 +43,10 @@ class PhoneToolbar: UIView {
         contentView.frame  = self.bounds
         contentView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
         let phone = Store.instance.getPhoneNumber() ?? "-"
+        
+        if !Reachability.isConnectedToNetwork() {
+            ivWifiStatus.image = UIImage(named: "no_wifi")
+        }
         
         if phone.count >= 11 {
             var chars = Array(phone)     // gets an array of characters

@@ -165,7 +165,7 @@ extension DashboardVc : BaseManagerDelegate {
             }
             self.lyPermissionDeniedView.isHidden = true
             self.lyDashboardView.isHidden = false
-            self.lyStackInfoAndTerm.isHidden = false
+//            self.lyStackInfoAndTerm.isHidden = false
         }else{
             showPermissionErrorLayout(locationOn: locationIsOn, bluetoothOn: bluetoothIsOn)
             stopFindDevice()

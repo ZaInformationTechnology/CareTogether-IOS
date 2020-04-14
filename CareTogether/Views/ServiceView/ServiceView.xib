@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -22,9 +22,6 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bakground" translatesAutoresizingMaskIntoConstraints="NO" id="xdR-kL-Bi0">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUM-em-NS6">
                     <rect key="frame" x="16" y="433.5" width="382" height="29.5"/>
                     <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
@@ -32,7 +29,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5h-yC-cke" customClass="RoundButton" customModule="CareTogether" customModuleProvider="target">
-                    <rect key="frame" x="16" y="825" width="382" height="55"/>
+                    <rect key="frame" x="16" y="761" width="382" height="55"/>
                     <color key="backgroundColor" red="0.94117647059999998" green="0.79607843140000001" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="55" id="Mp1-g6-OCT"/>
@@ -46,15 +43,11 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="xdR-kL-Bi0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EgE-E3-SOw"/>
                 <constraint firstItem="iUM-em-NS6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="KaX-10-J48"/>
-                <constraint firstAttribute="bottom" secondItem="xdR-kL-Bi0" secondAttribute="bottom" id="Mdj-Wi-rae"/>
-                <constraint firstItem="xdR-kL-Bi0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="T2P-Cc-g19"/>
                 <constraint firstItem="iUM-em-NS6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="TzQ-Xz-Fvl"/>
-                <constraint firstItem="xdR-kL-Bi0" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="Zkc-vm-fpT"/>
-                <constraint firstAttribute="bottom" secondItem="q5h-yC-cke" secondAttribute="bottom" constant="16" id="d05-D1-7Ul"/>
+                <constraint firstAttribute="bottom" secondItem="q5h-yC-cke" secondAttribute="bottom" constant="80" id="d05-D1-7Ul"/>
                 <constraint firstItem="q5h-yC-cke" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="fbh-uI-0oV"/>
                 <constraint firstItem="iUM-em-NS6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ieD-Jl-kSD"/>
                 <constraint firstAttribute="trailing" secondItem="iUM-em-NS6" secondAttribute="trailing" constant="16" id="rnU-Kl-9Iy"/>
@@ -64,7 +57,4 @@
             <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
         </view>
     </objects>
-    <resources>
-        <image name="bakground" width="360" height="640"/>
-    </resources>
 </document>

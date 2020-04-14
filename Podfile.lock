@@ -4,6 +4,7 @@ PODS:
   - CRRefresh (1.1.3)
   - DropDown (2.3.4)
   - EFCountingLabel (5.1.1)
+  - EVURLCache (3.6.0)
   - Firebase/Analytics (6.21.0):
     - Firebase/Core
   - Firebase/Core (6.21.0):
@@ -135,6 +136,7 @@ DEPENDENCIES:
   - CRRefresh
   - DropDown (= 2.3.4)
   - EFCountingLabel
+  - EVURLCache
   - Firebase/Analytics
   - Firebase/Messaging
   - ImageSlideshow (~> 1.8.3)
@@ -165,6 +167,7 @@ SPEC REPOS:
     - CRRefresh
     - DropDown
     - EFCountingLabel
+    - EVURLCache
     - Firebase
     - FirebaseAnalytics
     - FirebaseAnalyticsInterop
@@ -210,6 +213,7 @@ SPEC CHECKSUMS:
   CRRefresh: 1415d4ae06837fa7bb064c44f2e102f3ef517044
   DropDown: f225ff0fd09dde064d17aa03db7e4d4e4ff40b6b
   EFCountingLabel: 605358591a67a3c92feb7ec32486bfab4a30e2c9
+  EVURLCache: 7696b630c32417e2c4c792bc1655f10c8ecc0148
   Firebase: f378c80340dd41c0ad0914af740c021eb282a04b
   FirebaseAnalytics: a1a0b3327ceb5cd5b4bacffdb293f6c909aa087d
   FirebaseAnalyticsInterop: 3f86269c38ae41f47afeb43ebf32a001f58fcdae
@@ -249,6 +253,6 @@ SPEC CHECKSUMS:
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
 
-PODFILE CHECKSUM: f9d4f3ee4705d3b47d482781fde7110317815f88
+PODFILE CHECKSUM: c670a4c4f0ed9c2ddb311801b541a066d6422bd2
 
 COCOAPODS: 1.9.1

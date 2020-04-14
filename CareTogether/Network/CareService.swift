@@ -18,6 +18,7 @@ public enum CareService{
     case storePhoneWithToken(String)
     case getCountForUser
     case getVideoNews
+    case getDoDontVideo
 }
 
 
@@ -28,7 +29,7 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
     
     
     public var baseURL: URL {
-        let BASE_URL = "https://ct.zacompany.dev/api"
+        let BASE_URL = ""
         return URL(string: BASE_URL)!
     }
     
@@ -42,7 +43,7 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
         case .storePhoneWithToken(_) : return "/firebase"
         case .getCountForUser : return "count-for-me"
         case .getVideoNews : return "videos"
-            
+        case .getDoDontVideo : return "do-and-dont"
         }
     }
     
@@ -56,6 +57,7 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
         case .storePhoneWithToken(_ ) : return .post
         case .getCountForUser : return .get
         case .getVideoNews : return .get
+        case .getDoDontVideo : return .get
         }
     }
     
@@ -92,6 +94,7 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
             return .requestParameters(parameters: p, encoding:URLEncoding.default )
             
         case .getVideoNews : return .requestPlain
+        case .getDoDontVideo : return .requestPlain
             
         }
         
@@ -100,7 +103,7 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
     public var headers: [String : String]? {
         var httpHeaders: [String: String] = [:]
         httpHeaders["Content-Type"] = "application/json"
-        httpHeaders["X-API-TOKEN"] = "2p8j3fen7kg5850y1b2abdy9a3exzq6c5"
+        httpHeaders["X-API-TOKEN"] = ""
         httpHeaders["Accept"] = "application/json"
         return httpHeaders
     }

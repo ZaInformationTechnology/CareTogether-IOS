@@ -87,6 +87,7 @@ class NewVc: UIViewController {
     
     @objc func changeNewList(){
         lyNewList.animatePress()
+        
         lyNewList.backgroundColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
         lyVideoList.backgroundColor = .white
         tbNew.isHidden = false
@@ -101,13 +102,14 @@ class NewVc: UIViewController {
             case .Loading :
                 if self.videoList.isEmpty {
                     self.showLoading(show: true)
-
+                    
                 }
             case .FetchNewVideosSuccess(let respone) :
                 self.showLoading(show: false)
                 self.bindDataToVideoList(data: respone.data)
             case .FetchNewVideosError :
                 self.showLoading(show: false)
+                self.showErrorMessageAlertWithClose(message: Const.instance.unknownError)
             default :
                 print("other")
             }
@@ -145,9 +147,11 @@ class NewVc: UIViewController {
     
     func initVideoTable(){
         tbVideo.delegate = self
-               tbVideo.dataSource = self
-               let cellNib = UINib(nibName: "VideoCell", bundle: nil)
+        tbVideo.dataSource = self
+        let cellNib = UINib(nibName: "VideoCell", bundle: nil)
         tbVideo.register(cellNib, forCellReuseIdentifier: "VCell")
+        tbVideo.estimatedRowHeight = 80.0
+        tbVideo.rowHeight = UITableView.automaticDimension
     }
     
     
@@ -201,7 +205,7 @@ extension NewVc : UITableViewDelegate, UITableViewDataSource {
             vc.videoId = self.videoList[indexPath.row].id
             self.present(vc, animated: true, completion:nil)
         }
-
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -209,17 +213,17 @@ extension NewVc : UITableViewDelegate, UITableViewDataSource {
         if tableView == tbNew {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CellRow", for: indexPath) as! NewCell
             cell.selectionStyle = .none
-                   cell.lbNew.text = newList[indexPath.row].title
-                   return cell
+            cell.lbNew.text = newList[indexPath.row].title
+            return cell
         }else if tableView == tbVideo {
             let cell = tableView.dequeueReusableCell(withIdentifier: "VCell", for: indexPath) as! VideoCell
-                       cell.selectionStyle = .none
-                             // cell.lbNew.text = newList[indexPath.row].title
+            cell.selectionStyle = .none
+            // cell.lbNew.text = newList[indexPath.row].title
             cell.lbTitle.text = videoList[indexPath.row].title
             cell.iv.kf.setImage(with: URL(string: videoList[indexPath.row].image)!)
-                              return cell
+            return cell
         }
         
-       return UITableViewCell()
+        return UITableViewCell()
     }
 }

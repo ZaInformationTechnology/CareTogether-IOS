@@ -1,0 +1,6 @@
+framework module EVURLCache {
+  umbrella header "EVURLCache-umbrella.h"
+
+  export *
+  module * { export * }
+}

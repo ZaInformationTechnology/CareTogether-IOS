@@ -47,6 +47,29 @@ class NewUseCase  : NewRepository {
               Engine.apiService.request(.getVideoNews) { (result) in
                   switch (result) {
                   case .failure(let error) :
+                      completion(.FetchNewVideosError)
+                      print("error new list \(error)")
+                  case .success(let response) :
+                      response.data.decode(completion: { (data) in
+                        completion(.FetchNewVideosSuccess(respone: data))
+                      }) { (error) in
+                          completion(.FetchNewVideosError)
+                      }
+                      print("new list respone \(response)")
+                      
+                  }
+              }
+          }else {
+              completion(NewState.FetchNewListError)
+          }
+      }
+      
+    func fetchDoDontVideo(completion: @escaping (NewState) -> Void) {
+          if Reachability.isConnectedToNetwork() {
+              completion(.Loading)
+              Engine.apiService.request(.getDoDontVideo) { (result) in
+                  switch (result) {
+                  case .failure(let error) :
                       completion(.FetchNewListError)
                       print("error new list \(error)")
                   case .success(let response) :
@@ -63,6 +86,7 @@ class NewUseCase  : NewRepository {
               completion(NewState.FetchNewListError)
           }
       }
+      
       
       
     

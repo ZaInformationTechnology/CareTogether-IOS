@@ -33,6 +33,7 @@ pod 'Firebase/Messaging'
   pod 'CRRefresh'
   pod 'Toast-Swift', '~> 5.0.1'
 pod 'YouTubePlayer'
+pod "EVURLCache"
 end
 
 
