@@ -99,6 +99,8 @@
 		EEF573ED243B814600977AF8 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF573EB243B814600977AF8 /* VideoCell.xib */; };
 		EEF573EF243B87E300977AF8 /* VideoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF573EE243B87E300977AF8 /* VideoResponse.swift */; };
 		EEF573F1243B8BDF00977AF8 /* YoutubeVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF573F0243B8BDF00977AF8 /* YoutubeVc.swift */; };
+		EEF6A49B245005AC00FB402D /* StatusWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A49A245005AC00FB402D /* StatusWebView.swift */; };
+		EEF6A49D2450083000FB402D /* ENV.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A49C2450083000FB402D /* ENV.swift */; };
 		EEFEE8092434D8EB00B8D072 /* GlobalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFEE8082434D8EB00B8D072 /* GlobalView.swift */; };
 		EEFEE80B2434D8F300B8D072 /* GlobalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFEE80A2434D8F300B8D072 /* GlobalView.xib */; };
 		EEFEE80D2434E64500B8D072 /* StaticCountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFEE80C2434E64500B8D072 /* StaticCountryResponse.swift */; };
@@ -226,6 +228,8 @@
 		EEF573EB243B814600977AF8 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
 		EEF573EE243B87E300977AF8 /* VideoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoResponse.swift; sourceTree = "<group>"; };
 		EEF573F0243B8BDF00977AF8 /* YoutubeVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVc.swift; sourceTree = "<group>"; };
+		EEF6A49A245005AC00FB402D /* StatusWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusWebView.swift; sourceTree = "<group>"; };
+		EEF6A49C2450083000FB402D /* ENV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENV.swift; sourceTree = "<group>"; };
 		EEFEE8082434D8EB00B8D072 /* GlobalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalView.swift; sourceTree = "<group>"; };
 		EEFEE80A2434D8F300B8D072 /* GlobalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GlobalView.xib; sourceTree = "<group>"; };
 		EEFEE80C2434E64500B8D072 /* StaticCountryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticCountryResponse.swift; sourceTree = "<group>"; };
@@ -315,6 +319,7 @@
 			children = (
 				EE3E6331243B4F840039BE4B /* AboutVcViewController.swift */,
 				EE3E6333243B558E0039BE4B /* TermVc.swift */,
+				EEF6A49A245005AC00FB402D /* StatusWebView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -619,6 +624,7 @@
 				EE695CFF2430D026008512E4 /* Reachability.swift */,
 				EE4ED24F24390AE800C63954 /* Const.swift */,
 				EE3E632E243B4DA70039BE4B /* AppNavigationController.swift */,
+				EEF6A49C2450083000FB402D /* ENV.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -971,6 +977,7 @@
 				EE3E632F243B4DA70039BE4B /* AppNavigationController.swift in Sources */,
 				EE3E6334243B558E0039BE4B /* TermVc.swift in Sources */,
 				EED1F2D22430854600B071C8 /* ChooseFontVc.swift in Sources */,
+				EEF6A49D2450083000FB402D /* ENV.swift in Sources */,
 				EE12FE4B2438BBD4009BD49B /* AnalyticsUseCase.swift in Sources */,
 				EED1F2CE2430854600B071C8 /* AppDelegate.swift in Sources */,
 				EE58227624339BCF00D25CA2 /* DataTableSearchTextField.swift in Sources */,
@@ -986,6 +993,7 @@
 				EED1F30E24308F7800B071C8 /* RoundCardView.swift in Sources */,
 				EE58228424339BCF00D25CA2 /* SwiftDataTableDataSourceAndDelegate.swift in Sources */,
 				EEF573EF243B87E300977AF8 /* VideoResponse.swift in Sources */,
+				EEF6A49B245005AC00FB402D /* StatusWebView.swift in Sources */,
 				EE58C06824325ED7002F9FAE /* CareService.swift in Sources */,
 				EE58228224339BCF00D25CA2 /* DataCellRowRepresentable.swift in Sources */,
 				EE58C06624325EB3002F9FAE /* Engine.swift in Sources */,

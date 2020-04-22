@@ -28,8 +28,7 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
     
     
     public var baseURL: URL {
-        let BASE_URL = ""
-        return URL(string: BASE_URL)!
+        return URL(string: ENV.instance.BASE_URL)!
     }
     
     public var path : String {
@@ -100,7 +99,7 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
     public var headers: [String : String]? {
         var httpHeaders: [String: String] = [:]
         httpHeaders["Content-Type"] = "application/json"
-        httpHeaders["X-API-TOKEN"] = ""
+        httpHeaders["X-API-TOKEN"] = ENV.instance.TOKEN
         httpHeaders["Accept"] = "application/json"
         return httpHeaders
     }

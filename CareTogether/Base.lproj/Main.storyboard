@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -325,7 +325,7 @@
                                             <action selector="countryCodeButtonClicked:" destination="tE9-6m-Bjo" eventType="touchUpInside" id="m3l-Mv-Zi5"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MM" translatesAutoresizingMaskIntoConstraints="NO" id="nfC-gC-ufV">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MM.png" translatesAutoresizingMaskIntoConstraints="NO" id="nfC-gC-ufV">
                                         <rect key="frame" x="8" y="8" width="70" height="39"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1245,12 +1245,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="xEI-4f-Mjf" kind="relationship" relationship="rootViewController" id="E7O-3u-4cD"/>
+                        <segue destination="2H5-fR-fP1" kind="relationship" relationship="rootViewController" id="VHf-Xy-Gyd"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TzV-uB-CBR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1438" y="1084"/>
+            <point key="canvasLocation" x="1877" y="1130"/>
         </scene>
         <!--New Detail Vc-->
         <scene sceneID="xVH-RX-QJ3">
@@ -1850,7 +1850,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RD8-hl-GlY">
-                                                        <rect key="frame" x="16" y="9" width="30" height="29"/>
+                                                        <rect key="frame" x="16" y="9" width="30" height="28.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="fVx-43-TTh"/>
                                                             <constraint firstAttribute="width" constant="30" id="rHQ-6j-5z2"/>
@@ -1896,10 +1896,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocZ-c3-WSc" userLabel="LyGlobalScrollView">
-                                <rect key="frame" x="0.0" y="155.5" width="414" height="861.5"/>
+                                <rect key="frame" x="0.0" y="155.5" width="414" height="910.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcN-ar-D7H" customClass="GlobalView" customModule="CareTogether" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="861.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="910.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
@@ -1915,7 +1915,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="HM2-PV-dCE"/>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arI-K0-rHL" userLabel="Ly Myanmar Scroll View">
-                                <rect key="frame" x="0.0" y="155.5" width="414" height="861.5"/>
+                                <rect key="frame" x="0.0" y="155.5" width="414" height="910.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekf-32-BHL">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="801.5"/>
@@ -2336,14 +2336,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPO-Q2-k0u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2273.913043478261" y="1130.3571428571429"/>
+            <point key="canvasLocation" x="2233" y="1488"/>
         </scene>
         <!--Full Information Vc-->
         <scene sceneID="emh-I1-uiN">
             <objects>
                 <viewController storyboardIdentifier="FullInformationVc" id="bWV-nb-Ipa" customClass="FullInformationVc" customModule="CareTogether" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jeb-fy-tA0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgh-sj-WnT" customClass="DetailToolbar" customModule="CareTogether" customModuleProvider="target">
@@ -2354,7 +2354,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Gh-Nb-ZAO" customClass="RoundCardView" customModule="CareTogether" customModuleProvider="target">
-                                <rect key="frame" x="8" y="98" width="398" height="707"/>
+                                <rect key="frame" x="8" y="98" width="398" height="702"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -2378,7 +2378,72 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jBn-B8-Efk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2976.811594202899" y="1063.3928571428571"/>
+            <point key="canvasLocation" x="3003" y="1441"/>
+        </scene>
+        <!--Status Web View-->
+        <scene sceneID="heV-WK-ZlM">
+            <objects>
+                <viewController id="2H5-fR-fP1" customClass="StatusWebView" customModule="CareTogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aIu-xA-JqP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bakground" translatesAutoresizingMaskIntoConstraints="NO" id="DcP-7I-SrA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRT-3D-3RZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NCw-FC-3rb">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ဒေတာများရယူမှုမအောင်မြင်ပါ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnC-jf-ycV">
+                                        <rect key="frame" x="16" y="413.5" width="382" height="30"/>
+                                        <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="wnC-jf-ycV" firstAttribute="leading" secondItem="5oZ-Sa-eVL" secondAttribute="leading" constant="16" id="MGZ-5x-j1Z"/>
+                                    <constraint firstItem="wnC-jf-ycV" firstAttribute="centerX" secondItem="5oZ-Sa-eVL" secondAttribute="centerX" id="a8L-MH-zRG"/>
+                                    <constraint firstItem="5oZ-Sa-eVL" firstAttribute="trailing" secondItem="NCw-FC-3rb" secondAttribute="trailing" id="boC-8z-Tec"/>
+                                    <constraint firstItem="NCw-FC-3rb" firstAttribute="leading" secondItem="5oZ-Sa-eVL" secondAttribute="leading" id="ffE-ga-lJb"/>
+                                    <constraint firstItem="5oZ-Sa-eVL" firstAttribute="bottom" secondItem="NCw-FC-3rb" secondAttribute="bottom" id="lrU-L9-Ta3"/>
+                                    <constraint firstItem="5oZ-Sa-eVL" firstAttribute="trailing" secondItem="wnC-jf-ycV" secondAttribute="trailing" constant="16" id="oAh-K3-gP5"/>
+                                    <constraint firstItem="wnC-jf-ycV" firstAttribute="centerY" secondItem="5oZ-Sa-eVL" secondAttribute="centerY" id="pG9-ib-g6v"/>
+                                    <constraint firstItem="NCw-FC-3rb" firstAttribute="top" secondItem="5oZ-Sa-eVL" secondAttribute="top" id="vEA-gc-r57"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="5oZ-Sa-eVL"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DcP-7I-SrA" firstAttribute="top" secondItem="aIu-xA-JqP" secondAttribute="top" id="7kk-GJ-SJ8"/>
+                            <constraint firstAttribute="trailing" secondItem="DcP-7I-SrA" secondAttribute="trailing" id="EFW-jQ-BsO"/>
+                            <constraint firstItem="iRT-3D-3RZ" firstAttribute="top" secondItem="aIu-xA-JqP" secondAttribute="top" id="FDy-Ug-gBe"/>
+                            <constraint firstAttribute="trailing" secondItem="iRT-3D-3RZ" secondAttribute="trailing" id="Q1n-hX-rup"/>
+                            <constraint firstAttribute="bottom" secondItem="iRT-3D-3RZ" secondAttribute="bottom" id="WYj-jU-hvU"/>
+                            <constraint firstItem="iRT-3D-3RZ" firstAttribute="leading" secondItem="aIu-xA-JqP" secondAttribute="leading" id="XGq-1H-cXC"/>
+                            <constraint firstAttribute="bottom" secondItem="DcP-7I-SrA" secondAttribute="bottom" id="Ywi-MH-qer"/>
+                            <constraint firstItem="DcP-7I-SrA" firstAttribute="leading" secondItem="aIu-xA-JqP" secondAttribute="leading" id="hf2-Kd-cI7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9I3-47-QWw"/>
+                    <connections>
+                        <outlet property="lbError" destination="wnC-jf-ycV" id="h8H-Pp-l9E"/>
+                        <outlet property="webView" destination="NCw-FC-3rb" id="Sns-N9-UkW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g9q-mZ-cle" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3671.0144927536235" y="1062.7232142857142"/>
         </scene>
         <!--Term Vc-->
         <scene sceneID="imF-UA-e8E">
@@ -2458,12 +2523,13 @@
     </scenes>
     <resources>
         <image name="MM" width="400" height="266.5"/>
+        <image name="MM.png" width="256" height="170.5"/>
         <image name="back" width="25" height="16.5"/>
         <image name="bakground" width="360" height="640"/>
         <image name="check" width="24" height="24"/>
         <image name="dropdown_arrow" width="24" height="24"/>
         <image name="expand" width="21.5" height="21.5"/>
-        <image name="globe" catalog="system" width="64" height="62"/>
+        <image name="globe" catalog="system" width="128" height="121"/>
         <image name="healthorganization" width="129" height="129.5"/>
         <image name="ic_close" width="24" height="24"/>
         <image name="ic_goal" width="28" height="28"/>
@@ -2474,7 +2540,7 @@
         <image name="ic_uni" width="35.5" height="36"/>
         <image name="ic_video" width="256" height="256"/>
         <image name="ic_zg" width="58" height="58"/>
-        <image name="info.circle" catalog="system" width="64" height="62"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="logo" width="170.5" height="170.5"/>
         <image name="mask" width="25" height="25"/>
         <image name="next" width="25" height="16.5"/>
