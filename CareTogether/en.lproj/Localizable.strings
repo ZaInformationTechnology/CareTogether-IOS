@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  CareTogether
+
+  Created by CodigoHeinHtet on 19/04/2020.
+  Copyright © 2020 HEINHTET. All rights reserved.
+*/
+
+"dashboard_title" = "Dashboard for VIRUS";
+"dashboard_info_with_touch_people" = "CareTogether ကွန်ယက်အတွင်းမှ သုံးစွဲသူများနှင့် ချိတ်ဆက်ထားခြင်းမရှိသေးပါ။";
+"dashboard_info_for_description"  = "CareTogegher မှ သင့်ဖုန်းထဲမှာ မှတ်သားထားသောအချက်များအရ ရောဂါပိုးရှိသူနှင့်နီးစပ်(ထိတွေ့) ခဲ့ဖူးခြင်းမရှိသေးပါ။ \n  \n  အကယ်၍ သင်နှင့်ချိတ်ဆက်ထားဖူးသူတဦးဦးမှ အတည်ပြုလူနာဖြစ်သွားပါက ဒီနေရာတွင်သတိပေးအကြောင်းကြားပေးသွားမည်။ \n \n ယခုအခြေအနေကို ထိန်းသိမ်းထားရန် အတတ်နိုင်ဆုံး သင့်အိမ်တွင်နေထိုင်နိုင်ရန် တိုက်တွန်းအပ်ပါသည်။ ";
+
+"dashboard_info_with_touched_people" = "CareTogether ကွန်ယက်အတွင်းမှ သုံးစွဲသူများထဲမှ ဖုန်း (%@) လုံး နှင့်ချိတ်ဆက်ထားပီးဖြစ်ပါသည်။ English";
+"dashboard_warning_info_title" = "သင့်နှင့်ချိတ်ဆက်ထားဖူးသည့် သူများအတွင်းတွင် လူနာအဖြစ် သတ်မှတ်ခံထားရသူ (%@) ဦးတွေ့ရှိထားပါသည်။ English";
+"dashboard_normal_warning_title" = "သတိ English";
+"dashboard_normal_message"  = "သင်နှင့်သင့်ပတ်၀န်းကျင်သို့ ရောဂါပိုးမရောက်ရှိစေရန်အတွက် နေအိမ်အတွင်းသာနေထိုင်နိုင်ရန် အထူးလိုအပ်နေပါပြီ။ English";
+
+"dashboard_warning_message" = "၁။ အိမ်တွင်လုံခြုံစွာနေခြင်းဖြင့် ရောဂါပိုးမပြန့်နှံ့အောင်ကူညီပါ။\n ၂။ မဖြစ်မနေ အပြင်ထွက်ရမည်ဆိုပါက Mask တပ်ပြီးမှထွက်ပါ။\n ၃။ ကျန်းမာရေးနှင့်အားကစားဝန်ကြီးဌာနမှ လမ်းညွှန်ချက်များအတိုင်း သေချာလိုက်နာဆောင်ရွက်ပါ။ \n ၄။ ရောဂါအခြေအနေပြင်းထန်ပါက ဖုန်း <u>၀၆၇-၃၄၂၀၂၆၈</u> သို့ ဆက်သွယ် အကြောင်းကြားပါရန် English" ;
+"text_app_info"  = "App Info";
+"text_term" = " Term and Condition";
+"tab1" = "Account";
+"tab2" = "News";
+"tab3"  = "Dos and Dont's";
+"tab4" = "Status";
+"tab5" = "Emergency Contact";
+"text_loading" = "Loading";
+
+"text_loading" = "Loading";
+"permission_error_alert_message" = "App သုံးသူအချင်းချင်း ချိတ်ဆက်မှတ်သားနိုင်ရန်အတွက် Bluetooth / GPS များဖွင့်ထားရန် လိုအပ်နေပါသည်။";
+"text_share_current_health_title" = "လက်ရှိကျန်းမာရေးအခြေအနေများကိုမျှ ေ၀မည်";

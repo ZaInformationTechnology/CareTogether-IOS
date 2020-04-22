@@ -11,7 +11,7 @@ import CoreData
 import IQKeyboardManager
 import Firebase
 import FirebaseMessaging
-import EVURLCache
+import Localize_Swift
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,MessagingDelegate {
     
@@ -33,9 +33,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MessagingDelegate {
         application.isIdleTimerDisabled = true
         FirebaseApp.configure()
         Messaging.messaging().delegate = self
-        EVURLCache.LOGGING = true // We want to see all caching actions
-        EVURLCache.MAX_FILE_SIZE = 26 // We want more than the default: 2^26 = 64MB
-        EVURLCache.MAX_CACHE_SIZE = 30 // We want more than the default: 2^30 = 1GB
+       
+        
+        let currentLng = Store.instance.getCurrentLanguage()
+        if(currentLng == nil){
+            Store.instance.setCurrentLanguage(loginResponse: LocaleModel(locale: "mm", name: "Myanmar"))
+            Localize.setCurrentLanguage("my")
+        }
+        
         return true
     }
     

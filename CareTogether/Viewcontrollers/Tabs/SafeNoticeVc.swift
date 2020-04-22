@@ -51,6 +51,9 @@ class SafeNoticeVc: UIViewController {
     }
     
     
+    
+    
+    
     @objc func goRealNewVc(){
         lyRealNew.animatePress()
         lyRealNew.animatePress()

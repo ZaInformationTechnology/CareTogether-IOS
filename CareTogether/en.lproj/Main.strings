@@ -1,0 +1,276 @@
+
+/* Class = "UILabel"; text = "မြန်မာယူနီကုဒ်"; ObjectID = "0Vs-4s-nvz"; */
+"0Vs-4s-nvz.text" = "မြန်မာယူနီကုဒ်";
+
+/* Class = "UILabel"; text = "၀"; ObjectID = "1ld-A7-Ei6"; */
+"1ld-A7-Ei6.text" = "၀";
+
+/* Class = "UITabBarItem"; title = "ဆောင်ရန်/ရှောင်ရန်"; ObjectID = "3W2-r6-ajG"; */
+"3W2-r6-ajG.title" = "ဆောင်ရန်/ရှောင်ရန်";
+
+/* Class = "UILabel"; text = "0/14"; ObjectID = "3aA-ca-ov5"; */
+"3aA-ca-ov5.text" = "0/14";
+
+/* Class = "UILabel"; text = "သေဆုံး"; ObjectID = "46D-sC-oBM"; */
+"46D-sC-oBM.text" = "သေဆုံး";
+
+/* Class = "UILabel"; text = "https://who.int/"; ObjectID = "4M7-jo-vCd"; */
+"4M7-jo-vCd.text" = "https://who.int/";
+
+/* Class = "UILabel"; text = "ယခုအခါ ၀ူဟန် ဗိုင်းရပ်စ်  ရောဂါနှင့်ပတ်သက်၍ ပြည်သူများ အထိတ်တလန့်ဖြစ်စေရန်ရည်ရွယ်ပီး သတင်းစာမျက်နှာအတုများ Facebook Page အတုများမှ တဆင့် သတင်းအမှားများကိုဖြန့် လျက်ရှိပါသောကြေင့် အောက်ဖော်ပြပါ သတင်းစာမျက်နှာများ နှင့် Facebook Page များမှသတင်းအမှန်များကိုစသာယုံကြည့်ကြပါရန် အသိပေးအပ်ပါသည်။"; ObjectID = "4ZK-nc-z1t"; */
+"4ZK-nc-z1t.text" = "ယခုအခါ ၀ူဟန် ဗိုင်းရပ်စ်  ရောဂါနှင့်ပတ်သက်၍ ပြည်သူများ အထိတ်တလန့်ဖြစ်စေရန်ရည်ရွယ်ပီး သတင်းစာမျက်နှာအတုများ Facebook Page အတုများမှ တဆင့် သတင်းအမှားများကိုဖြန့် လျက်ရှိပါသောကြေင့် အောက်ဖော်ပြပါ သတင်းစာမျက်နှာများ နှင့် Facebook Page များမှသတင်းအမှန်များကိုစသာယုံကြည့်ကြပါရန် အသိပေးအပ်ပါသည်။";
+
+/* Class = "UILabel"; text = "https://www.fb.com/ministryofhealthandsportsmyanmar"; ObjectID = "5cq-to-ZYq"; */
+"5cq-to-ZYq.text" = "https://www.fb.com/ministryofhealthandsportsmyanmar";
+
+/* Class = "UITextField"; placeholder = "Phone"; ObjectID = "6OM-qK-2Hb"; */
+"6OM-qK-2Hb.placeholder" = "Phone";
+
+/* Class = "UILabel"; text = "ဗီဒီယိုများ"; ObjectID = "6Oy-Lb-mpQ"; */
+"6Oy-Lb-mpQ.text" = "ဗီဒီယိုများ";
+
+/* Class = "UILabel"; text = "သင်နှင့်သင့်ပတ်၀န်းကျင်သို့ ရောဂါပိုးမရောက်ရှိစေရန်အတွက် နေအိမ်အတွင်းသာနေထိုင်နိုင်ရန် အထူးလိုအပ်နေပါပြီ။"; ObjectID = "6VQ-JH-snC"; */
+"6VQ-JH-snC.text" = "သင်နှင့်သင့်ပတ်၀န်းကျင်သို့ ရောဂါပိုးမရောက်ရှိစေရန်အတွက် နေအိမ်အတွင်းသာနေထိုင်နိုင်ရန် အထူးလိုအပ်နေပါပြီ။";
+
+/* Class = "UILabel"; text = "ကျန်းမားရေးနှင့်အားကစား၀န်ကြီးဌာန"; ObjectID = "7Ac-OK-5mV"; */
+"7Ac-OK-5mV.text" = "ကျန်းမားရေးနှင့်အားကစား၀န်ကြီးဌာန";
+
+/* Class = "UILabel"; text = "သံသယလူနာ"; ObjectID = "7IO-6d-cyG"; */
+"7IO-6d-cyG.text" = "သံသယလူနာ";
+
+/* Class = "UILabel"; text = "09-449001261 , 09-794510057"; ObjectID = "8NM-k0-EAk"; */
+"8NM-k0-EAk.text" = "09-449001261 , 09-794510057";
+
+/* Class = "UILabel"; text = "https://www.fb.com/myanmarcdc"; ObjectID = "8Zt-JQ-tz0"; */
+"8Zt-JQ-tz0.text" = "https://www.fb.com/myanmarcdc";
+
+/* Class = "UILabel"; text = "Care Together"; ObjectID = "9WT-Bk-F0z"; */
+"9WT-Bk-F0z.text" = "Care Together";
+
+/* Class = "UILabel"; text = "Care Together"; ObjectID = "ATc-Mm-QFj"; */
+"ATc-Mm-QFj.text" = "Care Together";
+
+/* Class = "UILabel"; text = "ကနဦး ဝူဟမ်ဗိုင်းရပ်စ် စတင်ရောက်ရှိခဲ့သော စင်္ကာပူနိုင်ငံ၏ အစိုးရမှဖန်တီးထားသော traceTogether mobile application အားအသုံးပြု၍ contact-tracing အတွက်ဖြေရှင်းထားသည်ကိုတွေ့ရှိရပါသည်။  ထိုနည်းတူစွာ တခြားနိုင်ငံအသီးသီးသည်လည်း နည်းပညာသုံးပြု၍ ဖြေရှင်းနေသည်ကိုတွေ့ရှိရပါသည်။ ကျွန်ုပ်တို့မြန်မာနိုင်ငံတွင်လဲ အချင်းချင်းပူးပေါင်းပါဝင်ဆောင်ရွက်နိုင်ခြင်းဖြင့် ဝူဟမ်ဗိုင်းရပ်စ်အားကျော်လွှားနိုင်ရန် အကူအညီတစ်ခုရနိုင်မည့် ဤစနစ်အား Za Information Technologoy Co.,ltd ၏ CTO မှ စိတ်ကူးရရှိ၍ စတင်အကောင်အထည်ဖော်ခဲ့ကြပါသည်။"; ObjectID = "DXi-3f-nuu"; */
+"DXi-3f-nuu.text" = "ကနဦး ဝူဟမ်ဗိုင်းရပ်စ် စတင်ရောက်ရှိခဲ့သော စင်္ကာပူနိုင်ငံ၏ အစိုးရမှဖန်တီးထားသော traceTogether mobile application အားအသုံးပြု၍ contact-tracing အတွက်ဖြေရှင်းထားသည်ကိုတွေ့ရှိရပါသည်။  ထိုနည်းတူစွာ တခြားနိုင်ငံအသီးသီးသည်လည်း နည်းပညာသုံးပြု၍ ဖြေရှင်းနေသည်ကိုတွေ့ရှိရပါသည်။ ကျွန်ုပ်တို့မြန်မာနိုင်ငံတွင်လဲ အချင်းချင်းပူးပေါင်းပါဝင်ဆောင်ရွက်နိုင်ခြင်းဖြင့် ဝူဟမ်ဗိုင်းရပ်စ်အားကျော်လွှားနိုင်ရန် အကူအညီတစ်ခုရနိုင်မည့် ဤစနစ်အား Za Information Technologoy Co.,ltd ၏ CTO မှ စိတ်ကူးရရှိ၍ စတင်အကောင်အထည်ဖော်ခဲ့ကြပါသည်။";
+
+/* Class = "UILabel"; text = "သတိ"; ObjectID = "EKa-M6-SDo"; */
+"EKa-M6-SDo.text" = "သတိ";
+
+/* Class = "UILabel"; text = "Supported by Za Information Co., Ltd. Care Together Version 1"; ObjectID = "EaV-Z6-71w"; */
+"EaV-Z6-71w.text" = "Supported by Za Information Co., Ltd. Care Together Version 1";
+
+/* Class = "UILabel"; text = "Za Information Technology Co.,Ltd. ၏ နည်းပညာရှင် /ဆော့ဖ်ဝဲ အင်ဂျင်နီယာများမှ တာဝန်ယူ၍ စေတနာ့ဝန်ထမ်းအဖြစ် အကောင်အထည်ဖော်ဆောင်ရွက်ခဲ့ပါသည်။"; ObjectID = "Eda-t5-ei5"; */
+"Eda-t5-ei5.text" = "Za Information Technology Co.,Ltd. ၏ နည်းပညာရှင် /ဆော့ဖ်ဝဲ အင်ဂျင်နီယာများမှ တာဝန်ယူ၍ စေတနာ့ဝန်ထမ်းအဖြစ် အကောင်အထည်ဖော်ဆောင်ရွက်ခဲ့ပါသည်။";
+
+/* Class = "UILabel"; text = "Supported by Za Information Co., Ltd. Care Together Version 1"; ObjectID = "FHP-Ge-XGg"; */
+"FHP-Ge-XGg.text" = "Supported by Za Information Co., Ltd. Care Together Version 1";
+
+/* Class = "UILabel"; text = "Sureillance Dashboard (Myanmar ) 2020"; ObjectID = "Fbq-D7-X4P"; */
+"Fbq-D7-X4P.text" = "Sureillance Dashboard (Myanmar ) 2020";
+
+/* Class = "UILabel"; text = "0-799983833"; ObjectID = "Fdu-Jo-3o3"; */
+"Fdu-Jo-3o3.text" = "0-799983833";
+
+/* Class = "UILabel"; text = "သင့်နှင့်သင့်မိသားစု၊ သင့်ပတ်၀န်းကျင်အတွက် ဗိုင်းရပ်စ် အနရာယ်ကာကွယ်ေစာင့်ရှောက်မှုတွင်ပါ၀င်ကူညီနိုင်ရန်လိုအပ်နေပါသည်။"; ObjectID = "GfZ-GE-gkm"; */
+"GfZ-GE-gkm.text" = "သင့်နှင့်သင့်မိသားစု၊ သင့်ပတ်၀န်းကျင်အတွက် ဗိုင်းရပ်စ် အနရာယ်ကာကွယ်ေစာင့်ရှောက်မှုတွင်ပါ၀င်ကူညီနိုင်ရန်လိုအပ်နေပါသည်။";
+
+/* Class = "UILabel"; text = "တည်နေရာပေါ်မူတည်၍နီးစပ်ဖူးသူမရှိပါ"; ObjectID = "GzK-Qm-0uR"; */
+"GzK-Qm-0uR.text" = "တည်နေရာပေါ်မူတည်၍နီးစပ်ဖူးသူမရှိပါ";
+
+/* Class = "UILabel"; text = "နည်းပညာပံ့ပေးမှု"; ObjectID = "HQi-zw-uun"; */
+"HQi-zw-uun.text" = "နည်းပညာပံ့ပေးမှု";
+
+/* Class = "UILabel"; text = "တည်နေရာပေါ်မူတည်၍နီးစပ်ဖူးသူမရှိပါ"; ObjectID = "IXo-s4-VT5"; */
+"IXo-s4-VT5.text" = "တည်နေရာပေါ်မူတည်၍နီးစပ်ဖူးသူမရှိပါ";
+
+/* Class = "UILabel"; text = "နိုင်ငံတကာ"; ObjectID = "IXs-7n-qrC"; */
+"IXs-7n-qrC.text" = "နိုင်ငံတကာ";
+
+/* Class = "UILabel"; text = "၀"; ObjectID = "Ikn-AI-Omb"; */
+"Ikn-AI-Omb.text" = "၀";
+
+/* Class = "UILabel"; text = "http://mohs.gov.mm/"; ObjectID = "Isv-pR-HcZ"; */
+"Isv-pR-HcZ.text" = "http://mohs.gov.mm/";
+
+/* Class = "UILabel"; text = "စောင့်ကြည့်လူနာ"; ObjectID = "KO8-1I-NkI"; */
+"KO8-1I-NkI.text" = "စောင့်ကြည့်လူနာ";
+
+/* Class = "UILabel"; text = "ကိုယ်ပိုင် ဗိုင်းရပ်စ်စောင့်ကြည့်ခန်း"; ObjectID = "M0a-7C-8Sj"; */
+"M0a-7C-8Sj.text" = "ကိုယ်ပိုင် ဗိုင်းရပ်စ်စောင့်ကြည့်ခန်း";
+
+/* Class = "UILabel"; text = "ဤ Application သည် ကိုရိုနာဗိုင်းရပ်စ် ကူးစက် ပြန့်ပွားမှုလျှော့ချရေး လုပ်ငန်းစဥ်အား အထောက် အကူပြုစေရန် ရည်ရွယ်၍ ပြုလုပ်ဖန်တီးထားခြင်း ဖြစ်ပါသည်။\nဗိုင်းရပ်စ် ကူးစက်ခံရသူ လူနာနှင့် အနီးကပ် အတူရှိခဲ့ဖူးသော သူများအား အချိန်မှီ ကြိုတင်၍ သတိပေး ကာကွယ်နိုင်စေရန် အတွက် အထူးအလေးထားကာ အကောင်အထည်ဖော်ဆောင်ရွက်ခြင်းဖြစ်ပါသည်။"; ObjectID = "MmU-C2-uGS"; */
+"MmU-C2-uGS.text" = "ဤ Application သည် ကိုရိုနာဗိုင်းရပ်စ် ကူးစက် ပြန့်ပွားမှုလျှော့ချရေး လုပ်ငန်းစဥ်အား အထောက် အကူပြုစေရန် ရည်ရွယ်၍ ပြုလုပ်ဖန်တီးထားခြင်း ဖြစ်ပါသည်။\nဗိုင်းရပ်စ် ကူးစက်ခံရသူ လူနာနှင့် အနီးကပ် အတူရှိခဲ့ဖူးသော သူများအား အချိန်မှီ ကြိုတင်၍ သတိပေး ကာကွယ်နိုင်စေရန် အတွက် အထူးအလေးထားကာ အကောင်အထည်ဖော်ဆောင်ရွက်ခြင်းဖြစ်ပါသည်။";
+
+/* Class = "UILabel"; text = "၀"; ObjectID = "MpS-WG-iQX"; */
+"MpS-WG-iQX.text" = "၀";
+
+/* Class = "UILabel"; text = "၀"; ObjectID = "NAk-hz-blq"; */
+"NAk-hz-blq.text" = "၀";
+
+/* Class = "UILabel"; text = "Health Quarantine Unit (Yangon International)"; ObjectID = "NQW-Gg-aNb"; */
+"NQW-Gg-aNb.text" = "Health Quarantine Unit (Yangon International)";
+
+/* Class = "UILabel"; text = "တရား၀င်အကောင်အထည်ဖော်ဆောင်နိုင်ရန် [ ကြိုးစားနေခြင်း ]"; ObjectID = "OJK-jX-M0N"; */
+"OJK-jX-M0N.text" = "တရား၀င်အကောင်အထည်ဖော်ဆောင်နိုင်ရန် [ ကြိုးစားနေခြင်း ]";
+
+/* Class = "UILabel"; text = "သတင်းများ"; ObjectID = "PHK-ir-YY1"; */
+"PHK-ir-YY1.text" = "သတင်းများ";
+
+/* Class = "UITabBarItem"; title = "အကောင့်"; ObjectID = "PbY-8A-QEe"; */
+"PbY-8A-QEe.title" = "အကောင့်";
+
+/* Class = "UILabel"; text = "Regional Development of Public Health(Yangon)"; ObjectID = "QEe-Rc-fqK"; */
+"QEe-Rc-fqK.text" = "Regional Development of Public Health(Yangon)";
+
+/* Class = "UILabel"; text = "App ပြုလုပ်ရခြင်းရည်ရွယ်ချက်"; ObjectID = "QGi-Ne-zpF"; */
+"QGi-Ne-zpF.text" = "App ပြုလုပ်ရခြင်းရည်ရွယ်ချက်";
+
+/* Class = "UILabel"; text = "၀"; ObjectID = "Qeo-QI-EJJ"; */
+"Qeo-QI-EJJ.text" = "၀";
+
+/* Class = "UILabel"; text = "အကြံညဏ်"; ObjectID = "SBi-ET-x17"; */
+"SBi-ET-x17.text" = "အကြံညဏ်";
+
+/* Class = "UILabel"; text = "၀"; ObjectID = "Tfq-uX-GWk"; */
+"Tfq-uX-GWk.text" = "၀";
+
+/* Class = "UILabel"; text = "စောင့်ကြည့်/သံသယလူနာ"; ObjectID = "TqU-cd-eZh"; */
+"TqU-cd-eZh.text" = "စောင့်ကြည့်/သံသယလူနာ";
+
+/* Class = "UILabel"; text = "တိုင်းဒေသကြီး/ပြည်နယ်များအရ ဆက်သွယ်နိင်မည့်ဖုန်းနံပါတ်များကို ဖော်ပြပေးထားပါသည်"; ObjectID = "Ubh-DC-udb"; */
+"Ubh-DC-udb.text" = "တိုင်းဒေသကြီး/ပြည်နယ်များအရ ဆက်သွယ်နိင်မည့်ဖုန်းနံပါတ်များကို ဖော်ပြပေးထားပါသည်";
+
+/* Class = "UIButton"; normalTitle = "  App အကြောင်း"; ObjectID = "WLy-v6-R6C"; */
+"WLy-v6-R6C.normalTitle" = "  App အကြောင်း";
+
+/* Class = "UIButton"; normalTitle = "  အချက်အလက်ဆိုင်ရာမူဝါ​ဒ"; ObjectID = "WTY-uV-CwX"; */
+"WTY-uV-CwX.normalTitle" = "  အချက်အလက်ဆိုင်ရာမူဝါ​ဒ";
+
+/* Class = "UILabel"; text = "ပြန်လည်ကောင်းမွန်"; ObjectID = "WVf-1E-fPa"; */
+"WVf-1E-fPa.text" = "ပြန်လည်ကောင်းမွန်";
+
+/* Class = "UILabel"; text = "သတင်းများ"; ObjectID = "WkU-76-eIR"; */
+"WkU-76-eIR.text" = "သတင်းများ";
+
+/* Class = "UILabel"; text = "အရေးပေါ်ဆက်သွယ်ရန်ဖုန်းများ"; ObjectID = "ZrJ-VD-VO5"; */
+"ZrJ-VD-VO5.text" = "အရေးပေါ်ဆက်သွယ်ရန်ဖုန်းများ";
+
+/* Class = "UIButton"; normalTitle = "ပါ၀င်ကူညီပါမည်"; ObjectID = "aIz-Pk-5c7"; */
+"aIz-Pk-5c7.normalTitle" = "ပါ၀င်ကူညီပါမည်";
+
+/* Class = "UILabel"; text = "ဓာတ်ခွဲခန်းအဖြေစောင့်ဆိုင်း"; ObjectID = "auW-KF-r7T"; */
+"auW-KF-r7T.text" = "ဓာတ်ခွဲခန်းအဖြေစောင့်ဆိုင်း";
+
+/* Class = "UILabel"; text = "ဘာသာစကားပြောင်းလဲရန်"; ObjectID = "bL2-JM-qhS"; */
+"bL2-JM-qhS.text" = "ဘာသာစကားပြောင်းလဲရန်";
+
+/* Class = "UIButton"; normalTitle = "  App အကြောင်း"; ObjectID = "cSx-1h-5Rt"; */
+"cSx-1h-5Rt.normalTitle" = "  App အကြောင်း";
+
+/* Class = "UILabel"; text = "မြန်မာ"; ObjectID = "ca5-wF-krY"; */
+"ca5-wF-krY.text" = "မြန်မာ";
+
+/* Class = "UILabel"; text = "Care Together"; ObjectID = "ccC-sx-REu"; */
+"ccC-sx-REu.text" = "Care Together";
+
+/* Class = "UILabel"; text = "သတိ"; ObjectID = "dtT-jL-xGO"; */
+"dtT-jL-xGO.text" = "သတိ";
+
+/* Class = "UILabel"; text = "Regional Development of Public Health(Mandalay)"; ObjectID = "e89-Vk-I8D"; */
+"e89-Vk-I8D.text" = "Regional Development of Public Health(Mandalay)";
+
+/* Class = "UILabel"; text = "၀"; ObjectID = "eT0-99-z64"; */
+"eT0-99-z64.text" = "၀";
+
+/* Class = "UILabel"; text = "ကိုယ်ပိုင် ဗိုင်းရပ်စ်စောင့်ကြည့်ခန်း"; ObjectID = "eW9-vn-7Fc"; */
+"eW9-vn-7Fc.text" = "ကိုယ်ပိုင် ဗိုင်းရပ်စ်စောင့်ကြည့်ခန်း";
+
+/* Class = "UIButton"; normalTitle = "ရွေးချယ်မည်"; ObjectID = "fhm-cj-NGK"; */
+"fhm-cj-NGK.normalTitle" = "ရွေးချယ်မည်";
+
+/* Class = "UILabel"; text = "ဗိုင်းရပ်ပိုး တွေ့လူနာများနှင့်အနီးကပ်ထိတွေ့ဆက်ဆံမှုရှိပါကဆက်သွယ်သတင်းပေးပိုနိုင်ရန် ဖုန်းနံပါတ်များ"; ObjectID = "fy1-bW-gdS"; */
+"fy1-bW-gdS.text" = "ဗိုင်းရပ်ပိုး တွေ့လူနာများနှင့်အနီးကပ်ထိတွေ့ဆက်ဆံမှုရှိပါကဆက်သွယ်သတင်းပေးပိုနိုင်ရန် ဖုန်းနံပါတ်များ";
+
+/* Class = "UILabel"; text = "ဇော်ကျီ (သို့) ယူနီကုဒ် တစ်ခုခုကိုရွေးချယ်ပေးပါ။"; ObjectID = "ga7-oS-srg"; */
+"ga7-oS-srg.text" = "ဇော်ကျီ (သို့) ယူနီကုဒ် တစ်ခုခုကိုရွေးချယ်ပေးပါ။";
+
+/* Class = "UILabel"; text = "(၁) အသုံးပြုသူ ၏ ဖုန်းတွင်း၌ ထည့်သွင်းထားသော အချက်အလက်များအား Encrypt ပြုလုပ်ထားသောကြောင့် သက်ဆိုင်ရာ ကျန်းမာရေးဝန်ကြီးဌာရှိ ထိန်းချုပ် နည်းပညာစနစ်ဖြင့်သာ ဖတ်ရှု့ စစ်ဆေးခွင့်ရှိစေရန် စီစဥ်ဆောင်ရွက်ထားပါသည်။"; ObjectID = "gg1-90-2K2"; */
+"gg1-90-2K2.text" = "(၁) အသုံးပြုသူ ၏ ဖုန်းတွင်း၌ ထည့်သွင်းထားသော အချက်အလက်များအား Encrypt ပြုလုပ်ထားသောကြောင့် သက်ဆိုင်ရာ ကျန်းမာရေးဝန်ကြီးဌာရှိ ထိန်းချုပ် နည်းပညာစနစ်ဖြင့်သာ ဖတ်ရှု့ စစ်ဆေးခွင့်ရှိစေရန် စီစဥ်ဆောင်ရွက်ထားပါသည်။";
+
+/* Class = "UILabel"; text = "၀"; ObjectID = "iSb-41-tIc"; */
+"iSb-41-tIc.text" = "၀";
+
+/* Class = "UILabel"; text = "Facebook Page များ"; ObjectID = "joS-T8-6UT"; */
+"joS-T8-6UT.text" = "Facebook Page များ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "kcv-uu-us2"; */
+"kcv-uu-us2.text" = "Label";
+
+/* Class = "UILabel"; text = "သင်နှင့်သင့်ပတ်၀န်းကျင်သို့ ရောဂါပိုးမရောက်ရှိစေရန်အတွက် နေအိမ်အတွင်းသာနေထိုင်နိုင်ရန် အထူးလိုအပ်နေပါပြီ။"; ObjectID = "kjl-hL-Pmz"; */
+"kjl-hL-Pmz.text" = "သင်နှင့်သင့်ပတ်၀န်းကျင်သို့ ရောဂါပိုးမရောက်ရှိစေရန်အတွက် နေအိမ်အတွင်းသာနေထိုင်နိုင်ရန် အထူးလိုအပ်နေပါပြီ။";
+
+/* Class = "UILabel"; text = "မြန်မာဇော်ကျီ"; ObjectID = "llz-Yg-sHM"; */
+"llz-Yg-sHM.text" = "မြန်မာဇော်ကျီ";
+
+/* Class = "UITabBarItem"; title = "အခြေအနေ"; ObjectID = "n9y-e4-gkT"; */
+"n9y-e4-gkT.title" = "အခြေအနေ";
+
+/* Class = "UITabBarItem"; title = "အသိပေးချက်"; ObjectID = "nZH-mh-TE1"; */
+"nZH-mh-TE1.title" = "အသိပေးချက်";
+
+/* Class = "UILabel"; text = "Care Together"; ObjectID = "p4K-KR-7IP"; */
+"p4K-KR-7IP.text" = "Care Together";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rFi-2j-qq6"; */
+"rFi-2j-qq6.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "  အချက်အလက်ဆိုင်ရာမူဝါ​ဒ"; ObjectID = "ro5-yL-JRX"; */
+"ro5-yL-JRX.normalTitle" = "  အချက်အလက်ဆိုင်ရာမူဝါ​ဒ";
+
+/* Class = "UIButton"; normalTitle = "+95"; ObjectID = "sEt-m8-9vs"; */
+"sEt-m8-9vs.normalTitle" = "+95";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "sM5-mq-zWI"; */
+"sM5-mq-zWI.text" = "0";
+
+/* Class = "UITabBarItem"; title = "အရေးပေါ်ဖုန်း"; ObjectID = "slB-cD-u0H"; */
+"slB-cD-u0H.title" = "အရေးပေါ်ဖုန်း";
+
+/* Class = "UILabel"; text = "အသုံးပြုမည့်ဖောင့်အားရွေးချယ်ပေးပါ။"; ObjectID = "szb-NU-H1f"; */
+"szb-NU-H1f.text" = "အသုံးပြုမည့်ဖောင့်အားရွေးချယ်ပေးပါ။";
+
+/* Class = "UILabel"; text = "Public Health Emergency Operation Center"; ObjectID = "t75-pt-Clx"; */
+"t75-pt-Clx.text" = "Public Health Emergency Operation Center";
+
+/* Class = "UILabel"; text = "0/14"; ObjectID = "t8m-NR-wBB"; */
+"t8m-NR-wBB.text" = "0/14";
+
+/* Class = "UILabel"; text = "ဤ Application အား ကျန်းမာရေးနှင့်အားကစားဝန်ကြီးဌာနမှ တာဝန်ရှိသူများထံ သို့  ပူးပေါင်းဆောင်ရွက်ရေးအား ((တွေ့ဆုံခွင့်ရရန်)) တင်ပြထားပါသည်။"; ObjectID = "uai-hh-VFq"; */
+"uai-hh-VFq.text" = "ဤ Application အား ကျန်းမာရေးနှင့်အားကစားဝန်ကြီးဌာနမှ တာဝန်ရှိသူများထံ သို့  ပူးပေါင်းဆောင်ရွက်ရေးအား ((တွေ့ဆုံခွင့်ရရန်)) တင်ပြထားပါသည်။";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "v9k-Rj-uyY"; */
+"v9k-Rj-uyY.text" = "0";
+
+/* Class = "UILabel"; text = "ရုပ်သံ"; ObjectID = "w52-lz-B8X"; */
+"w52-lz-B8X.text" = "ရုပ်သံ";
+
+/* Class = "UILabel"; text = "ပိုးမတွေ့လူနာ"; ObjectID = "wFf-HK-kv6"; */
+"wFf-HK-kv6.text" = "ပိုးမတွေ့လူနာ";
+
+/* Class = "UILabel"; text = "02-2000344 , 09-43099526"; ObjectID = "xOc-dE-IOd"; */
+"xOc-dE-IOd.text" = "02-2000344 , 09-43099526";
+
+/* Class = "UILabel"; text = "Website Link များ"; ObjectID = "xnc-yZ-xhP"; */
+"xnc-yZ-xhP.text" = "Website Link များ";
+
+/* Class = "UILabel"; text = "Data Source : www.mohs.gov.mm"; ObjectID = "z0B-Il-cJ7"; */
+"z0B-Il-cJ7.text" = "Data Source : www.mohs.gov.mm";
+
+/* Class = "UILabel"; text = "067-3420268"; ObjectID = "zQ3-6v-LUW"; */
+"zQ3-6v-LUW.text" = "067-3420268";
+
+/* Class = "UILabel"; text = "ပိုးတွေ့လူနာ"; ObjectID = "zUZ-d3-5AH"; */
+"zUZ-d3-5AH.text" = "ပိုးတွေ့လူနာ";
+
+/* Class = "UILabel"; text = "တိုင်း/ပြည်နယ်အလိုက်စောင့်ကြည့်/သံသယလူနာစုစုပေါင်း"; ObjectID = "zpb-V5-xpp"; */
+"zpb-V5-xpp.text" = "တိုင်း/ပြည်နယ်အလိုက်စောင့်ကြည့်/သံသယလူနာစုစုပေါင်း";

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,20 +24,20 @@
             <rect key="frame" x="0.0" y="0.0" width="368" height="65"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4r-UD-fMJ">
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4r-UD-fMJ">
                     <rect key="frame" x="16" y="25" width="24" height="24"/>
                     <state key="normal" image="toolbar_back"/>
                     <connections>
                         <action selector="btnBackPressed:" destination="-1" eventType="touchUpInside" id="acA-v6-QyB"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="သတိပေးချက်များ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ow-AX-e9V">
-                    <rect key="frame" x="125.5" y="22.5" width="117" height="29.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="သတိပေးချက်များ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ow-AX-e9V">
+                    <rect key="frame" x="56" y="22.5" width="256" height="29.5"/>
                     <fontDescription key="fontDescription" name="Pyidaungsu-Bold" family="Pyidaungsu" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSH-ym-jmi">
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="255" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSH-ym-jmi">
                     <rect key="frame" x="328" y="25" width="24" height="24"/>
                     <state key="normal" image="share"/>
                     <connections>
@@ -45,13 +45,14 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="8Ow-AX-e9V" firstAttribute="leading" secondItem="V4r-UD-fMJ" secondAttribute="trailing" constant="16" id="4pH-qG-ob6"/>
+                <constraint firstItem="RSH-ym-jmi" firstAttribute="leading" secondItem="8Ow-AX-e9V" secondAttribute="trailing" constant="16" id="8Db-kK-5nv"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="V4r-UD-fMJ" secondAttribute="bottom" constant="16" id="DBy-er-Nih"/>
                 <constraint firstItem="8Ow-AX-e9V" firstAttribute="centerY" secondItem="V4r-UD-fMJ" secondAttribute="centerY" id="K2f-iS-uSx"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RSH-ym-jmi" secondAttribute="trailing" constant="16" id="OmB-VA-goW"/>
                 <constraint firstItem="RSH-ym-jmi" firstAttribute="centerY" secondItem="8Ow-AX-e9V" secondAttribute="centerY" id="eKq-gp-8d2"/>
-                <constraint firstItem="8Ow-AX-e9V" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oK1-3A-SKy"/>
                 <constraint firstItem="V4r-UD-fMJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="rAD-it-3If"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

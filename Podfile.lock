@@ -2,9 +2,6 @@ PODS:
   - Alamofire (5.0.5)
   - BlueSwift (1.0.3)
   - CRRefresh (1.1.3)
-  - DropDown (2.3.4)
-  - EFCountingLabel (5.1.1)
-  - EVURLCache (3.6.0)
   - Firebase/Analytics (6.21.0):
     - Firebase/Core
   - Firebase/Core (6.21.0):
@@ -94,6 +91,7 @@ PODS:
   - Kingfisher (5.13.2):
     - Kingfisher/Core (= 5.13.2)
   - Kingfisher/Core (5.13.2)
+  - Localize-Swift (2.0.0)
   - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
   - Moya/RxSwift (14.0.0):
@@ -123,26 +121,21 @@ PODS:
   - SKCountryPicker (1.2.8)
   - SKPhotoBrowser (6.1.0)
   - SkyFloatingLabelTextField (3.8.0)
-  - StepIndicator (1.0.8)
   - SwiftHEXColors (1.4.0)
   - SwiftyJSON (4.3.0)
-  - SwipeCellKit (2.7.1)
-  - TagListView (1.4.0)
   - Toast-Swift (5.0.1)
   - YouTubePlayer (0.4.0)
 
 DEPENDENCIES:
   - BlueSwift (~> 1.0.3)
   - CRRefresh
-  - DropDown (= 2.3.4)
-  - EFCountingLabel
-  - EVURLCache
   - Firebase/Analytics
   - Firebase/Messaging
   - ImageSlideshow (~> 1.8.3)
   - ImageSlideshow/Kingfisher
   - IQKeyboardManager
   - JGProgressHUD
+  - Localize-Swift (~> 2.0)
   - Moya/RxSwift (~> 14.0.0-beta.6)
   - ObjectMapper (~> 3.4)
   - RealmSwift
@@ -152,11 +145,8 @@ DEPENDENCIES:
   - SKCountryPicker
   - SKPhotoBrowser
   - SkyFloatingLabelTextField
-  - StepIndicator (~> 1.0.8)
   - SwiftHEXColors
   - SwiftyJSON (~> 4.0)
-  - SwipeCellKit
-  - TagListView (~> 1.0)
   - Toast-Swift (~> 5.0.1)
   - YouTubePlayer
 
@@ -165,9 +155,6 @@ SPEC REPOS:
     - Alamofire
     - BlueSwift
     - CRRefresh
-    - DropDown
-    - EFCountingLabel
-    - EVURLCache
     - Firebase
     - FirebaseAnalytics
     - FirebaseAnalyticsInterop
@@ -185,6 +172,7 @@ SPEC REPOS:
     - IQKeyboardManager
     - JGProgressHUD
     - Kingfisher
+    - Localize-Swift
     - Moya
     - nanopb
     - ObjectMapper
@@ -199,11 +187,8 @@ SPEC REPOS:
     - SKCountryPicker
     - SKPhotoBrowser
     - SkyFloatingLabelTextField
-    - StepIndicator
     - SwiftHEXColors
     - SwiftyJSON
-    - SwipeCellKit
-    - TagListView
     - Toast-Swift
     - YouTubePlayer
 
@@ -211,9 +196,6 @@ SPEC CHECKSUMS:
   Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
   BlueSwift: 871a4c6926cf47832b747e867d817b4a7bafa2ec
   CRRefresh: 1415d4ae06837fa7bb064c44f2e102f3ef517044
-  DropDown: f225ff0fd09dde064d17aa03db7e4d4e4ff40b6b
-  EFCountingLabel: 605358591a67a3c92feb7ec32486bfab4a30e2c9
-  EVURLCache: 7696b630c32417e2c4c792bc1655f10c8ecc0148
   Firebase: f378c80340dd41c0ad0914af740c021eb282a04b
   FirebaseAnalytics: a1a0b3327ceb5cd5b4bacffdb293f6c909aa087d
   FirebaseAnalyticsInterop: 3f86269c38ae41f47afeb43ebf32a001f58fcdae
@@ -231,6 +213,7 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
   JGProgressHUD: aa403e9a5b45cae98903c4600cccdd98c0c3ec90
   Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
+  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
@@ -245,14 +228,11 @@ SPEC CHECKSUMS:
   SKCountryPicker: d475635e3b2eca17a6909955eef628a298e24652
   SKPhotoBrowser: 343de95d89dc7913763c5dda243cc6e606e4a168
   SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
-  StepIndicator: 748b293f671355b021253f82031ac002f153dc81
   SwiftHEXColors: c5baa53cf2412ce6391633ce74999437cc025efc
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
-  SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
-  TagListView: 987b0bdbb16cd9d9e7c0e2ec32aff37ecba8b173
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
 
-PODFILE CHECKSUM: c670a4c4f0ed9c2ddb311801b541a066d6422bd2
+PODFILE CHECKSUM: 00ab56d3d3a7f126a3e22a39a219a4a3313ef689
 
 COCOAPODS: 1.9.1

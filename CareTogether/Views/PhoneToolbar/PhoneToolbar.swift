@@ -8,17 +8,26 @@
 
 import UIKit
 
+protocol PhoneToolbarCallback {
+    func goSettingVc()
+    func goPPLVc()
+    func goInfoVc()
+}
+
 class PhoneToolbar: UIView {
     
+    @IBOutlet weak var ivLocale: UIImageView!
     @IBOutlet weak var contentView : UIView!
     @IBOutlet weak var ivWifiStatus: CIrcleImage!
     @IBOutlet weak var lbPhone: UILabel!
+    var delegate : PhoneToolbarCallback? = nil
     override init(frame: CGRect) {
         super.init(frame : frame)
         initView()
         
     }
     
+    @IBOutlet weak var ivSetting: CIrcleImage!
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -27,6 +36,16 @@ class PhoneToolbar: UIView {
     }
     
     
+    func checkLanguage(){
+        let currentLanguage = Store.instance.getCurrentLanguage()
+        if (currentLanguage != nil){
+            let image = UIImage(named: "\(currentLanguage!.locale)")
+            ivLocale.image = image
+        }
+    }
+    
+    
+    @IBOutlet weak var ivInfo: CIrcleImage!
     
     
     override func prepareForInterfaceBuilder() {
@@ -44,9 +63,9 @@ class PhoneToolbar: UIView {
         contentView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
         let phone = Store.instance.getPhoneNumber() ?? "-"
         
-        if !Reachability.isConnectedToNetwork() {
-            ivWifiStatus.image = UIImage(named: "no_wifi")
-        }
+        //        if !Reachability.isConnectedToNetwork() {
+        //            ivWifiStatus.image = UIImage(named: "no_wifi")
+        //        }
         
         if phone.count >= 11 {
             var chars = Array(phone)     // gets an array of characters
@@ -58,5 +77,35 @@ class PhoneToolbar: UIView {
             lbPhone.text = modifiedString
             
         }
+        
+        let settingPress = UITapGestureRecognizer(target: self, action: #selector(goSettingVc))
+        ivSetting.isUserInteractionEnabled = true
+        ivSetting.addGestureRecognizer(settingPress)
+        
+        
+        
+        let pplPressed = UITapGestureRecognizer(target: self, action: #selector(goPPLVc))
+        ivWifiStatus.isUserInteractionEnabled = true
+        ivWifiStatus.addGestureRecognizer(pplPressed)
+        
+        
+        
+        let infoPress = UITapGestureRecognizer(target: self, action: #selector(goInfo))
+        ivInfo.isUserInteractionEnabled = true
+        ivInfo.addGestureRecognizer(infoPress)
+        
+        
+    }
+    
+    @objc func goPPLVc(){
+        delegate?.goPPLVc()
+    }
+    
+    @objc func goInfo(){
+        delegate?.goInfoVc()
+    }
+    
+    @objc func goSettingVc(){
+        delegate?.goSettingVc()
     }
 }

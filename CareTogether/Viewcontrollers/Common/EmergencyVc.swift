@@ -10,12 +10,20 @@ import UIKit
 import WebKit
 import JGProgressHUD
 class EmergencyVc: UIViewController {
-    let url = "https://ct.zacompany.dev/webview/contacts"
+    var url = "https://ct.zacompany.dev/webview/contacts"
     let hud = JGProgressHUD(style: .dark)
     @IBOutlet weak var webView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        hud.textLabel.text = "လုပ်ဆောင်နေပါသည်"
+        
+        var language = Store.instance.getCurrentLanguage()?.locale
+        
+        if( language == nil) {
+            language = "mm"
+        }
+        
+        url = "https://ct.zacompany.dev/webview/contacts?language=\(language!)"
+        hud.textLabel.text = "text_loading".localized()
         webView.navigationDelegate = self
         webView.allowsBackForwardNavigationGestures = true
         webView.load(URLRequest(url: URL(string: url)!))
@@ -37,29 +45,29 @@ extension EmergencyVc : WKNavigationDelegate {
     }
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-     if navigationAction.request.url?.scheme == "tel" {
-        guard let telUrl  = navigationAction.request.url else {return}
-        if let range = telUrl.absoluteString.range(of: "tel:") {
-            let phone = telUrl.absoluteString[range.upperBound...]
-            dialNumber(number: String(phone))
+        if navigationAction.request.url?.scheme == "tel" {
+            guard let telUrl  = navigationAction.request.url else {return}
+            if let range = telUrl.absoluteString.range(of: "tel:") {
+                let phone = telUrl.absoluteString[range.upperBound...]
+                dialNumber(number: String(phone))
+            }
+            
+            decisionHandler(.cancel)
+        } else {
+            decisionHandler(.allow)
         }
-       
-         decisionHandler(.cancel)
-     } else {
-         decisionHandler(.allow)
-     }
-     }
+    }
     
     func dialNumber(number : String) {
-
-     if let url = URL(string: "tel://\(number)"),
-       UIApplication.shared.canOpenURL(url) {
-          if #available(iOS 10, *) {
-            UIApplication.shared.open(url, options: [:], completionHandler:nil)
-           } else {
-               UIApplication.shared.openURL(url)
-           }
-       }
+        
+        if let url = URL(string: "tel://\(number)"),
+            UIApplication.shared.canOpenURL(url) {
+            if #available(iOS 10, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler:nil)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
     }
 }
 

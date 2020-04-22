@@ -19,6 +19,7 @@ public enum CareService{
     case getCountForUser
     case getVideoNews
     case getDoDontVideo
+    case getAvailableLanguage
 }
 
 
@@ -29,7 +30,7 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
     
     
     public var baseURL: URL {
-        let BASE_URL = ""
+        let BASE_URL = "https://ct.zacompany.dev/api"
         return URL(string: BASE_URL)!
     }
     
@@ -44,6 +45,7 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
         case .getCountForUser : return "count-for-me"
         case .getVideoNews : return "videos"
         case .getDoDontVideo : return "do-and-dont"
+        case .getAvailableLanguage : return "settings"
         }
     }
     
@@ -58,6 +60,7 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
         case .getCountForUser : return .get
         case .getVideoNews : return .get
         case .getDoDontVideo : return .get
+        case .getAvailableLanguage : return .get
         }
     }
     
@@ -68,9 +71,17 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
     
     public var task: Task {
         
+        var currentLanguage = LocaleModel(locale: "mm", name: "Myanmar")
+        
+        let storeLang = Store.instance.getCurrentLanguage()
+        if(storeLang != nil ){
+            currentLanguage = storeLang!
+        }
+        
+  
         switch self {
         case .getNewsList(let page):
-            let p = ["page" : page
+            let p = ["page" : page ,"language" : currentLanguage.locale
                 ] as [String : Any]
             return .requestParameters(parameters: p, encoding:URLEncoding.default )
             
@@ -94,7 +105,11 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
             return .requestParameters(parameters: p, encoding:URLEncoding.default )
             
         case .getVideoNews : return .requestPlain
-        case .getDoDontVideo : return .requestPlain
+        case .getDoDontVideo :
+            let p = ["language" : currentLanguage.locale
+                       ] as [String : Any]
+                   return .requestParameters(parameters: p, encoding:URLEncoding.default )
+        case .getAvailableLanguage : return .requestPlain
             
         }
         
@@ -103,7 +118,7 @@ extension CareService  : TargetType , AccessTokenAuthorizable{
     public var headers: [String : String]? {
         var httpHeaders: [String: String] = [:]
         httpHeaders["Content-Type"] = "application/json"
-        httpHeaders["X-API-TOKEN"] = ""
+        httpHeaders["X-API-TOKEN"] = "2p8j3fen7kg5850y1b2abdy9a3exzq6c5"
         httpHeaders["Accept"] = "application/json"
         return httpHeaders
     }

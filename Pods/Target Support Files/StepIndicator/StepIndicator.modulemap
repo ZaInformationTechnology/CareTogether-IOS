@@ -1,6 +1,0 @@
-framework module StepIndicator {
-  umbrella header "StepIndicator-umbrella.h"
-
-  export *
-  module * { export * }
-}

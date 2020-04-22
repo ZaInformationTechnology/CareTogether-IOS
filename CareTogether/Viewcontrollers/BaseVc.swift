@@ -201,15 +201,14 @@ extension BaseVc: CBCentralManagerDelegate {
         }
         if name.count > 2 {
             let prefix = name[0 ..< 2]
-            if prefix.elementsEqual("CT"){
+//            if prefix.elementsEqual("On"){
+             if prefix.elementsEqual("CT"){
                 print("found \(prefix)")
-                self.view.makeToast(name, duration: 3.0, position: .bottom, style: ToastStyle())
-
+               // self.view.makeToast(name, duration: 3.0, position: .bottom, style: ToastStyle())
                 guard let location  = currentLocation else {
                    return
                 }
                  TrackDbUtils.instance.checkAndUpdate(name: name, location: location)
-                
             }else {
                 print("not found \(prefix)")
             }

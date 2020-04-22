@@ -11,15 +11,10 @@ def share_pod
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
   pod 'SwiftyJSON', '~> 4.0'
-  pod 'DropDown', '2.3.4'
   pod 'Moya/RxSwift', '~> 14.0.0-beta.6'
-  pod 'EFCountingLabel'
   pod 'CRRefresh'
   pod 'JGProgressHUD'
-  pod 'StepIndicator', '~> 1.0.8'
-  pod 'TagListView', '~> 1.0'
 	pod 'IQKeyboardManager'
-	pod 'SwipeCellKit'
 pod 'SKCountryPicker'
 pod 'SKPhotoBrowser'
 pod 'SwiftHEXColors'
@@ -33,7 +28,7 @@ pod 'Firebase/Messaging'
   pod 'CRRefresh'
   pod 'Toast-Swift', '~> 5.0.1'
 pod 'YouTubePlayer'
-pod "EVURLCache"
+pod 'Localize-Swift', '~> 2.0'
 end
 
 

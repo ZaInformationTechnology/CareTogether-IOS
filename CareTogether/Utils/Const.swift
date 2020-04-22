@@ -19,6 +19,10 @@ import Foundation
 class Const {
     static let instance = Const()
     
+    
+    let ABOUT_URL = "https://ct.zacompany.dev/webview/information/about"
+    let PRIVACY_URL = "https://ct.zacompany.dev/webview/information/privacy"
+    
     func indentifiedCount(count : Int)  -> String {
         return  "နီးစပ်ဖူးသူများထဲမှ ဝူဟန် ဗိုင်းရပ်စ် ရောဂါပိုးတွေ့ရှိသူ  (\(count)) တွေ့ရှိထားပါသည်။"
     }
@@ -38,4 +42,8 @@ class Const {
     let about = "Application အကြောင်း"
     
     let unknownError = "လုပ်ဆောင်မှုမအောင်မြင်ပါ"
+    
+    let loading = "လုပ်ဆောင်နေပါသည်"
+    
+    let setting = "ပြင်ဆင်ရန်"
 }

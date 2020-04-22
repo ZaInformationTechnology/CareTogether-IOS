@@ -64,7 +64,7 @@ class NewVc: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        hud.textLabel.text = "လုပ်ဆောင်နေပါသည်"
+        hud.textLabel.text = "text_loading".localized()
         initTable()
         newApiCall()
         initVideoTable()

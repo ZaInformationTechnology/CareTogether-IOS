@@ -18,7 +18,7 @@ final class AppNavigationController: UINavigationController {
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-
+        
         delegate = self
     }
 
@@ -31,6 +31,8 @@ final class AppNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         interactivePopGestureRecognizer?.delegate = self
+      
+        
     }
     
   

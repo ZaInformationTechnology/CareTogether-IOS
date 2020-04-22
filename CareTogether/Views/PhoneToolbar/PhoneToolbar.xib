@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +10,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhoneToolbar" customModule="CareTogether" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="Uat-TK-Nvi"/>
-                <outlet property="ivWifiStatus" destination="fP8-HG-Kvq" id="QHL-U4-MgH"/>
+                <outlet property="ivInfo" destination="bAP-Jc-gKa" id="QKH-3a-m8j"/>
+                <outlet property="ivLocale" destination="fP8-HG-Kvq" id="ajs-Bw-Jqe"/>
+                <outlet property="ivSetting" destination="fP8-HG-Kvq" id="a4p-JW-NiZ"/>
+                <outlet property="ivWifiStatus" destination="0yb-ur-Fsw" id="lrf-7t-Zib"/>
                 <outlet property="lbPhone" destination="dSi-JB-Ixv" id="m39-jk-0Sx"/>
             </connections>
         </placeholder>
@@ -22,35 +25,57 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" translatesAutoresizingMaskIntoConstraints="NO" id="cSb-ZR-d2Z">
                     <rect key="frame" x="16" y="11" width="40" height="40"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="tintColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="5gZ-0b-8KW"/>
                         <constraint firstAttribute="width" constant="40" id="Hor-cT-1f0"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09450036255" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSi-JB-Ixv">
-                    <rect key="frame" x="75" y="20.5" width="301" height="21"/>
+                    <rect key="frame" x="75" y="20.5" width="245" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi" translatesAutoresizingMaskIntoConstraints="NO" id="fP8-HG-Kvq" customClass="CIrcleImage" customModule="CareTogether" customModuleProvider="target">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mm" translatesAutoresizingMaskIntoConstraints="NO" id="fP8-HG-Kvq">
                     <rect key="frame" x="392" y="11" width="40" height="40"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="tintColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="40" id="3oU-XQ-rZV"/>
                         <constraint firstAttribute="height" constant="40" id="dfK-We-5G6"/>
                     </constraints>
                 </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_network_pp" translatesAutoresizingMaskIntoConstraints="NO" id="0yb-ur-Fsw" customClass="CIrcleImage" customModule="CareTogether" customModuleProvider="target">
+                    <rect key="frame" x="336" y="11" width="40" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="D9d-pH-Qni"/>
+                        <constraint firstAttribute="width" constant="40" id="nEn-hJ-CEY"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_alert" translatesAutoresizingMaskIntoConstraints="NO" id="bAP-Jc-gKa" customClass="CIrcleImage" customModule="CareTogether" customModuleProvider="target">
+                    <rect key="frame" x="280" y="11" width="40" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="3WP-uJ-K8Q"/>
+                        <constraint firstAttribute="width" constant="40" id="H4V-IT-kZO"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="0yb-ur-Fsw" firstAttribute="centerY" secondItem="fP8-HG-Kvq" secondAttribute="centerY" id="1lu-lj-hTO"/>
+                <constraint firstItem="fP8-HG-Kvq" firstAttribute="leading" secondItem="0yb-ur-Fsw" secondAttribute="trailing" constant="16" id="GaW-gQ-bhO"/>
                 <constraint firstItem="cSb-ZR-d2Z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="ItQ-hd-i7C"/>
-                <constraint firstItem="fP8-HG-Kvq" firstAttribute="leading" secondItem="dSi-JB-Ixv" secondAttribute="trailing" constant="16" id="Ql1-yu-5oI"/>
+                <constraint firstItem="bAP-Jc-gKa" firstAttribute="centerY" secondItem="0yb-ur-Fsw" secondAttribute="centerY" id="PHC-Qu-j74"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fP8-HG-Kvq" secondAttribute="trailing" constant="16" id="TvJ-BL-HhQ"/>
+                <constraint firstItem="0yb-ur-Fsw" firstAttribute="leading" secondItem="bAP-Jc-gKa" secondAttribute="trailing" constant="16" id="bt3-hO-9S8"/>
                 <constraint firstItem="dSi-JB-Ixv" firstAttribute="centerY" secondItem="cSb-ZR-d2Z" secondAttribute="centerY" id="drM-4y-Grp"/>
                 <constraint firstAttribute="bottom" secondItem="cSb-ZR-d2Z" secondAttribute="bottom" constant="8" id="efv-hP-SDi"/>
+                <constraint firstItem="0yb-ur-Fsw" firstAttribute="leading" secondItem="dSi-JB-Ixv" secondAttribute="trailing" constant="16" id="jV2-GH-20A"/>
                 <constraint firstItem="fP8-HG-Kvq" firstAttribute="centerY" secondItem="cSb-ZR-d2Z" secondAttribute="centerY" id="jVo-Yc-zof"/>
                 <constraint firstItem="dSi-JB-Ixv" firstAttribute="leading" secondItem="cSb-ZR-d2Z" secondAttribute="trailing" constant="19" id="uGJ-wl-H3J"/>
             </constraints>
@@ -60,7 +85,9 @@
         </view>
     </objects>
     <resources>
+        <image name="ic_alert" width="22" height="22"/>
+        <image name="ic_network_pp" width="22" height="22"/>
+        <image name="mm" width="400" height="266.5"/>
         <image name="phone" width="33.5" height="33.5"/>
-        <image name="wifi" width="27.5" height="20.5"/>
     </resources>
 </document>

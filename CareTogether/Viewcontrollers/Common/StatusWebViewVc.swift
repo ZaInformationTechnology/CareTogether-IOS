@@ -11,12 +11,22 @@ import WebKit
 import JGProgressHUD
 
 class StatusWebViewVc: UIViewController {
-    let url = "https://ct.zacompany.dev/webview/myanmar"
+    var url = ""
     let hud = JGProgressHUD(style: .dark)
     @IBOutlet weak var webView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        hud.textLabel.text = "လုပ်ဆောင်နေပါသည်"
+        
+        
+        var language = Store.instance.getCurrentLanguage()?.locale
+        
+        if( language == nil) {
+            language = "mm"
+        }
+        
+        
+        url = "https://ct.zacompany.dev/webview/myanmar?language=\(language!)"
+        hud.textLabel.text = "text_loading".localized()
         webView.navigationDelegate = self
         webView.allowsBackForwardNavigationGestures = true
         webView.load(URLRequest(url: URL(string: url)!))

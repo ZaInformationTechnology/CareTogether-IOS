@@ -242,7 +242,7 @@ class GlobalView: UIView {
         addSubview(contentView)
         contentView.frame  = self.bounds
         contentView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
-        hud.textLabel.text = "လုပ်ဆောင်နေပါသည်"
+        hud.textLabel.text = "text_loading".localized()
         
     }
     

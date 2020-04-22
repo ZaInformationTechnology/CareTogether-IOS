@@ -51,8 +51,8 @@ extension UIViewController {
         let cancelAction = UIAlertAction.init(title:"မလုပ်ပါ", style: .cancel) { (action) in
             completion(false )
         }
-    alert.addAction(cancelAction)
-
+        alert.addAction(cancelAction)
+        
         alert.addAction(alertAction)
         self.present(alert, animated: true, completion: nil)
     }
@@ -72,5 +72,25 @@ extension UIViewController {
         }
         alert.addAction(alertAction)
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    func addSubViewController(url : String,hideToolbar : Bool,title : String,container : UIView){
+        var language = Store.instance.getCurrentLanguage()?.locale
+        
+        if(language == nil){
+            language = "mm"
+        }
+        let controller = storyboard?.instantiateViewController(identifier: "ToolbarWebVc") as! ToolbarWebVc
+        controller.hideToolbar = hideToolbar
+        controller.url = "\(url)?language=\(String(describing: language!))"
+        print("language url \(url)?language=\(String(describing: language!))")
+//        controller.url = url
+        controller.toolbarTitle = title
+        addChild(controller)
+        container.addSubview(controller.view)
+        controller.view.frame = container.bounds
+        controller.view.autoresizingMask
+            = [.flexibleWidth, .flexibleHeight]
+        controller.didMove(toParent: self)
     }
 }
