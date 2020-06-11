@@ -10,25 +10,29 @@ import UIKit
 import WebKit
 import JGProgressHUD
 class EmergencyVc: UIViewController {
+    @IBOutlet weak var lbTitle: UILabel!
+    @IBOutlet weak var lbRegionTitle: UILabel!
     var url = "https://ct.zacompany.dev/webview/contacts"
     let hud = JGProgressHUD(style: .dark)
     @IBOutlet weak var webView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var language = Store.instance.getCurrentLanguage()?.locale
-        
-        if( language == nil) {
-            language = "mm"
-        }
-        
-        url = "https://ct.zacompany.dev/webview/contacts?language=\(language!)"
+        let language = Store.instance.getCurrentLanguage()?.locale ?? "mm"
+        url = "https://ct.zacompany.dev/webview/contacts?language=\(language)"
         hud.textLabel.text = "text_loading".localized()
         webView.navigationDelegate = self
         webView.allowsBackForwardNavigationGestures = true
         webView.load(URLRequest(url: URL(string: url)!))
         hud.show(in: self.view)
         
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        lbTitle.text = "contact_title".localized()
+        lbRegionTitle.text = "contact_region_info".localized()
     }
     
 }

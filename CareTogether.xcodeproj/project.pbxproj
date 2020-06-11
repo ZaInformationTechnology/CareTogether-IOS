@@ -155,6 +155,12 @@
 		EE12FE4A2438BBD4009BD49B /* AnalyticsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsUseCase.swift; sourceTree = "<group>"; };
 		EE12FE4C2438BC02009BD49B /* AnalyticsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsState.swift; sourceTree = "<group>"; };
 		EE12FE4F2438C803009BD49B /* EncodedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodedModel.swift; sourceTree = "<group>"; };
+		EE3E5C3E245095BF00C87103 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		EE3E5C3F245095BF00C87103 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EE3E5C40245095BF00C87103 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EE3E5C41245096A800C87103 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Main.strings; sourceTree = "<group>"; };
+		EE3E5C42245096A800C87103 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EE3E5C43245096A800C87103 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EE3E632C243B4C8A0039BE4B /* DashVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashVc.swift; sourceTree = "<group>"; };
 		EE3E632E243B4DA70039BE4B /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		EE3E6331243B4F840039BE4B /* AboutVcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVcViewController.swift; sourceTree = "<group>"; };
@@ -860,6 +866,8 @@
 				en,
 				Base,
 				my,
+				ja,
+				th,
 			);
 			mainGroup = EED1F2C12430854600B071C8;
 			productRefGroup = EED1F2CB2430854600B071C8 /* Products */;
@@ -1171,6 +1179,8 @@
 				EE494D15244C39A9006656D7 /* Base */,
 				EE494D17244C39B9006656D7 /* en */,
 				EE494D18244C39BA006656D7 /* my */,
+				EE3E5C40245095BF00C87103 /* ja */,
+				EE3E5C43245096A800C87103 /* th */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1181,6 +1191,8 @@
 				EED1F2D42430854600B071C8 /* Base */,
 				EE494D0E244C387D006656D7 /* my */,
 				EE494D11244C389E006656D7 /* en */,
+				EE3E5C3E245095BF00C87103 /* ja */,
+				EE3E5C41245096A800C87103 /* th */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1190,6 +1202,8 @@
 			children = (
 				EED1F2DC2430854700B071C8 /* Base */,
 				EE494D0F244C387D006656D7 /* my */,
+				EE3E5C3F245095BF00C87103 /* ja */,
+				EE3E5C42245096A800C87103 /* th */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

@@ -28,3 +28,5 @@
 "text_loading" = "Loading";
 "permission_error_alert_message" = "App သုံးသူအချင်းချင်း ချိတ်ဆက်မှတ်သားနိုင်ရန်အတွက် Bluetooth / GPS များဖွင့်ထားရန် လိုအပ်နေပါသည်။";
 "text_share_current_health_title" = "လက်ရှိကျန်းမာရေးအခြေအနေများကိုမျှ ေ၀မည်";
+"contact_title" = "If you have a close contact with a Covid-19 postive patient, please contact the following persons";
+"contact_region_info" = "Emergency Contact (Regions and Divisions)";

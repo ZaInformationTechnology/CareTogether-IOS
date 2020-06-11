@@ -49,28 +49,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MM5-Gr-TTm" customClass="RoundCardView" customModule="CareTogether" customModuleProvider="target">
-                                <rect key="frame" x="16" y="202.5" width="382" height="313"/>
+                                <rect key="frame" x="16" y="202.5" width="382" height="332"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="အသုံးပြုမည့်ဖောင့်အားရွေးချယ်ပေးပါ။" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szb-NU-H1f">
-                                        <rect key="frame" x="16" y="16" width="350" height="20"/>
+                                        <rect key="frame" x="16" y="16" width="350" height="29.5"/>
                                         <fontDescription key="fontDescription" name="Pyidaungsu-Bold" family="Pyidaungsu" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ဇော်ကျီ (သို့) ယူနီကုဒ် တစ်ခုခုကိုရွေးချယ်ပေးပါ။" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ga7-oS-srg">
-                                        <rect key="frame" x="16" y="44" width="350" height="20"/>
+                                        <rect key="frame" x="16" y="53.5" width="350" height="29.5"/>
                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="qkO-vy-7rI">
-                                        <rect key="frame" x="24" y="76" width="334" height="150"/>
+                                        <rect key="frame" x="24" y="95" width="334" height="150"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKp-EP-tLK" customClass="RoundCardView" customModule="CareTogether" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="159" height="150"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="မြန်မာဇော်ကျီ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llz-Yg-sHM">
-                                                        <rect key="frame" x="16" y="122" width="127" height="20"/>
+                                                        <rect key="frame" x="16" y="112.5" width="127" height="29.5"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -121,7 +121,7 @@
                                                 <rect key="frame" x="175" y="0.0" width="159" height="150"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="မြန်မာယူနီကုဒ်" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vs-4s-nvz">
-                                                        <rect key="frame" x="16" y="122" width="127" height="20"/>
+                                                        <rect key="frame" x="16" y="112.5" width="127" height="29.5"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -174,7 +174,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhm-cj-NGK" customClass="RoundButton" customModule="CareTogether" customModuleProvider="target">
-                                        <rect key="frame" x="24" y="242" width="334" height="55"/>
+                                        <rect key="frame" x="24" y="261" width="334" height="55"/>
                                         <color key="backgroundColor" red="0.94117647058823528" green="0.79607843137254897" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="xz2-Fq-Hgs"/>
@@ -656,7 +656,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="သတင်းများ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkU-76-eIR">
-                                                        <rect key="frame" x="72" y="15" width="95" height="20"/>
+                                                        <rect key="frame" x="72" y="10.5" width="95" height="29.5"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -688,7 +688,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ရုပ်သံ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w52-lz-B8X">
-                                                        <rect key="frame" x="62" y="15" width="105" height="20"/>
+                                                        <rect key="frame" x="62" y="10.5" width="105" height="29.5"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -869,7 +869,7 @@
                                 <rect key="frame" x="0.0" y="90" width="414" height="1122"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BaF-ZU-tGJ">
-                                        <rect key="frame" x="0.0" y="8" width="414" height="959.5"/>
+                                        <rect key="frame" x="0.0" y="8" width="414" height="1127"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_goal" translatesAutoresizingMaskIntoConstraints="NO" id="mIo-hZ-8At">
                                                 <rect key="frame" x="16" y="16" width="50" height="50"/>
@@ -879,26 +879,26 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App ပြုလုပ်ရခြင်းရည်ရွယ်ချက်" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGi-Ne-zpF">
-                                                <rect key="frame" x="82" y="31" width="316" height="20"/>
+                                                <rect key="frame" x="82" y="26.5" width="316" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="Pyidaungsu-Bold" family="Pyidaungsu" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_legal" translatesAutoresizingMaskIntoConstraints="NO" id="mle-mQ-rJ1">
-                                                <rect key="frame" x="16" y="248.5" width="50" height="50"/>
+                                                <rect key="frame" x="16" y="295.5" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="4KH-oy-PuL"/>
                                                     <constraint firstAttribute="width" constant="50" id="MJ7-OX-WPe"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="တရား၀င်အကောင်အထည်ဖော်ဆောင်နိုင်ရန် [ ကြိုးစားနေခြင်း ]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJK-jX-M0N">
-                                                <rect key="frame" x="82" y="253.5" width="316" height="40"/>
+                                                <rect key="frame" x="82" y="291" width="316" height="59"/>
                                                 <fontDescription key="fontDescription" name="Pyidaungsu-Bold" family="Pyidaungsu" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_legal" translatesAutoresizingMaskIntoConstraints="NO" id="6b5-CE-rH5">
-                                                <rect key="frame" x="16" y="397" width="50" height="50"/>
+                                                <rect key="frame" x="16" y="462" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="CYe-Jw-UN2"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="DD4-4H-ENr"/>
@@ -907,26 +907,26 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="အကြံညဏ်" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBi-ET-x17">
-                                                <rect key="frame" x="82" y="412" width="316" height="20"/>
+                                                <rect key="frame" x="82" y="472.5" width="316" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="Pyidaungsu-Bold" family="Pyidaungsu" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_tech" translatesAutoresizingMaskIntoConstraints="NO" id="2ma-XF-Boc">
-                                                <rect key="frame" x="16" y="686" width="50" height="50"/>
+                                                <rect key="frame" x="16" y="840.5" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="Y3N-3Y-v7H"/>
                                                     <constraint firstAttribute="height" constant="50" id="vdC-y0-Bzg"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="နည်းပညာပံ့ပေးမှု" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQi-zw-uun">
-                                                <rect key="frame" x="82" y="701" width="316" height="20"/>
+                                                <rect key="frame" x="82" y="850.5" width="316" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="Pyidaungsu-Bold" family="Pyidaungsu" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MmU-C2-uGS">
-                                                <rect key="frame" x="16" y="74" width="382" height="158.5"/>
+                                                <rect key="frame" x="16" y="74" width="382" height="205.5"/>
                                                 <string key="text">ဤ Application သည် ကိုရိုနာဗိုင်းရပ်စ် ကူးစက် ပြန့်ပွားမှုလျှော့ချရေး လုပ်ငန်းစဥ်အား အထောက် အကူပြုစေရန် ရည်ရွယ်၍ ပြုလုပ်ဖန်တီးထားခြင်း ဖြစ်ပါသည်။
 ဗိုင်းရပ်စ် ကူးစက်ခံရသူ လူနာနှင့် အနီးကပ် အတူရှိခဲ့ဖူးသော သူများအား အချိန်မှီ ကြိုတင်၍ သတိပေး ကာကွယ်နိုင်စေရန် အတွက် အထူးအလေးထားကာ အကောင်အထည်ဖော်ဆောင်ရွက်ခြင်းဖြစ်ပါသည်။</string>
                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
@@ -934,28 +934,28 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uai-hh-VFq">
-                                                <rect key="frame" x="16" y="301.5" width="382" height="79.5"/>
+                                                <rect key="frame" x="16" y="358" width="382" height="88"/>
                                                 <string key="text">ဤ Application အား ကျန်းမာရေးနှင့်အားကစားဝန်ကြီးဌာနမှ တာဝန်ရှိသူများထံ သို့  ပူးပေါင်းဆောင်ရွက်ရေးအား ((တွေ့ဆုံခွင့်ရရန်)) တင်ပြထားပါသည်။</string>
                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXi-3f-nuu">
-                                                <rect key="frame" x="16" y="440" width="382" height="238"/>
+                                                <rect key="frame" x="16" y="510" width="382" height="322.5"/>
                                                 <string key="text">ကနဦး ဝူဟမ်ဗိုင်းရပ်စ် စတင်ရောက်ရှိခဲ့သော စင်္ကာပူနိုင်ငံ၏ အစိုးရမှဖန်တီးထားသော traceTogether mobile application အားအသုံးပြု၍ contact-tracing အတွက်ဖြေရှင်းထားသည်ကိုတွေ့ရှိရပါသည်။  ထိုနည်းတူစွာ တခြားနိုင်ငံအသီးသီးသည်လည်း နည်းပညာသုံးပြု၍ ဖြေရှင်းနေသည်ကိုတွေ့ရှိရပါသည်။ ကျွန်ုပ်တို့မြန်မာနိုင်ငံတွင်လဲ အချင်းချင်းပူးပေါင်းပါဝင်ဆောင်ရွက်နိုင်ခြင်းဖြင့် ဝူဟမ်ဗိုင်းရပ်စ်အားကျော်လွှားနိုင်ရန် အကူအညီတစ်ခုရနိုင်မည့် ဤစနစ်အား Za Information Technologoy Co.,ltd ၏ CTO မှ စိတ်ကူးရရှိ၍ စတင်အကောင်အထည်ဖော်ခဲ့ကြပါသည်။</string>
                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eda-t5-ei5">
-                                                <rect key="frame" x="16" y="739" width="382" height="79.5"/>
+                                                <rect key="frame" x="16" y="898" width="382" height="88"/>
                                                 <string key="text">Za Information Technology Co.,Ltd. ၏ နည်းပညာရှင် /ဆော့ဖ်ဝဲ အင်ဂျင်နီယာများမှ တာဝန်ယူ၍ စေတနာ့ဝန်ထမ်းအဖြစ် အကောင်အထည်ဖော်ဆောင်ရွက်ခဲ့ပါသည်။</string>
                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Care Together" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4K-KR-7IP">
-                                                <rect key="frame" x="16" y="922.5" width="382" height="21"/>
+                                                <rect key="frame" x="16" y="1090" width="382" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1095,10 +1095,10 @@
                                         </subviews>
                                     </stackView>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wy-g4-50J">
-                                        <rect key="frame" x="0.0" y="130" width="414" height="484.5"/>
+                                        <rect key="frame" x="0.0" y="130" width="414" height="524"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mur-IW-UB7">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="484.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="524"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8By-2X-eey">
                                                         <rect key="frame" x="16" y="0.0" width="382" height="110"/>
@@ -1114,13 +1114,13 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ကိုယ်ပိုင် ဗိုင်းရပ်စ်စောင့်ကြည့်ခန်း" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eW9-vn-7Fc">
-                                                                <rect key="frame" x="16" y="44" width="350" height="20"/>
+                                                                <rect key="frame" x="16" y="53.5" width="350" height="29.5"/>
                                                                 <fontDescription key="fontDescription" name="Pyidaungsu-Bold" family="Pyidaungsu" pointSize="17"/>
                                                                 <color key="textColor" red="0.050980392159999999" green="0.1529411765" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Care Together" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WT-Bk-F0z">
-                                                                <rect key="frame" x="16" y="16" width="350" height="20"/>
+                                                                <rect key="frame" x="16" y="16" width="350" height="29.5"/>
                                                                 <fontDescription key="fontDescription" name="Pyidaungsu-Bold" family="Pyidaungsu" pointSize="17"/>
                                                                 <color key="textColor" red="0.050980392159999999" green="0.1529411765" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -1183,16 +1183,16 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEY-yw-aSZ" customClass="RoundCardView" customModule="CareTogether" customModuleProvider="target">
-                                                        <rect key="frame" x="16" y="270" width="382" height="161"/>
+                                                        <rect key="frame" x="16" y="270" width="382" height="200.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="သင်နှင့်သင့်ပတ်၀န်းကျင်သို့ ရောဂါပိုးမရောက်ရှိစေရန်အတွက် နေအိမ်အတွင်းသာနေထိုင်နိုင်ရန် အထူးလိုအပ်နေပါပြီ။" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6VQ-JH-snC">
-                                                                <rect key="frame" x="16" y="85.5" width="350" height="59.5"/>
+                                                                <rect key="frame" x="16" y="96.5" width="350" height="88"/>
                                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="သတိ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtT-jL-xGO">
-                                                                <rect key="frame" x="16" y="54" width="350" height="23.5"/>
+                                                                <rect key="frame" x="16" y="54" width="350" height="34.5"/>
                                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="20"/>
                                                                 <color key="textColor" red="0.76470588240000004" green="0.043137254899999998" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -1868,7 +1868,7 @@
                                                 <rect key="frame" x="2" y="2" width="179" height="46"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="မြန်မာ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ca5-wF-krY">
-                                                        <rect key="frame" x="67.5" y="13" width="44.5" height="20"/>
+                                                        <rect key="frame" x="68.5" y="8.5" width="42.5" height="29.5"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -1915,7 +1915,7 @@
                                                 <rect key="frame" x="2" y="2" width="179" height="46"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="နိုင်ငံတကာ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXs-7n-qrC">
-                                                        <rect key="frame" x="50" y="13" width="79" height="20"/>
+                                                        <rect key="frame" x="52" y="8.5" width="75" height="29.5"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -2004,7 +2004,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="စောင့်ကြည့်/သံသယလူနာ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqU-cd-eZh">
-                                                                <rect key="frame" x="16" y="41.5" width="155" height="40"/>
+                                                                <rect key="frame" x="16" y="41.5" width="155" height="59"/>
                                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -2035,7 +2035,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="စောင့်ကြည့်လူနာ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KO8-1I-NkI">
-                                                                <rect key="frame" x="16" y="41.5" width="155" height="20"/>
+                                                                <rect key="frame" x="16" y="41.5" width="155" height="29.5"/>
                                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -2075,7 +2075,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="သံသယလူနာ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IO-6d-cyG">
-                                                                <rect key="frame" x="16" y="41.5" width="155" height="20"/>
+                                                                <rect key="frame" x="16" y="41.5" width="155" height="29.5"/>
                                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -2106,7 +2106,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ဓာတ်ခွဲခန်းအဖြေစောင့်ဆိုင်း" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auW-KF-r7T">
-                                                                <rect key="frame" x="16" y="41.5" width="155" height="40"/>
+                                                                <rect key="frame" x="16" y="41.5" width="155" height="59"/>
                                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -2146,7 +2146,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ပိုးမတွေ့လူနာ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFf-HK-kv6">
-                                                                <rect key="frame" x="16" y="41.5" width="155" height="20"/>
+                                                                <rect key="frame" x="16" y="41.5" width="155" height="29.5"/>
                                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -2177,7 +2177,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ပိုးတွေ့လူနာ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUZ-d3-5AH">
-                                                                <rect key="frame" x="16" y="41.5" width="155" height="20"/>
+                                                                <rect key="frame" x="16" y="41.5" width="155" height="29.5"/>
                                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -2218,7 +2218,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="သေဆုံး" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46D-sC-oBM">
-                                                                <rect key="frame" x="16" y="41.5" width="155" height="20"/>
+                                                                <rect key="frame" x="16" y="41.5" width="155" height="29.5"/>
                                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -2249,7 +2249,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ပြန်လည်ကောင်းမွန်" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVf-1E-fPa">
-                                                                <rect key="frame" x="16" y="41.5" width="155" height="20"/>
+                                                                <rect key="frame" x="16" y="41.5" width="155" height="29.5"/>
                                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -2293,7 +2293,7 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="တိုင်း/ပြည်နယ်အလိုက်စောင့်ကြည့်/သံသယလူနာစုစုပေါင်း" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpb-V5-xpp">
-                                                        <rect key="frame" x="8" y="8" width="350" height="40"/>
+                                                        <rect key="frame" x="8" y="8" width="350" height="59"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -2521,17 +2521,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ဗိုင်းရပ်ပိုး တွေ့လူနာများနှင့်အနီးကပ်ထိတွေ့ဆက်ဆံမှုရှိပါကဆက်သွယ်သတင်းပေးပိုနိုင်ရန် ဖုန်းနံပါတ်များ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fy1-bW-gdS">
-                                        <rect key="frame" x="32" y="60" width="350" height="59.5"/>
+                                        <rect key="frame" x="32" y="60" width="350" height="59"/>
                                         <viewLayoutGuide key="safeArea" id="1ne-yF-Ubd"/>
                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPA-QW-HL2" customClass="RoundCardView" customModule="CareTogether" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="135.5" width="382" height="80"/>
+                                        <rect key="frame" x="16" y="135" width="382" height="99"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="တိုင်းဒေသကြီး/ပြည်နယ်များအရ ဆက်သွယ်နိင်မည့်ဖုန်းနံပါတ်များကို ဖော်ပြပေးထားပါသည်" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubh-DC-udb">
-                                                <rect key="frame" x="20" y="20" width="342" height="40"/>
+                                                <rect key="frame" x="20" y="20" width="342" height="59"/>
                                                 <fontDescription key="fontDescription" name="Pyidaungsu-Bold" family="Pyidaungsu" pointSize="17"/>
                                                 <color key="textColor" red="0.050980392159999999" green="0.1529411765" blue="0.61251100352112675" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2548,10 +2548,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZs-Ip-XQR" customClass="RoundCardView" customModule="CareTogether" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="231.5" width="382" height="565.5"/>
+                                        <rect key="frame" x="16" y="250" width="382" height="547"/>
                                         <subviews>
                                             <wkWebView clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWX-vx-oSO">
-                                                <rect key="frame" x="4" y="4" width="374" height="557.5"/>
+                                                <rect key="frame" x="4" y="4" width="374" height="539"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <wkWebViewConfiguration key="configuration">
                                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -2599,6 +2599,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="BMI-xW-dmM"/>
                     <connections>
+                        <outlet property="lbRegionTitle" destination="Ubh-DC-udb" id="Rou-4q-U8X"/>
+                        <outlet property="lbTitle" destination="fy1-bW-gdS" id="gZ1-s8-lE3"/>
                         <outlet property="webView" destination="hWX-vx-oSO" id="alG-e7-Q6X"/>
                     </connections>
                 </viewController>
@@ -2625,10 +2627,10 @@
                                 <rect key="frame" x="0.0" y="90" width="414" height="1176"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ia-Iu-XRy">
-                                        <rect key="frame" x="0.0" y="8" width="414" height="131.5"/>
+                                        <rect key="frame" x="0.0" y="8" width="414" height="179"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gg1-90-2K2">
-                                                <rect key="frame" x="16" y="16" width="382" height="99.5"/>
+                                                <rect key="frame" x="16" y="16" width="382" height="147"/>
                                                 <string key="text">(၁) အသုံးပြုသူ ၏ ဖုန်းတွင်း၌ ထည့်သွင်းထားသော အချက်အလက်များအား Encrypt ပြုလုပ်ထားသောကြောင့် သက်ဆိုင်ရာ ကျန်းမာရေးဝန်ကြီးဌာရှိ ထိန်းချုပ် နည်းပညာစနစ်ဖြင့်သာ ဖတ်ရှု့ စစ်ဆေးခွင့်ရှိစေရန် စီစဥ်ဆောင်ရွက်ထားပါသည်။</string>
                                                 <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2798,6 +2800,7 @@
                             <constraint firstItem="O6V-xg-3IE" firstAttribute="leading" secondItem="8xq-kl-jwh" secondAttribute="leading" id="cJe-RW-E00"/>
                             <constraint firstAttribute="bottom" secondItem="cBm-UZ-Mlg" secondAttribute="bottom" id="gB4-Lh-sEN"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="C5p-gv-GVB"/>
                     </view>
                     <connections>
                         <outlet property="constHeightOfToolbar" destination="a5M-h6-5PM" id="nks-QR-u8u"/>
@@ -3176,13 +3179,13 @@
                                                 <rect key="frame" x="16" y="16" width="382" height="360"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="လက်ရှိကျန်းမာရေးအခြေအနေ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5K-g7-jmR">
-                                                        <rect key="frame" x="16" y="8" width="350" height="29.5"/>
+                                                        <rect key="frame" x="16" y="8" width="350" height="20"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="52W-sg-Vfh">
-                                                        <rect key="frame" x="16" y="53.5" width="350" height="80"/>
+                                                        <rect key="frame" x="16" y="44" width="350" height="80"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ဖျားနာခြင်းရှိ/မရှိ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMf-BC-yN5">
                                                                 <rect key="frame" x="0.0" y="0.0" width="167" height="80"/>
@@ -3240,7 +3243,7 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="KVe-80-VBF">
-                                                        <rect key="frame" x="16" y="149.5" width="350" height="80"/>
+                                                        <rect key="frame" x="16" y="140" width="350" height="80"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="အသက်ရှုကြပ််ခြင်းရှိ/မရှိ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8y-Ed-kbS">
                                                                 <rect key="frame" x="0.0" y="0.0" width="167" height="80"/>
@@ -3298,7 +3301,7 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7G6-K7-nAS">
-                                                        <rect key="frame" x="16" y="245.5" width="350" height="80"/>
+                                                        <rect key="frame" x="16" y="236" width="350" height="80"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="၀မ်းလျှောခြင်းရှိ/မရှိ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9v1-AH-Vka">
                                                                 <rect key="frame" x="0.0" y="0.0" width="167" height="80"/>
@@ -3377,13 +3380,13 @@
                                                 <rect key="frame" x="16" y="384" width="382" height="450"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ရောဂါကူးစက်မှုဖြစ်ပွားနေချိန်အတွင်း ခံစားရသော ကျန်းမာရေး အခြေအနေများကိုမျှဝေမည်" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpH-Zh-FAk">
-                                                        <rect key="frame" x="16" y="8" width="350" height="59"/>
+                                                        <rect key="frame" x="16" y="8" width="350" height="40"/>
                                                         <fontDescription key="fontDescription" name="Pyidaungsu" family="Pyidaungsu" pointSize="17"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="leading" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="မျှဝေရန်" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I78-a8-Ilt">
-                                                        <rect key="frame" x="16" y="83" width="350" height="351"/>
+                                                        <rect key="frame" x="16" y="64" width="350" height="370"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>

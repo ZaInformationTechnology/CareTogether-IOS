@@ -9,13 +9,13 @@
 import Foundation
 
 protocol  CommonRepository  {
-    
     func getSettings (completion : @escaping (_ state : CommonState)->Void)
 }
 
 class CommonUseCase  : CommonRepository{
     func getSettings(completion: @escaping (CommonState) -> Void) {
         if Reachability.isConnectedToNetwork(){
+            completion(.Loading)
             Engine.apiService.request(.getAvailableLanguage) { (result) in
                 switch (result) {
                 case .failure(let error) :
@@ -34,6 +34,5 @@ class CommonUseCase  : CommonRepository{
         }else{
             completion(.FetchSettingError)
         }
-        
     }
 }

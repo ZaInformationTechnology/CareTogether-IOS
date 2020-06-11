@@ -112,6 +112,10 @@ extension SettingVc : UITableViewDelegate,UITableViewDataSource {
             currentLocale = "my"
         case "en" :
             currentLocale = "en"
+        case "shan" :
+            currentLocale = "ja"
+        case  "rakhine" :
+            currentLocale = "th"
         default:
             print("other")
         }
